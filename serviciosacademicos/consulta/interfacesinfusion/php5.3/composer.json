@@ -1,0 +1,34 @@
+{
+    "name": "infusionsoft/php-sdk",
+    "description": "Beta PHP SDK for the Infusionsoft",
+    "keywords": [
+        "infusionsoft",
+        "sdk"
+    ],
+    "homepage": "https://developer.infusionsoft.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Infusionsoft",
+            "homepage": "https://developer.infusionsoft.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "ext-curl": "*",
+        "guzzle/guzzle": "3.8.*",
+        "lstrojny/fxmlrpc": "0.8.*",
+         "infusionsoft/php-sdk": "1.0.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master",
+        "phpunit/phpunit": "~4",
+        "squizlabs/php_codesniffer": "1.*",
+        "codeception/aspect-mock": "~0.5"
+    },
+    "autoload": {
+        "psr-0": {
+            "Infusionsoft": ["src", "tests"]
+        }
+    }
+}
