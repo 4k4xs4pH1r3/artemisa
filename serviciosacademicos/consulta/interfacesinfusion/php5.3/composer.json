@@ -16,7 +16,7 @@
     "require": {
         "php": ">=5.3.3",
         "ext-curl": "*",
-        "guzzle/guzzle": "3.8.*",
+        "guzzle/guzzle": "3.9.*",
         "lstrojny/fxmlrpc": "0.8.*",
          "infusionsoft/php-sdk": "1.0.0"
     },
