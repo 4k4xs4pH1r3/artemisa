@@ -83,7 +83,11 @@
 		"grunt-compare-size": "0.4.0-rc.3",
 		"grunt-html": "15.2.2",
 		"grunt-git-authors": "1.2.0",
+<<<<<<< HEAD
+		"rimraf": "3.0.2",
+=======
 		"rimraf": "2.7.1",
+>>>>>>> main
 		"testswarm": "1.1.0"
 	},
 	"keywords": []
