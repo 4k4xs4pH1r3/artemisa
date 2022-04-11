@@ -16,15 +16,21 @@
     "require": {
         "php": ">=5.3.3",
         "ext-curl": "*",
+<<<<<<< HEAD
         "guzzle/guzzle": "3.8.*",
         "lstrojny/fxmlrpc": "0.22.*",
          "infusionsoft/php-sdk": "1.0.0"
+=======
+        "guzzle/guzzle": "3.9.*",
+        "lstrojny/fxmlrpc": "0.8.*",
+         "infusionsoft/php-sdk": "1.5.2"
+>>>>>>> main
     },
     "require-dev": {
         "mockery/mockery": "dev-master",
         "phpunit/phpunit": "~4",
         "squizlabs/php_codesniffer": "2.*",
-        "codeception/aspect-mock": "0.5.1"
+        "codeception/aspect-mock": "0.5.5"
     },
     "autoload": {
         "psr-0": {
