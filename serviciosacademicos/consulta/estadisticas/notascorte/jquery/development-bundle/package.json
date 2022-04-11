@@ -52,8 +52,12 @@
 =======
 		"grunt-html": "0.3.4",
 		"grunt-junit": "0.1.4",
+<<<<<<< HEAD
+		"grunt-git-authors": "1.2.0",
+=======
 >>>>>>> main
 		"grunt-git-authors": "1.0.0",
+>>>>>>> main
 		"rimraf": "2.0.1",
 		"testswarm": "0.2.3"
 	},
