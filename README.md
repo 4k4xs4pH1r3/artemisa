@@ -1,2 +1,2 @@
 # artemisa
-Codigo fuente de artemisa.unbosque.edu.co, incluyendo SALA y demas sistemas.
+ Source code of artemisa.unbosque.edu.co, including room and other systems. 
