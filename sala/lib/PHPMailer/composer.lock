@@ -5,10 +5,14 @@
         "This file is @generated automatically"
     ],
 <<<<<<< HEAD
+    "content-hash": "9442ea9946ebd1666d011dfeb12aef36",
+=======
+<<<<<<< HEAD
     "content-hash": "43cea0188804ad01fc7f59efb892f7e1",
 =======
     "content-hash": "9a5bd9559291c856382e3a4e88e7bb9f",
 >>>>>>> 853c0410474638c9df387fc5ceca06b12f1f8d77
+>>>>>>> main
     "packages": [],
     "packages-dev": [
         {
@@ -1601,23 +1605,27 @@
             ],
             "abandoned": true,
 <<<<<<< HEAD
+            "time": "2017-12-04T08:55:13+00:00"
+=======
+<<<<<<< HEAD
             "time": "2017-02-27T10:12:30+00:00"
 =======
             "time": "2017-12-04T08:55:13+00:00"
 >>>>>>> 853c0410474638c9df387fc5ceca06b12f1f8d77
+>>>>>>> main
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.35",
+            "version": "4.8.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "791b1a67c25af50e230f841ee7a9c6eba507dc87"
+                "reference": "46023de9a91eec7dfb06cc56cb4e260017298517"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/791b1a67c25af50e230f841ee7a9c6eba507dc87",
-                "reference": "791b1a67c25af50e230f841ee7a9c6eba507dc87",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/46023de9a91eec7dfb06cc56cb4e260017298517",
+                "reference": "46023de9a91eec7dfb06cc56cb4e260017298517",
                 "shasum": ""
             },
             "require": {
@@ -1676,7 +1684,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-02-06T05:18:07+00:00"
+            "time": "2017-06-21T08:07:12+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
