@@ -9,11 +9,7 @@
         "php": ">=5.2.1"
     },
     "require-dev": {
-<<<<<<< HEAD
       "phpunit/phpunit": "9.5.20"
-=======
-      "phpunit/phpunit": "4.8.36"
->>>>>>> main
     },
     "autoload": {
         "classmap": [

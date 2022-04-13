@@ -31,7 +31,7 @@
                 "phpbench/phpbench": "^0.16 || ^1",
                 "phpstan/phpstan": "^1.4",
                 "phpstan/phpstan-phpunit": "^1",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
+                "phpunit/phpunit": "9.5.20",
                 "vimeo/psalm": "^4.22"
             },
             "type": "library",
@@ -97,7 +97,7 @@
             "require-dev": {
                 "doctrine/collections": "^1.6.8",
                 "doctrine/common": "^2.13.3 || ^3.2.2",
-                "phpunit/phpunit": "^7.5.20 || ^8.5.23 || ^9.5.13"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "autoload": {
@@ -148,7 +148,7 @@
             },
             "require-dev": {
                 "ircmaxell/php-yacc": "^0.0.7",
-                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
+                "phpunit/phpunit": "9.5.20"
             },
             "bin": [
                 "bin/php-parse"
@@ -454,7 +454,7 @@
             },
             "require-dev": {
                 "phpspec/phpspec": "^6.0 || ^7.0",
-                "phpunit/phpunit": "^8.0 || ^9.0"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
@@ -524,7 +524,7 @@
                 "theseer/tokenizer": "^1.2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "suggest": {
                 "ext-pcov": "*",
@@ -585,7 +585,7 @@
                 "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
@@ -642,7 +642,7 @@
             },
             "require-dev": {
                 "ext-pcntl": "*",
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "suggest": {
                 "ext-pcntl": "*"
@@ -700,7 +700,7 @@
                 "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
@@ -755,7 +755,7 @@
                 "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
@@ -909,7 +909,7 @@
                 "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
@@ -961,7 +961,7 @@
                 "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
@@ -1013,7 +1013,7 @@
                 "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
@@ -1066,7 +1066,7 @@
                 "sebastian/exporter": "^4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
@@ -1135,7 +1135,7 @@
                 "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
@@ -1187,7 +1187,7 @@
                 "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3",
+                "phpunit/phpunit": "9.5.20",
                 "symfony/process": "^4.2 || ^5"
             },
             "type": "library",
@@ -1249,7 +1249,7 @@
                 "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "suggest": {
                 "ext-posix": "*"
@@ -1310,7 +1310,7 @@
             },
             "require-dev": {
                 "ext-mbstring": "*",
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
@@ -1384,7 +1384,7 @@
             },
             "require-dev": {
                 "ext-dom": "*",
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "suggest": {
                 "ext-uopz": "*"
@@ -1442,7 +1442,7 @@
                 "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
@@ -1496,7 +1496,7 @@
                 "sebastian/recursion-context": "^4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
@@ -1547,7 +1547,7 @@
                 "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
@@ -1598,7 +1598,7 @@
                 "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
@@ -1657,7 +1657,7 @@
                 "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.0"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
@@ -1708,7 +1708,7 @@
                 "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.5"
+                "phpunit/phpunit": "10.0.x-dev"
             },
             "type": "library",
             "extra": {
@@ -1939,7 +1939,7 @@
                 "vimeo/psalm": "<4.6.1 || 4.6.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.5.13"
+                "phpunit/phpunit": "9.5.20"
             },
             "type": "library",
             "extra": {
