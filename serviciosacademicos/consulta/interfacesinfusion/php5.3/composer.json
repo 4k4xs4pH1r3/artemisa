@@ -18,7 +18,7 @@
         "ext-curl": "*",
         "guzzle/guzzle": "7.4.2*",
         "lstrojny/fxmlrpc": "0.22.0*",
-         "infusionsoft/php-sdk": "1.0.0"
+         "infusionsoft/php-sdk": "1.5.2"
 
     },
     "require-dev": {
