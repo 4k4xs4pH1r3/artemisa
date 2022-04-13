@@ -45,9 +45,14 @@
         "zendframework/zend-i18n": "2.5.1",
 =======
         "zendframework/zend-filter": "2.5.1",
+<<<<<<< HEAD
+        "zendframework/zend-i18n": "2.5.1",
+        "zendframework/zend-json": "2.6.1",
+=======
         "zendframework/zend-i18n": "2.10.1",
 >>>>>>> main
         "zendframework/zend-json": "2.5.1",
+>>>>>>> main
         "zendframework/zend-math": "2.5.1",
         "zendframework/zend-serializer": "2.5.1",
         "zendframework/zend-servicemanager": "2.5.1",
