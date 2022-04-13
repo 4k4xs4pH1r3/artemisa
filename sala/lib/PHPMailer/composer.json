@@ -24,19 +24,29 @@
         "php": ">=5.0.0"
     },
     "require-dev": {
-        "doctrine/annotations": "1.2.7",
+        "doctrine/annotations": "1.13.2",
         "jms/serializer": "0.16.0",
-        "phpdocumentor/phpdocumentor": "2.9.0",
+        "phpdocumentor/phpdocumentor": "2.9.1",
         "phpunit/phpunit": "9.5.20",
         "symfony/debug": "2.8.*",
         "symfony/filesystem": "2.8.*",
         "symfony/translation": "2.8.*",
         "symfony/yaml": "2.8.*",
+<<<<<<< HEAD
         "zendframework/zend-cache": "2.5.1",
+        "zendframework/zend-config": "2.6.0",
+=======
+        "zendframework/zend-cache": "2.9.0",
         "zendframework/zend-config": "2.5.1",
+>>>>>>> main
         "zendframework/zend-eventmanager": "2.6.4",
-        "zendframework/zend-filter": "2.5.1",
+<<<<<<< HEAD
+        "zendframework/zend-filter": "2.9.2",
         "zendframework/zend-i18n": "2.5.1",
+=======
+        "zendframework/zend-filter": "2.5.1",
+        "zendframework/zend-i18n": "2.10.1",
+>>>>>>> main
         "zendframework/zend-json": "2.5.1",
         "zendframework/zend-math": "2.7.1",
         "zendframework/zend-serializer": "2.5.1",
