@@ -32,8 +32,13 @@
         "symfony/filesystem": "2.8.*",
         "symfony/translation": "2.8.*",
         "symfony/yaml": "2.8.*",
+<<<<<<< HEAD
+        "zendframework/zend-cache": "2.5.1",
+        "zendframework/zend-config": "2.6.0",
+=======
         "zendframework/zend-cache": "2.9.0",
         "zendframework/zend-config": "2.5.1",
+>>>>>>> main
         "zendframework/zend-eventmanager": "2.6.4",
         "zendframework/zend-filter": "2.5.1",
         "zendframework/zend-i18n": "2.10.1",
