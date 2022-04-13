@@ -24,7 +24,7 @@
     },
     "require-dev": {
         "phpdocumentor/phpdocumentor": "3.3.1",
-        "phpunit/phpunit": "4.8.28"
+        "phpunit/phpunit": "9.5.20"
     },
     "autoload": {
         "classmap": ["class.phpmailer.php", "class.pop3.php", "class.smtp.php"]
