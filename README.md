@@ -6,3 +6,5 @@
 <a href="https://deepsource.io/gh/4k4xs4pH1r3/artemisa/?ref=repository-badge}" target="_blank"><img alt="DeepSource" title="DeepSource" src="https://deepsource.io/gh/4k4xs4pH1r3/artemisa.svg/?label=active+issues&show_trend=true&token=px_ugU8Lgd1sXA0UyF9BNGIH"/></a>
 
 <a href="https://deepsource.io/gh/4k4xs4pH1r3/artemisa/?ref=repository-badge}" target="_blank"><img alt="DeepSource" title="DeepSource" src="https://deepsource.io/gh/4k4xs4pH1r3/artemisa.svg/?label=resolved+issues&show_trend=true&token=px_ugU8Lgd1sXA0UyF9BNGIH"/></a>
+
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/summary/new_code?id=4k4xs4pH1r3_artemisa)
