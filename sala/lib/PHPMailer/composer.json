@@ -38,7 +38,7 @@
         "zendframework/zend-filter": "2.5.1",
         "zendframework/zend-i18n": "2.5.1",
         "zendframework/zend-json": "2.5.1",
-        "zendframework/zend-math": "2.5.1",
+        "zendframework/zend-math": "2.7.1",
         "zendframework/zend-serializer": "2.5.1",
         "zendframework/zend-servicemanager": "2.5.1",
         "zendframework/zend-stdlib": "2.5.1"
