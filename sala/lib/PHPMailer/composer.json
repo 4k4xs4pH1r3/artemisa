@@ -32,7 +32,7 @@
         "symfony/filesystem": "2.8.*",
         "symfony/translation": "2.8.*",
         "symfony/yaml": "2.8.*",
-        "zendframework/zend-cache": "2.5.1",
+        "zendframework/zend-cache": "2.9.0",
         "zendframework/zend-config": "2.5.1",
         "zendframework/zend-eventmanager": "2.5.1",
         "zendframework/zend-filter": "2.5.1",
