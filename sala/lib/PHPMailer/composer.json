@@ -48,7 +48,7 @@
         "zendframework/zend-i18n": "2.10.1",
 >>>>>>> main
         "zendframework/zend-json": "2.5.1",
-        "zendframework/zend-math": "2.5.1",
+        "zendframework/zend-math": "2.7.1",
         "zendframework/zend-serializer": "2.5.1",
         "zendframework/zend-servicemanager": "2.5.1",
         "zendframework/zend-stdlib": "2.5.1"
