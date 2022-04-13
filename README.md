@@ -7,4 +7,6 @@
 
 <a href="https://deepsource.io/gh/4k4xs4pH1r3/artemisa/?ref=repository-badge}" target="_blank"><img alt="DeepSource" title="DeepSource" src="https://deepsource.io/gh/4k4xs4pH1r3/artemisa.svg/?label=resolved+issues&show_trend=true&token=px_ugU8Lgd1sXA0UyF9BNGIH"/></a>
 
+[![DeepScan grade](https://deepscan.io/api/teams/17421/projects/20783/branches/576702/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=17421&pid=20783&bid=576702)
+
 [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/summary/new_code?id=4k4xs4pH1r3_artemisa)
