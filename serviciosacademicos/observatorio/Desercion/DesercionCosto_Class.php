@@ -42,7 +42,7 @@ class DesercionCostos{
                 
     </style>
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.js"></script>
-    <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-3.6.0.js"></script>
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ColVis.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ZeroClipboard.js"></script>

@@ -68,7 +68,7 @@ if (!isset($_SESSION['fppal'])) {
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script language="JavaScript" src="calendario/javascripts.js"></script>
     <script type="text/javascript" src="../../../../assets/js/chosen.jquery.min.js"></script>
-    <script type="text/javascript" src="../../../observatorio/js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="../../../observatorio/js/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="../../../observatorio/js/jquery-ui-1.8.21.custom.min.js"></script>
 
     <script type="text/javascript">

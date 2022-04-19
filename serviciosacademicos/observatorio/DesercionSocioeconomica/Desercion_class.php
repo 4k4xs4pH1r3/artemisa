@@ -20,7 +20,7 @@ class Desercion{
          for($j=0;$j<$Num_P;$j++){
                 //echo '<br>->J->'.$j;
                /*****************************************************************************/ 
-                //echo '<br>´periodo->'.$C_Periodo[$j]['codigoperiodo'];
+                //echo '<br>ï¿½periodo->'.$C_Periodo[$j]['codigoperiodo'];
                 
                 //$Datos[$j]['Periodo']=$C_Periodo[$j]['codigoperiodo'];
                 
@@ -328,7 +328,7 @@ class Desercion{
                 @import "../../../observatorio/data/media/css/themes/smoothness/jquery-ui-1.8.4.custom.css";
     </style>-->
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.js"></script>
-    <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-3.6.0.js"></script>
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ColVis.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ZeroClipboard.js"></script>
@@ -514,7 +514,7 @@ public function DisplayAnual($CodigoPeriodo){
                 @import "../../../observatorio/data/media/css/themes/smoothness/jquery-ui-1.8.4.custom.css";
     </style>-->
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.js"></script>
-    <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-3.6.0.js"></script>
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ColVis.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ZeroClipboard.js"></script>
@@ -1021,7 +1021,7 @@ public function ConsultaDesercionSemestral($CodigoCarrera,$Periodo){
                 @import "../../../observatorio/data/media/css/themes/smoothness/jquery-ui-1.8.4.custom.css";
     </style>-->
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.js"></script>
-    <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-3.6.0.js"></script>
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ColVis.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ZeroClipboard.js"></script>
@@ -1451,7 +1451,7 @@ public function ConsultaDesercionSemestral($CodigoCarrera,$Periodo){
     111	Inscrito sin pago
     112	Terminacion de curso o educacion no formal
     113	No Admitido
-    114	En proceso de financiación
+    114	En proceso de financiaciï¿½n
     115	Lista en Espera
     200	Prueba Academica
     300	Admitido
@@ -2604,7 +2604,7 @@ public function DisplayCohorte($CodigoPeriodo){
     </style>
     
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.js"></script>
-    <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-3.6.0.js"></script>
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ColVis.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ZeroClipboard.js"></script>

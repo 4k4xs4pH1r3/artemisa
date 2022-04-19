@@ -424,7 +424,7 @@ public function DisplaySemestral($CodigoPeriodo,$modalidad,$programa=-1){
     </style>
    
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.js"></script>
-    <!--<script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-1.8.3.js"></script>-->	
+    <!--<script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-3.6.0.js"></script>-->	
     <script type="text/javascript" language="javascript" src="../js/jquery-ui-1.8.21.custom.min.js"></script>
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ColVis.js"></script>
@@ -553,7 +553,7 @@ public function DisplaySemestral($CodigoPeriodo,$modalidad,$programa=-1){
     </style>
    
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.js"></script>
-    <!--<script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-1.8.3.js"></script>-->	
+    <!--<script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-3.6.0.js"></script>-->	
     <script type="text/javascript" language="javascript" src="../js/jquery-ui-1.8.21.custom.min.js"></script>
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ColVis.js"></script>
@@ -776,7 +776,7 @@ public function DisplayAnual($CodigoPeriodo,$tipo=1){
                 @import "../../../observatorio/data/media/css/themes/smoothness/jquery-ui-1.8.4.custom.css";
     </style>-->
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.js"></script>
-    <!--<script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-1.8.3.js"></script>-->	
+    <!--<script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-3.6.0.js"></script>-->	
     <script type="text/javascript" language="javascript" src="../js/jquery-ui-1.8.21.custom.min.js"></script>
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ColVis.js"></script>
@@ -1510,7 +1510,7 @@ public function ConsultaDesercionSemestral($CodigoCarrera,$Periodo){
                 @import "../../../observatorio/data/media/css/themes/smoothness/jquery-ui-1.8.4.custom.css";
     </style>-->
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.js"></script>
-    <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-3.6.0.js"></script>
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ColVis.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ZeroClipboard.js"></script>
@@ -3151,7 +3151,7 @@ public function DisplayCohorte($CodigoPeriodo,$tipo=1){
     </style>
     
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.js"></script>
-    <!--<script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-1.8.3.js"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-3.6.0.js"></script>-->
     <script type="text/javascript" language="javascript" src="../js/jquery-ui-1.8.21.custom.min.js"></script>
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ColVis.js"></script>
@@ -3751,7 +3751,7 @@ public function DisplaySocioEconomicoSemestral(){
     </style>
     
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.js"></script>
-    <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-3.6.0.js"></script>
     <script type="text/javascript" language="javascript" src="../data/media/js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ColVis.js"></script>
     <script type="text/javascript" charset="utf-8" src="../data/media/js/ZeroClipboard.js"></script>

@@ -32,7 +32,7 @@ class InterfazSolicitud {
 
         </style>
         <!--<script type="text/javascript" language="javascript" src="../../observatorio/data/media/js/jquery.js"></script>
-        <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-1.8.3.js"></script>-->
+        <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-3.6.0.js"></script>-->
         <script type="text/javascript" language="javascript" src="../../observatorio/data/media/js/jquery.dataTables.js"></script>
         <script type="text/javascript" charset="utf-8" src="../../observatorio/data/media/js/ColVis.js"></script>
         <script type="text/javascript" charset="utf-8" src="../../observatorio/data/media/js/ZeroClipboard.js"></script>
@@ -3152,7 +3152,7 @@ a.HoraFin
 
         </style>
         <!--<script type="text/javascript" language="javascript" src="../../observatorio/data/media/js/jquery.js"></script>
-        <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-1.8.3.js"></script>-->
+        <script type="text/javascript" charset="utf-8" src="../jquery/js/jquery-3.6.0.js"></script>-->
         <script type="text/javascript" language="javascript" src="../../observatorio/data/media/js/jquery.dataTables.js"></script>
         <script type="text/javascript" charset="utf-8" src="../../observatorio/data/media/js/ColVis.js"></script>
         <script type="text/javascript" charset="utf-8" src="../../observatorio/data/media/js/ZeroClipboard.js"></script>

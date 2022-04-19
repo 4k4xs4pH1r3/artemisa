@@ -454,7 +454,7 @@ class Estructura_Tablero{
                         </tr>
                      </table>
                      </fieldset>
-   <script type="text/javascript" language="javascript" src="../../js/jquery-1.8.3.js"></script>
+   <script type="text/javascript" language="javascript" src="../../js/jquery-3.6.0.js"></script>
    <script type="text/javascript" language="javascript" src="../../js/jquery-ui.js"></script>
 
     

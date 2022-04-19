@@ -30,7 +30,7 @@
                 @import "../../css/jquery-ui-timepicker-addon.css";
         </style>
        <script type="text/javascript" language="javascript" src="../../js/jquery.js"></script>
-       <!--<script type="text/javascript" language="javascript" src="../../js/jquery-1.8.3.js"></script>-->
+       <!--<script type="text/javascript" language="javascript" src="../../js/jquery-3.6.0.js"></script>-->
         <script type="text/javascript" language="javascript" src="../../js/jquery.dataTables.js"></script>
         <script type="text/javascript" language="javascript" src="../../js/jquery-ui-1.8.21.custom.min.js"></script>
         <script type="text/javascript" language="javascript" src="../../js/jquery.fastLiveFilter.js"></script>
