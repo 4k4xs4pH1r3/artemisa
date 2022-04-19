@@ -523,7 +523,7 @@ function link_H($db,$url1,$modulo,$titulo){
     </ul>
   </div>
 </div>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.13.1.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 </body>

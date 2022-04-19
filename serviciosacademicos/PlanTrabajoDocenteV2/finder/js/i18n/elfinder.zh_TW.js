@@ -408,9 +408,9 @@
 			'contextmenu'     : '情境選單', // from v2.1.15 added 9.9.2016
 			'pageTurning'     : '正在換頁', // from v2.1.15 added 10.9.2016
 			'volumeRoots'     : '磁碟根目錄', // from v2.1.16 added 16.9.2016
-			'reset'           : '重設', // from v2.1.16 added 1.10.2016
-			'bgcolor'         : '背景頻色', // from v2.1.16 added 1.10.2016
-			'colorPicker'     : '顏色選擇器', // from v2.1.16 added 1.10.2016
+			'reset'           : '重設', // from v2.1.16 added 1.13.1016
+			'bgcolor'         : '背景頻色', // from v2.1.16 added 1.13.1016
+			'colorPicker'     : '顏色選擇器', // from v2.1.16 added 1.13.1016
 			'8pxgrid'         : '8px 網格', // from v2.1.16 added 4.10.2016
 			'enabled'         : '啟用', // from v2.1.16 added 4.10.2016
 			'disabled'        : '停用', // from v2.1.16 added 4.10.2016

@@ -406,9 +406,9 @@
 			'contextmenu'     : 'Context menu', // from v2.1.15 added 9.9.2016
 			'pageTurning'     : 'Page turning', // from v2.1.15 added 10.9.2016
 			'volumeRoots'     : 'Volume roots', // from v2.1.16 added 16.9.2016
-			'reset'           : 'යළි පිහිටුවන්න(Reset)', // from v2.1.16 added 1.10.2016
-			'bgcolor'         : 'පසුබිම් වර්ණය', // from v2.1.16 added 1.10.2016
-			'colorPicker'     : 'Color picker', // from v2.1.16 added 1.10.2016
+			'reset'           : 'යළි පිහිටුවන්න(Reset)', // from v2.1.16 added 1.13.1016
+			'bgcolor'         : 'පසුබිම් වර්ණය', // from v2.1.16 added 1.13.1016
+			'colorPicker'     : 'Color picker', // from v2.1.16 added 1.13.1016
 			'8pxgrid'         : 'පික්සල් 8ක දැල', // from v2.1.16 added 4.10.2016
 			'enabled'         : 'සක්‍රීයයි', // from v2.1.16 added 4.10.2016
 			'disabled'        : 'අක්‍රීයයි', // from v2.1.16 added 4.10.2016

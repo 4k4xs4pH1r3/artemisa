@@ -43,7 +43,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Nuevo Acuerdos</title>
         
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.13.1/jquery.min.js"></script>
         <script type="text/javascript" language="javascript" src="../mgi/js/jquery.js"></script>
         <script type="text/javascript" language="javascript" src="../mgi/js/jquery-ui-1.8.21.custom.min.js"></script>
         <script type="text/javascript" language="javascript" src="../mgi/js/functions.js"></script>

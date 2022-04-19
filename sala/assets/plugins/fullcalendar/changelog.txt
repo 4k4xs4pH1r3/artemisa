@@ -325,7 +325,7 @@ v1.6.3 (2013-08-10)
 	- `viewDisplay`
 	- `disableDragging`
 	- `disableResizing`
-- bundled with latest jQuery (1.10.2) and jQuery UI (1.10.3)
+- bundled with latest jQuery (1.13.1) and jQuery UI (1.13.1)
 
 [PR 15]: https://github.com/arshaw/fullcalendar/pull/15
 [PR 111]: https://github.com/arshaw/fullcalendar/pull/111
@@ -378,7 +378,7 @@ v1.6.0 (2013-03-18)
 - `data-date` attributes on cells (thx @Jae)
 - expose `$.fullCalendar.dateFormatters`
 - when clicking fast on buttons, prevent text selection
-- bundled with latest jQuery (1.9.1) and jQuery UI (1.10.2)
+- bundled with latest jQuery (1.9.1) and jQuery UI (1.13.1)
 - Grunt/Lumbar build system for internal development
 - build for Bower package manager
 - build for jQuery plugin site

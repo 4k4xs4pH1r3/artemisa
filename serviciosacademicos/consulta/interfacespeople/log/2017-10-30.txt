@@ -857,7 +857,7 @@ Called from:SCC_HR_INTEGRATION.HRServices.PersonServices.OnE
 		<PHONE>3661948</PHONE>
 		<EMAIL_ADDR>barrosmariby@gmail.com</EMAIL_ADDR>
 		<BUSINESS_UNIT>UBSF0</BUSINESS_UNIT>
-	</m:messageRequest> id:1 descripcion:2017-10-31-01.10.38.000000>>>  - A SQL error occurred. Please consult your system log for details.Publish of message PERSON_BASIC_SYNC failed. (119,9) HCR_PUBLICATION_RULES.PersonBasicPublication.OnExecute  Name:PersonBasicPublication  PCPC:3203  Statement:52
+	</m:messageRequest> id:1 descripcion:2017-10-31-01.13.18.000000>>>  - A SQL error occurred. Please consult your system log for details.Publish of message PERSON_BASIC_SYNC failed. (119,9) HCR_PUBLICATION_RULES.PersonBasicPublication.OnExecute  Name:PersonBasicPublication  PCPC:3203  Statement:52
 Called from:PERSONAL_DATA.GBL.SavePostChange  Statement:6Error saving Component Interface. {HCR_PERSONAL_DATA_SRV} (91,37) (0,0) HMCR_API2CI.ciHandler.OnExecute  Name:notificarErroresCI  PCPC:63152  Statement:1234
 Called from:HMCR_API2CI.ciHandler.OnExecute  Name:ciSave  Statement:109
 Called from:HMCR_API2CI.ciLocalPool.OnExecute  Name:ciSavePool  Statement:40

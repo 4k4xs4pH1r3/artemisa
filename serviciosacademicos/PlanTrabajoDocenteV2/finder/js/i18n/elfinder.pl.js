@@ -418,9 +418,9 @@
 			'contextmenu'     : 'Menu kontekstowe', // from v2.1.15 added 9.9.2016
 			'pageTurning'     : 'Obracanie strony', // from v2.1.15 added 10.9.2016
 			'volumeRoots'     : 'Wolumin główny', // from v2.1.16 added 16.9.2016
-			'reset'           : 'Resetuj', // from v2.1.16 added 1.10.2016
-			'bgcolor'         : 'Kolor tła', // from v2.1.16 added 1.10.2016
-			'colorPicker'     : 'Wybierania kolorów', // from v2.1.16 added 1.10.2016
+			'reset'           : 'Resetuj', // from v2.1.16 added 1.13.1016
+			'bgcolor'         : 'Kolor tła', // from v2.1.16 added 1.13.1016
+			'colorPicker'     : 'Wybierania kolorów', // from v2.1.16 added 1.13.1016
 			'8pxgrid'         : '8px Kratka', // from v2.1.16 added 4.10.2016
 			'enabled'         : 'Włączone', // from v2.1.16 added 4.10.2016
 			'disabled'        : 'Wyłączone', // from v2.1.16 added 4.10.2016

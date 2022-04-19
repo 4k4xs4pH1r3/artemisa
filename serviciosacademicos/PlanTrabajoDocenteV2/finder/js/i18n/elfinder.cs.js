@@ -419,9 +419,9 @@
 			'contextmenu'     : 'Kontextové menu', // from v2.1.15 added 9.9.2016
 			'pageTurning'     : 'Otáčení stránky', // from v2.1.15 added 10.9.2016
 			'volumeRoots'     : 'Kořeny média', // from v2.1.16 added 16.9.2016
-			'reset'           : 'Obnovit', // from v2.1.16 added 1.10.2016
-			'bgcolor'         : 'Barva pozadí', // from v2.1.16 added 1.10.2016
-			'colorPicker'     : 'Výběr barvy', // from v2.1.16 added 1.10.2016
+			'reset'           : 'Obnovit', // from v2.1.16 added 1.13.1016
+			'bgcolor'         : 'Barva pozadí', // from v2.1.16 added 1.13.1016
+			'colorPicker'     : 'Výběr barvy', // from v2.1.16 added 1.13.1016
 			'8pxgrid'         : '8px mřížka', // from v2.1.16 added 4.10.2016
 			'enabled'         : 'Povoleno', // from v2.1.16 added 4.10.2016
 			'disabled'        : 'Zakázáno', // from v2.1.16 added 4.10.2016

@@ -4,20 +4,20 @@
  *
  * To rebuild or modify this file with the latest versions of the included
  * software please visit:
- *   https://datatables.net/download/#dt/dt-1.10.20
+ *   https://datatables.net/download/#dt/dt-1.13.10
  *
  * Included libraries:
- *   DataTables 1.10.20
+ *   DataTables 1.13.10
  */
 
-/*! DataTables 1.10.20
+/*! DataTables 1.13.10
  * ©2008-2019 SpryMedia Ltd - datatables.net/license
  */
 
 /**
  * @summary     DataTables
  * @description Paginate, search and order HTML tables
- * @version     1.10.20
+ * @version     1.13.10
  * @file        jquery.dataTables.js
  * @author      SpryMedia Ltd
  * @contact     www.datatables.net
@@ -9499,7 +9499,7 @@
 	 *  @type string
 	 *  @default Version number
 	 */
-	DataTable.version = "1.10.20";
+	DataTable.version = "1.13.10";
 
 	/**
 	 * Private data store, containing all of the settings objects that are
@@ -13921,7 +13921,7 @@
 		 *
 		 *  @type string
 		 */
-		build:"dt/dt-1.10.20",
+		build:"dt/dt-1.13.10",
 	
 	
 		/**

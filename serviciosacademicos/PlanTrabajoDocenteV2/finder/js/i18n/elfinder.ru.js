@@ -419,9 +419,9 @@
 			'contextmenu'     : 'Контекстное меню', // from v2.1.15 added 9.9.2016
 			'pageTurning'     : 'Переключение страницы', // from v2.1.15 added 10.9.2016
 			'volumeRoots'     : 'Корни томов', // from v2.1.16 added 16.9.2016
-			'reset'           : 'Сбросить', // from v2.1.16 added 1.10.2016
-			'bgcolor'         : 'Фоновый цвет', // from v2.1.16 added 1.10.2016
-			'colorPicker'     : 'Выбор цвета', // from v2.1.16 added 1.10.2016
+			'reset'           : 'Сбросить', // from v2.1.16 added 1.13.1016
+			'bgcolor'         : 'Фоновый цвет', // from v2.1.16 added 1.13.1016
+			'colorPicker'     : 'Выбор цвета', // from v2.1.16 added 1.13.1016
 			'8pxgrid'         : '8px сетка', // from v2.1.16 added 4.10.2016
 			'enabled'         : 'Включено', // from v2.1.16 added 4.10.2016
 			'disabled'        : 'Отключено', // from v2.1.16 added 4.10.2016

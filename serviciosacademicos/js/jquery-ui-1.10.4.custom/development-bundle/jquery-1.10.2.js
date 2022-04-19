@@ -1,5 +1,5 @@
 /*!
- * jQuery JavaScript Library v1.10.2
+ * jQuery JavaScript Library v1.13.1
  * http://jquery.com/
  *
  * Includes Sizzle.js
@@ -46,7 +46,7 @@ var
 	// List of deleted data cache ids, so we can reuse them
 	core_deletedIds = [],
 
-	core_version = "1.10.2",
+	core_version = "1.13.1",
 
 	// Save a reference to some core methods
 	core_concat = core_deletedIds.concat,
@@ -1000,7 +1000,7 @@ function isArraylike( obj ) {
 // All jQuery objects should point back to these
 rootjQuery = jQuery(document);
 /*!
- * Sizzle CSS Selector Engine v1.10.2
+ * Sizzle CSS Selector Engine v1.13.1
  * http://sizzlejs.com/
  *
  * Copyright 2013 jQuery Foundation, Inc. and other contributors

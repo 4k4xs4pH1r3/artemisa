@@ -417,9 +417,9 @@
 			'contextmenu'          : 'Context menu', // from v2.1.15 added 9.9.2016
 			'pageTurning'          : 'Pagina omslaan', // from v2.1.15 added 10.9.2016
 			'volumeRoots'          : 'Volume roots', // from v2.1.16 added 16.9.2016
-			'reset'                : 'Reset', // from v2.1.16 added 1.10.2016
-			'bgcolor'              : 'Achtergrondkleur', // from v2.1.16 added 1.10.2016
-			'colorPicker'          : 'Kleurkiezer', // from v2.1.16 added 1.10.2016
+			'reset'                : 'Reset', // from v2.1.16 added 1.13.1016
+			'bgcolor'              : 'Achtergrondkleur', // from v2.1.16 added 1.13.1016
+			'colorPicker'          : 'Kleurkiezer', // from v2.1.16 added 1.13.1016
 			'8pxgrid'              : '8px Grid', // from v2.1.16 added 4.10.2016
 			'enabled'              : 'Actief', // from v2.1.16 added 4.10.2016
 			'disabled'             : 'Inactief', // from v2.1.16 added 4.10.2016

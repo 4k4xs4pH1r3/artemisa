@@ -19,7 +19,7 @@
 <html>
     <head>
         <title>Monitoreo de aulas</title>
-		<script type="text/javascript" charset="utf-8" src="../js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../js/jquery-1.13.1.js"></script>
 		<script type="text/javascript" charset="utf-8" src="../js/function.js?3"></script>
 		<link rel="stylesheet" href="../css/monitoreo.css" type="text/css" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">

@@ -11,7 +11,7 @@
 <html>
     <head>
         <title>Monitoreo de aulas</title>
-		<script type="text/javascript" charset="utf-8" src="../js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../js/jquery-1.13.1.js"></script>
 		<script type="text/javascript" charset="utf-8" src="../js/function.js"></script>
 		<?php
                 /*@modified Diego Rivera <riveradiego@unbosque.edu.co>

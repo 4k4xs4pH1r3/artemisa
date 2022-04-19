@@ -1,6 +1,6 @@
 <?php
 /**
- * Se descargan las librerias http://code.jquery.com/ui/1.10.3/jquery-ui.js 
+ * Se descargan las librerias http://code.jquery.com/ui/1.13.1/jquery-ui.js 
  * y http://code.jquery.com/ui/jquery-ui-git.css para evitar problemas de
  * referenciacion por https
  * @modified Andres Ariza <andresariza@unbosque.edu.do>.

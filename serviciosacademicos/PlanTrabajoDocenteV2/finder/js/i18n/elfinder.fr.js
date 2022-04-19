@@ -419,9 +419,9 @@
 			'contextmenu'     : 'Menu contextuel', // from v2.1.15 added 9.9.2016
 			'pageTurning'     : 'Tourner la page', // from v2.1.15 added 10.9.2016
 			'volumeRoots'     : 'Volumes principaux', // from v2.1.16 added 16.9.2016
-			'reset'           : 'Réinitialiser', // from v2.1.16 added 1.10.2016
-			'bgcolor'         : 'Couleur de fond', // from v2.1.16 added 1.10.2016
-			'colorPicker'     : 'Sélecteur de couleur', // from v2.1.16 added 1.10.2016
+			'reset'           : 'Réinitialiser', // from v2.1.16 added 1.13.1016
+			'bgcolor'         : 'Couleur de fond', // from v2.1.16 added 1.13.1016
+			'colorPicker'     : 'Sélecteur de couleur', // from v2.1.16 added 1.13.1016
 			'8pxgrid'         : 'Grille 8px', // from v2.1.16 added 4.10.2016
 			'enabled'         : 'Actif', // from v2.1.16 added 4.10.2016
 			'disabled'        : 'Inactif', // from v2.1.16 added 4.10.2016

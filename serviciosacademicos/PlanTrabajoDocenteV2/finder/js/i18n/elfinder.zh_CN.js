@@ -422,9 +422,9 @@
 			'contextmenu'     : '上下文菜单', // from v2.1.15 added 9.9.2016
 			'pageTurning'     : '翻页', // from v2.1.15 added 10.9.2016
 			'volumeRoots'     : '根目录', // from v2.1.16 added 16.9.2016
-			'reset'           : '重置', // from v2.1.16 added 1.10.2016
-			'bgcolor'         : '背景色', // from v2.1.16 added 1.10.2016
-			'colorPicker'     : '颜色选择器', // from v2.1.16 added 1.10.2016
+			'reset'           : '重置', // from v2.1.16 added 1.13.1016
+			'bgcolor'         : '背景色', // from v2.1.16 added 1.13.1016
+			'colorPicker'     : '颜色选择器', // from v2.1.16 added 1.13.1016
 			'8pxgrid'         : '步长(8px)', // from v2.1.16 added 4.10.2016
 			'enabled'         : '启用', // from v2.1.16 added 4.10.2016
 			'disabled'        : '关闭', // from v2.1.16 added 4.10.2016

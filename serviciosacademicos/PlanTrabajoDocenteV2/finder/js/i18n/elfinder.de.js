@@ -412,9 +412,9 @@
 			'contextmenu'     : 'Kontextmenü', // from v2.1.15 added 9.9.2016
 			'pageTurning'     : 'Seite umblättern', // from v2.1.15 added 10.9.2016
 			'volumeRoots'     : 'Volume-Rootverzeichnisse', // from v2.1.16 added 16.9.2016
-			'reset'           : 'Neustart', // from v2.1.16 added 1.10.2016
-			'bgcolor'         : 'Hintergrund Farbe', // from v2.1.16 added 1.10.2016
-			'colorPicker'     : 'Farbauswahl', // from v2.1.16 added 1.10.2016
+			'reset'           : 'Neustart', // from v2.1.16 added 1.13.1016
+			'bgcolor'         : 'Hintergrund Farbe', // from v2.1.16 added 1.13.1016
+			'colorPicker'     : 'Farbauswahl', // from v2.1.16 added 1.13.1016
 			'8pxgrid'         : '8px Raster', // from v2.1.16 added 4.10.2016
 			'enabled'         : 'Ein', // from v2.1.16 added 4.10.2016
 			'disabled'        : 'Aus', // from v2.1.16 added 4.10.2016

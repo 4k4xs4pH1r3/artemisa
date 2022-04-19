@@ -148,7 +148,7 @@
 	<?php
         /*@modified Diego Rivera <riveradiego@unbosque.edu.co>
          *se cambia  css externa <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">por css local
-         *se cambia js externa <script src="//code.jquery.com/jquery-1.10.2.js"></script> por js local
+         *se cambia js externa <script src="//code.jquery.com/jquery-1.13.1.js"></script> por js local
          *se cambia js externa <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> por js local
          * @Since November 29,2018
          */

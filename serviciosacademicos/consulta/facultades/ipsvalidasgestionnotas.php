@@ -68,7 +68,7 @@ session_start();
         /*@modified Diego Rivera <riveradiego@unbosque.edu.co>
          * Se cambian js ,css y imagen externa por locales
          *<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
-          <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+          <script src="//code.jquery.com/jquery-1.13.1.js"></script>
 	  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
          * http://jqueryui.com/resources/demos/datepicker/images/calendar.gif
          *@since november 30,2018

@@ -407,9 +407,9 @@
 			'contextmenu'     : 'Context menu', // from v2.1.15 added 9.9.2016
 			'pageTurning'     : 'Page turning', // from v2.1.15 added 10.9.2016
 			'volumeRoots'     : 'Volume roots', // from v2.1.16 added 16.9.2016
-			'reset'           : 'Reset', // from v2.1.16 added 1.10.2016
-			'bgcolor'         : 'Background color', // from v2.1.16 added 1.10.2016
-			'colorPicker'     : 'Color picker', // from v2.1.16 added 1.10.2016
+			'reset'           : 'Reset', // from v2.1.16 added 1.13.1016
+			'bgcolor'         : 'Background color', // from v2.1.16 added 1.13.1016
+			'colorPicker'     : 'Color picker', // from v2.1.16 added 1.13.1016
 			'8pxgrid'         : '8px Grid', // from v2.1.16 added 4.10.2016
 			'enabled'         : 'Enabled', // from v2.1.16 added 4.10.2016
 			'disabled'        : 'Disabled', // from v2.1.16 added 4.10.2016

@@ -19,7 +19,7 @@
     <title>Buscar Pago PSE</title><style type="text/css"></style>
     
     <link rel="stylesheet" href="js/jquery-ui.css">
-    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-1.13.1.js"></script>
     <script src="js/jquery-ui.js"></script>
     
     

@@ -419,9 +419,9 @@
 			'contextmenu'     : 'コンテキストメニュー', // from v2.1.15 added 9.9.2016
 			'pageTurning'     : 'ページめくり', // from v2.1.15 added 10.9.2016
 			'volumeRoots'     : 'ボリュームルート', // from v2.1.16 added 16.9.2016
-			'reset'           : 'リセット', // from v2.1.16 added 1.10.2016
-			'bgcolor'         : '背景色', // from v2.1.16 added 1.10.2016
-			'colorPicker'     : 'カラーピッカー', // from v2.1.16 added 1.10.2016
+			'reset'           : 'リセット', // from v2.1.16 added 1.13.1016
+			'bgcolor'         : '背景色', // from v2.1.16 added 1.13.1016
+			'colorPicker'     : 'カラーピッカー', // from v2.1.16 added 1.13.1016
 			'8pxgrid'         : '8pxグリッド', // from v2.1.16 added 4.10.2016
 			'enabled'         : '有効', // from v2.1.16 added 4.10.2016
 			'disabled'        : '無効', // from v2.1.16 added 4.10.2016

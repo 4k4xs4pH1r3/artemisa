@@ -1,4 +1,4 @@
-/*! jQuery UI - v1.10.3 - 2013-05-03
+/*! jQuery UI - v1.13.1 - 2013-05-03
 * http://jqueryui.com
 * Includes: jquery.ui.core.js, jquery.ui.widget.js, jquery.ui.mouse.js, jquery.ui.draggable.js, jquery.ui.droppable.js, jquery.ui.resizable.js, jquery.ui.selectable.js, jquery.ui.sortable.js, jquery.ui.effect.js, jquery.ui.accordion.js, jquery.ui.autocomplete.js, jquery.ui.button.js, jquery.ui.datepicker.js, jquery.ui.dialog.js, jquery.ui.effect-blind.js, jquery.ui.effect-bounce.js, jquery.ui.effect-clip.js, jquery.ui.effect-drop.js, jquery.ui.effect-explode.js, jquery.ui.effect-fade.js, jquery.ui.effect-fold.js, jquery.ui.effect-highlight.js, jquery.ui.effect-pulsate.js, jquery.ui.effect-scale.js, jquery.ui.effect-shake.js, jquery.ui.effect-slide.js, jquery.ui.effect-transfer.js, jquery.ui.menu.js, jquery.ui.position.js, jquery.ui.progressbar.js, jquery.ui.slider.js, jquery.ui.spinner.js, jquery.ui.tabs.js, jquery.ui.tooltip.js
 * Copyright 2013 jQuery Foundation and other contributors; Licensed MIT */
@@ -11,7 +11,7 @@ var uuid = 0,
 $.ui = $.ui || {};
 
 $.extend( $.ui, {
-	version: "1.10.3",
+	version: "1.13.1",
 
 	keyCode: {
 		BACKSPACE: 8,
@@ -833,7 +833,7 @@ $( document ).mouseup( function() {
 });
 
 $.widget("ui.mouse", {
-	version: "1.10.3",
+	version: "1.13.1",
 	options: {
 		cancel: "input,textarea,button,select,option",
 		distance: 1,
@@ -985,7 +985,7 @@ $.widget("ui.mouse", {
 (function( $, undefined ) {
 
 $.widget("ui.draggable", $.ui.mouse, {
-	version: "1.10.3",
+	version: "1.13.1",
 	widgetEventPrefix: "drag",
 	options: {
 		addClasses: true,
@@ -1933,7 +1933,7 @@ function isOverAxis( x, reference, size ) {
 }
 
 $.widget("ui.droppable", {
-	version: "1.10.3",
+	version: "1.13.1",
 	widgetEventPrefix: "drop",
 	options: {
 		accept: "*",
@@ -2294,7 +2294,7 @@ function isNumber(value) {
 }
 
 $.widget("ui.resizable", $.ui.mouse, {
-	version: "1.10.3",
+	version: "1.13.1",
 	widgetEventPrefix: "resize",
 	options: {
 		alsoResize: false,
@@ -3240,7 +3240,7 @@ $.ui.plugin.add("resizable", "grid", {
 (function( $, undefined ) {
 
 $.widget("ui.selectable", $.ui.mouse, {
-	version: "1.10.3",
+	version: "1.13.1",
 	options: {
 		appendTo: "body",
 		autoRefresh: true,
@@ -3513,7 +3513,7 @@ function isFloating(item) {
 }
 
 $.widget("ui.sortable", $.ui.mouse, {
-	version: "1.10.3",
+	version: "1.13.1",
 	widgetEventPrefix: "sort",
 	ready: false,
 	options: {
@@ -5656,7 +5656,7 @@ $.fn.extend({
 (function() {
 
 $.extend( $.effects, {
-	version: "1.10.3",
+	version: "1.13.1",
 
 	// Saves a set of properties in a data storage
 	save: function( element, set ) {
@@ -6063,7 +6063,7 @@ showProps.height = showProps.paddingTop = showProps.paddingBottom =
 	showProps.borderTopWidth = showProps.borderBottomWidth = "show";
 
 $.widget( "ui.accordion", {
-	version: "1.10.3",
+	version: "1.13.1",
 	options: {
 		active: 0,
 		animate: {},
@@ -6616,7 +6616,7 @@ $.widget( "ui.accordion", {
 var requestIndex = 0;
 
 $.widget( "ui.autocomplete", {
-	version: "1.10.3",
+	version: "1.13.1",
 	defaultElement: "<input>",
 	options: {
 		appendTo: null,
@@ -7236,7 +7236,7 @@ var lastActive, startXPos, startYPos, clickDragged,
 	};
 
 $.widget( "ui.button", {
-	version: "1.10.3",
+	version: "1.13.1",
 	defaultElement: "<button>",
 	options: {
 		disabled: null,
@@ -7553,7 +7553,7 @@ $.widget( "ui.button", {
 });
 
 $.widget( "ui.buttonset", {
-	version: "1.10.3",
+	version: "1.13.1",
 	options: {
 		items: "button, input[type=button], input[type=submit], input[type=reset], input[type=checkbox], input[type=radio], a, :data(ui-button)"
 	},
@@ -7613,7 +7613,7 @@ $.widget( "ui.buttonset", {
 
 (function( $, undefined ) {
 
-$.extend($.ui, { datepicker: { version: "1.10.3" } });
+$.extend($.ui, { datepicker: { version: "1.13.1" } });
 
 var PROP_NAME = "datepicker",
 	instActive;
@@ -9633,7 +9633,7 @@ $.fn.datepicker = function(options){
 $.datepicker = new Datepicker(); // singleton instance
 $.datepicker.initialized = false;
 $.datepicker.uuid = new Date().getTime();
-$.datepicker.version = "1.10.3";
+$.datepicker.version = "1.13.1";
 
 })(jQuery);
 
@@ -9656,7 +9656,7 @@ var sizeRelatedOptions = {
 	};
 
 $.widget( "ui.dialog", {
-	version: "1.10.3",
+	version: "1.13.1",
 	options: {
 		appendTo: "body",
 		autoOpen: true,
@@ -11420,7 +11420,7 @@ $.effects.effect.transfer = function( o, done ) {
 (function( $, undefined ) {
 
 $.widget( "ui.menu", {
-	version: "1.10.3",
+	version: "1.13.1",
 	defaultElement: "<ul>",
 	delay: 300,
 	options: {
@@ -12515,7 +12515,7 @@ $.ui.position = {
 (function( $, undefined ) {
 
 $.widget( "ui.progressbar", {
-	version: "1.10.3",
+	version: "1.13.1",
 	options: {
 		max: 100,
 		value: 0,
@@ -12651,7 +12651,7 @@ $.widget( "ui.progressbar", {
 var numPages = 5;
 
 $.widget( "ui.slider", $.ui.mouse, {
-	version: "1.10.3",
+	version: "1.13.1",
 	widgetEventPrefix: "slide",
 
 	options: {
@@ -13316,7 +13316,7 @@ function modifier( fn ) {
 }
 
 $.widget( "ui.spinner", {
-	version: "1.10.3",
+	version: "1.13.1",
 	defaultElement: "<input>",
 	widgetEventPrefix: "spin",
 	options: {
@@ -13797,7 +13797,7 @@ function isLocal( anchor ) {
 }
 
 $.widget( "ui.tabs", {
-	version: "1.10.3",
+	version: "1.13.1",
 	delay: 300,
 	options: {
 		active: null,
@@ -14644,7 +14644,7 @@ function removeDescribedBy( elem ) {
 }
 
 $.widget( "ui.tooltip", {
-	version: "1.10.3",
+	version: "1.13.1",
 	options: {
 		content: function() {
 			// support: IE<9, Opera in jQuery <1.7

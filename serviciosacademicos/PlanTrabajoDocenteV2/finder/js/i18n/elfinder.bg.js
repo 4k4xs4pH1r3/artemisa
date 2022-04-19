@@ -413,9 +413,9 @@
 			'contextmenu'     : 'Контекстно меню', // from v2.1.15 added 9.9.2016
 			'pageTurning'     : 'Завъртане на страницата', // from v2.1.15 added 10.9.2016
 			'volumeRoots'     : 'Начала на ресурси', // from v2.1.16 added 16.9.2016
-			'reset'           : 'Нулиране', // from v2.1.16 added 1.10.2016
-			'bgcolor'         : 'Цвят на фона', // from v2.1.16 added 1.10.2016
-			'colorPicker'     : 'Средство за избиране на цвят', // from v2.1.16 added 1.10.2016
+			'reset'           : 'Нулиране', // from v2.1.16 added 1.13.1016
+			'bgcolor'         : 'Цвят на фона', // from v2.1.16 added 1.13.1016
+			'colorPicker'     : 'Средство за избиране на цвят', // from v2.1.16 added 1.13.1016
 			'8pxgrid'         : '8px мрежа', // from v2.1.16 added 4.10.2016
 			'enabled'         : 'Активно', // from v2.1.16 added 4.10.2016
 			'disabled'        : 'Неактивно', // from v2.1.16 added 4.10.2016
