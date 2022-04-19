@@ -110,7 +110,7 @@ function JsGeneral(){
     <link rel="stylesheet" href="../../css/themes/smoothness/jquery-ui-1.8.4.custom.css" type="text/css" /> 
      <script type="text/javascript" language="javascript" src="../../mgi/js/jquery.js"></script>
      <script type="text/javascript" language="javascript" src="../../mgi/js/jquery-ui-1.8.21.custom.min.js"></script>
-    <script type='text/javascript' src='jquery-1.7.2.min.js'></script>
+    <script type='text/javascript' src='jquery-3.6.0.min.js'></script>
     <script type="text/javascript">
        
         timer = setTimeout('temporizador()', 1000);
@@ -123,7 +123,7 @@ function JsGeneral(){
                     async: false,
                     dataType: 'json',
                     data:({actionID: 'Nickname'}),
-                    error:function(objeto, quepaso, otroobj){alert('Error de Conexión , Favor Vuelva a Intentar');},
+                    error:function(objeto, quepaso, otroobj){alert('Error de Conexiï¿½n , Favor Vuelva a Intentar');},
                     success: function(data){
                         //$('#Nickname').slideUp(1000).delay('2000').fadeIn(1500);
                         $('#Nickname').html(data.Nickname);
@@ -137,7 +137,7 @@ function JsGeneral(){
             		   async: false,
             		   dataType: 'json',
             		   data:({actionID: 'Total',view:1}),
-            		   error:function(objeto, quepaso, otroobj){alert('Error de Conexión , Favor Vuelva a Intentar');},
+            		   error:function(objeto, quepaso, otroobj){alert('Error de Conexiï¿½n , Favor Vuelva a Intentar');},
             		   success: function(data){
             					if(data.val==false){
             					   alert('Error');
@@ -168,7 +168,7 @@ function JsGeneral(){
             		   async: true,
             		   dataType: 'json',
             		   data:({actionID: 'Total',view:2}),
-            		   error:function(objeto, quepaso, otroobj){alert('Error de Conexión , Favor Vuelva a Intentar');},
+            		   error:function(objeto, quepaso, otroobj){alert('Error de Conexiï¿½n , Favor Vuelva a Intentar');},
             		   success: function(data){
             					if(data.val==false){
             					   alert('Error');
@@ -205,7 +205,7 @@ function JsGeneral(){
                 async: false,
                 dataType: 'html',
                 data:({actionID: 'CargaData',Num:N,view:view}),
-                error:function(objeto, quepaso, otroobj){alert('Error de Conexión , Favor Vuelva a Intentar');},
+                error:function(objeto, quepaso, otroobj){alert('Error de Conexiï¿½n , Favor Vuelva a Intentar');},
                 success: function(data){
                     //$('#CargaDinamic').slideUp(1000).delay('2000').fadeIn(1500);
                     $('#CargaDinamic').html(data);
@@ -220,7 +220,7 @@ function JsGeneral(){
                 async: false,
                 dataType: 'html',
                 data:({actionID: 'CargaData',Num:N,view:view}),
-                error:function(objeto, quepaso, otroobj){alert('Error de Conexión , Favor Vuelva a Intentar');},
+                error:function(objeto, quepaso, otroobj){alert('Error de Conexiï¿½n , Favor Vuelva a Intentar');},
                 success: function(data){
                     //$('#CargaDinamic').slideUp(1000).delay('2000').fadeIn(1500);
                     $('#CargaDinamic2').html(data);

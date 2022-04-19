@@ -38,7 +38,7 @@ if($_REQUEST['id']){
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
     <head>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://raw.github.com/gist/826bff2445c8533dd7fc/797734455959ef27796b6770c95a7b39049ae6e9/AjaxUpload.2.0.min.js"></script>
 
         <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />        

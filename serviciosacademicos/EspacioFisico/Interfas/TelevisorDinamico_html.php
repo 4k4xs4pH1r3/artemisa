@@ -265,7 +265,7 @@ function JsGeneral(){
     <link rel="stylesheet" href="../../css/themes/smoothness/jquery-ui-1.8.4.custom.css" type="text/css" /> 
      <script type="text/javascript" language="javascript" src="../../mgi/js/jquery.js"></script>
      <script type="text/javascript" language="javascript" src="../../mgi/js/jquery-ui-1.8.21.custom.min.js"></script>
-    <script type='text/javascript' src='jquery-1.7.2.min.js'></script>
+    <script type='text/javascript' src='jquery-3.6.0.min.js'></script>
     <script type="text/javascript">
        
         timer = setTimeout('temporizador()', 1000);
