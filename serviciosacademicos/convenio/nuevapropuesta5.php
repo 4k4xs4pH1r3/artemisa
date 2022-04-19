@@ -60,7 +60,7 @@
         <script type="text/javascript" language="javascript" src="../mgi/js/functions.js"></script>
 
         <script type="text/javascript" language="javascript" src="uploadify/uploadify.swf"></script>
-        <script type="text/javascript" language="javascript" src="uploadify/jquery.uploadify-3.1.min.js"></script>
+        <script type="text/javascript" language="javascript" src="uploadify/jquery.uploadify-3.1.10.min.js"></script>
         <script type="text/javascript" language="javascript" src="js/funcionArchivosSolicitudes.js"></script>
 
         <script>
