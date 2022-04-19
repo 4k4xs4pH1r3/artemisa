@@ -14,7 +14,7 @@ if(!empty($formulaLiquidacionId)){
         <link media="screen, projection" type="text/css" href="../../educacionContinuada/css/style.css" rel="stylesheet">
         <link href="<?php echo HTTP_SITE ?>/assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
         <link href="<?php echo HTTP_SITE ?>/assets/plugins/bootstrap-datepicker/bootstrap-datepicker.css" rel="stylesheet">
-        <script type="text/javascript" language="javascript" src="<?php echo HTTP_SITE ?>/assets/js/jquery-2.1.1.min.js"></script> 
+        <script type="text/javascript" language="javascript" src="<?php echo HTTP_SITE ?>/assets/js/jquery-3.6.0.min.js"></script> 
         <?php /*/ ?>
         <script type='text/javascript' language="javascript" src="../../js/jquery.js"></script>
         <script type='text/javascript' language="javascript" src="../../js/jquery.min.js"></script>

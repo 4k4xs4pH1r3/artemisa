@@ -19,7 +19,7 @@
 		<link rel="stylesheet" type="text/css" href="../../../../sala/assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="../../../../sala/assets/css/select2.min.css" />
         <!--<link rel="stylesheet" type="text/css" href="../../../mgi/css/styleOrdenes.css" media="screen" />-->
-        <script type="text/javascript" language="javascript" src="../../../../sala/assets/js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" language="javascript" src="../../../../sala/assets/js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="../../../../sala/assets/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="../../../../sala/assets/js/select2.min.js"></script>
 		<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />

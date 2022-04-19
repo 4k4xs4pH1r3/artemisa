@@ -18,7 +18,7 @@
         include("modulo/centroGestion.php");
     ?>
 </div>
-<script type="text/javascript" src="../../sala/assets/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../../sala/assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="../../sala/assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../../sala/assets/js/datatables.min.js"></script>
 <script type="text/javascript" src="../../sala/assets/js/select2.min.js"></script>

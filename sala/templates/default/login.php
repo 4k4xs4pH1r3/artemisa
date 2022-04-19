@@ -62,7 +62,7 @@ if($auth===true){
     <?php echo Factory::printImportJsCss("js",HTTP_SITE."/assets/plugins/pace/pace.min.js"); ?>
 
     <!--jQuery [ REQUIRED ]-->
-    <?php echo Factory::printImportJsCss("js",HTTP_SITE."/assets/js/jquery-2.1.1.min.js"); ?>
+    <?php echo Factory::printImportJsCss("js",HTTP_SITE."/assets/js/jquery-3.6.0.min.js"); ?>
     <?php echo Factory::printImportJsCss("js",HTTP_SITE."/assets/js/jquery-ui.min.js"); ?>
 		
     <!--JAVASCRIPT-->
