@@ -190,7 +190,7 @@ $cca = false;
 
  <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
      var cargar = "<?php echo $action; ?>" ;

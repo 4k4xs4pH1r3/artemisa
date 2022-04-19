@@ -25,7 +25,7 @@ $db=writeHeader('Estadisticas <br> Admisiones',true,'Admisiones',1);
 <style type="text/css">
 .botonExcel{cursor:pointer;}
 </style>
-<script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
   
    $(document).ready(function(){  

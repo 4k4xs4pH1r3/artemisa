@@ -9,16 +9,16 @@ $ValidarSesion->Validar($_SESSION);
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<!-- P&aacute;gina web diseñada por LOVELESS ISMA -->
+<!-- P&aacute;gina web diseï¿½ada por LOVELESS ISMA -->
 <!-- Puedes usar este archivo  HTML de manera pacialmente libre, en tu web, tu trabajo, tu casa, tu blog, para estudiar, para sorprender a tu novia, etc. -->
-<!-- ¿Porqué digo parcialmente? Por que está bajo licencia GPL (General Public License, sí, esa la del búfalo o gnu o sabrá la mierda que animal sea), y puedes usarla libremente. -->
-<!-- Pero eso sí, poniendo el nombre de su autor (en este caso '***LOVELESS ISMA***'). -->
-<!-- Así que cualquier intento de copiar ésto sin siquiera agradecer a LOVELESS ISMA y/o poner su nombre te juro que te estaré vigilando. -->
-<!-- Y el día que te encuentre te perseguiré con unas tijeras para jardín y te podaré los testículos. -->
+<!-- ï¿½Porquï¿½ digo parcialmente? Por que estï¿½ bajo licencia GPL (General Public License, sï¿½, esa la del bï¿½falo o gnu o sabrï¿½ la mierda que animal sea), y puedes usarla libremente. -->
+<!-- Pero eso sï¿½, poniendo el nombre de su autor (en este caso '***LOVELESS ISMA***'). -->
+<!-- Asï¿½ que cualquier intento de copiar ï¿½sto sin siquiera agradecer a LOVELESS ISMA y/o poner su nombre te juro que te estarï¿½ vigilando. -->
+<!-- Y el dï¿½a que te encuentre te perseguirï¿½ con unas tijeras para jardï¿½n y te podarï¿½ los testï¿½culos. -->
 <title>Galer&iacute;a de im&aacute;genes con PHP y JQuery, desarrollada por LOVELESSISMA.</title>
 <title>Documento sin t&iacute;tulo</title>
 <link rel="stylesheet" type="text/css" href="css/uploadify.css">
-<script language="javascript" type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 <script language="javascript" type="text/javascript" src="js/swfobject.js"></script>
 <script language="javascript" type="text/javascript" src="js/jquery.uploadify.v2.1.0.min.js"></script>
 <script type="text/javascript">
@@ -73,7 +73,7 @@ margin-right:10px;
 float:left;
 text-decoration:none;
 font:12px/20px Tahoma, Verdana, Arial, Helvetica, sans-serif !important;
--moz-border-radius: 2px; /* Sólo Firefox */
+-moz-border-radius: 2px; /* Sï¿½lo Firefox */
 }
 
 a.linkCancelar:hover {
