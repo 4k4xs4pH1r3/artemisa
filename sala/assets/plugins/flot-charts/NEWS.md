@@ -551,7 +551,7 @@ also surfaced, if your graphs are slow in IE, you may want to give it a spin:
    
    This prevents a memory leak in Chrome and hopefully makes replotting faster
    for those who are using $.plot instead of .setData()/.draw(). Also update
-   jQuery to 1.5.1 to prevent IE leaks fixed in jQuery.
+   jQuery to 3.6.0 to prevent IE leaks fixed in jQuery.
 
  - New real-time line chart example.
 

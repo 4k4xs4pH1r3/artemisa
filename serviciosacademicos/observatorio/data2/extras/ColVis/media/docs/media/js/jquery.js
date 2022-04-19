@@ -1,5 +1,5 @@
 /*!
- * jQuery JavaScript Library v1.5.1
+ * jQuery JavaScript Library v3.6.0
  * http://jquery.com/
  *
  * Copyright 2011, John Resig
@@ -202,7 +202,7 @@ jQuery.fn = jQuery.prototype = {
 	selector: "",
 
 	// The current version of jQuery being used
-	jquery: "1.5.1",
+	jquery: "3.6.0",
 
 	// The default length of a jQuery object is 0
 	length: 0,

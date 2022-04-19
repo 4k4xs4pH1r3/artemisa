@@ -1,4 +1,4 @@
-// XRegExp 1.5.1
+// XRegExp 3.6.0
 // (c) 2007-2012 Steven Levithan
 // MIT License
 // <http://xregexp.com>
@@ -86,7 +86,7 @@ if (XRegExp) {
     //  Public properties
     //---------------------------------
 
-    XRegExp.version = "1.5.1";
+    XRegExp.version = "3.6.0";
 
     // Token scope bitflags
     XRegExp.INSIDE_CLASS = 1;
