@@ -360,7 +360,7 @@ function Mensaje(){
     <link href="../asignacionSalones/calendario3/wdCalendar/css/main.css" rel="stylesheet" type="text/css" />
     <?php 
     /*@modified Diego Rivera<riveradiego@unbosque.edu.co>
-     *Se cambia js externa http://code.jquery.com/jquery-1.11.1.min.js por js intertena
+     *Se cambia js externa http://code.jquery.com/jquery-3.6.0.min.js por js intertena
      *@since November 30,2018
      */
     ?>

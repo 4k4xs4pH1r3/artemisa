@@ -114,7 +114,7 @@ $idVocaciones = orderMultiDimensionalArray($idVocaciones);
 	<title>Autoevaluación Docente</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link type="text/css" rel="stylesheet" href="tema/themes/base/jquery.ui.all.css" />
-	<script type="text/javascript" language="javascript" src="tema/paginador/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" language="javascript" src="tema/paginador/js/jquery-3.6.0.min.js"></script>
 	<style type="text/css">
 		.verAutoE{
 			-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;

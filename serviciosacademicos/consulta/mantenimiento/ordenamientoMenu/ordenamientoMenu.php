@@ -113,7 +113,7 @@ $menu = & new FullTree($db, $location, $_SESSION['MM_Username'], $administrador)
             menuBar.setTarget('contenedorMenu');
 
         </script>
-        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
         <link rel="stylesheet" href="css/style.min.css" />        
         <script src="js/jstree.min.js"></script>
     </head>

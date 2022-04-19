@@ -98,7 +98,7 @@ $idVocaciones = orderMultiDimensionalArray($idVocaciones);
 	<title>Plan Mejora Docente</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link type="text/css" rel="stylesheet" href="tema/themes/base/jquery.ui.all.css" />
-	<script type="text/javascript" language="javascript" src="tema/paginador/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" language="javascript" src="tema/paginador/js/jquery-3.6.0.min.js"></script>
     </head>
     <body style="background: #eff2dc;">
     

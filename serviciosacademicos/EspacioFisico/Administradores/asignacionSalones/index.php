@@ -27,7 +27,7 @@ if($_POST['Buscar']==1){
 <head>
 	<meta charset="utf-8" />
 	<title>Menú</title>	
-	<script type="text/javascript" href="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" href="http://code.jquery.com/jquery-3.6.0.min.js"></script>
 		
 </head>
 <body>

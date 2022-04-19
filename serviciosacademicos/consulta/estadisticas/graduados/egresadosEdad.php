@@ -683,7 +683,7 @@ $Resultado = $Data->GetArray();
 
 
 <link type="text/css" rel="stylesheet" href="js/jquery.dataTables.css" />
-<script type="text/javascript" language="javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" language="javascript" src="js/jquery.dataTables.min.js"></script>  
 <form>
     <body>

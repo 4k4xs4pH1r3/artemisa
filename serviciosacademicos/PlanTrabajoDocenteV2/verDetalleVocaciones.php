@@ -45,7 +45,7 @@ $id_Programa = $_SESSION['codigofacultad'];
         <!--<link type="text/css" rel="stylesheet" href="tema/paginador/css/demo_page.css" />-->
         <!--<link type="text/css" rel="stylesheet" href="tema/paginador/css/demo_table.css" />-->
         <link type="text/css" rel="stylesheet" href="tema/paginador/css/jquery.dataTables.css" />
-        <script type="text/javascript" language="javascript" src="tema/paginador/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" language="javascript" src="tema/paginador/js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" language="javascript" src="tema/paginador/js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="js/MainDetalleVocacion.js"></script>
         <script type="text/javascript">

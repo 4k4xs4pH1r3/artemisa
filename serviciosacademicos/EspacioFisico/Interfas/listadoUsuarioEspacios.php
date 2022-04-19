@@ -48,7 +48,7 @@
 		
       
 <link type="text/css" rel="stylesheet" href="jquery.dataTables.css" />
-<script type="text/javascript" language="javascript" src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript" language="javascript" src="jquery-3.6.0.min.js"></script>
 <script type="text/javascript" language="javascript" src="jquery.dataTables.min.js"></script>  
 <div id="container" style="width:100%">
             <h2>Listado Usuarios</h2>
