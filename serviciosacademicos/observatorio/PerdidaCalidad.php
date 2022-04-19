@@ -52,7 +52,7 @@ if($_POST){
 		<link type="text/css" rel="stylesheet" href="../../assets/css/bootstrap.css">
 		<link type="text/css" rel="stylesheet" href="../../assets/css/general.css">
 		<link type="text/css" rel="stylesheet" href="../../assets/css/chosen.css">
-		<script type="text/javascript" src="../../assets/js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
 		<script type="text/javascript" src="../../assets/js/bootstrap.js"></script> 
     </head>
     <body>

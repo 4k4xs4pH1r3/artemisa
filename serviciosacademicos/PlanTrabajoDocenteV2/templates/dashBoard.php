@@ -18,7 +18,7 @@
     echo Factory::printImportJsCss("css",HTTP_ROOT."/assets/css/bootstrap-datetimepicker.min.css");
     echo Factory::printImportJsCss("css",HTTP_ROOT."/sala/assets/css/loader.css");
     
-    echo Factory::printImportJsCss("js",HTTP_ROOT."/assets/js/jquery-1.11.3.min.js");
+    echo Factory::printImportJsCss("js",HTTP_ROOT."/assets/js/jquery-3.6.0.min.js");
     echo Factory::printImportJsCss("js",HTTP_ROOT."/assets/js/bootstrap.js");
     echo Factory::printImportJsCss("js",HTTP_ROOT."/assets/js/chosen.jquery.min.js");
     echo Factory::printImportJsCss("js",HTTP_ROOT."/assets/js/triggerChosen.js");

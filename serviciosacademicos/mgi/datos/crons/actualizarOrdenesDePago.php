@@ -93,7 +93,7 @@ require_once(PATH_ROOT.'/serviciosacademicos/educacionContinuada/Excel/reader.ph
         echo Factory::printImportJsCss("css",HTTP_ROOT."/assets/css/chosen.css");
         echo Factory::printImportJsCss("css",HTTP_ROOT."/serviciosacademicos/mgi/css/styleOrdenes.css");
 
-        echo Factory::printImportJsCss("js",HTTP_ROOT."/assets/js/jquery-1.11.3.min.js");
+        echo Factory::printImportJsCss("js",HTTP_ROOT."/assets/js/jquery-3.6.0.min.js");
         echo Factory::printImportJsCss("js",HTTP_ROOT."/assets/js/bootstrap.js");
         echo Factory::printImportJsCss("js",HTTP_ROOT."/serviciosacademicos/mgi/js/jquery.js");
         echo Factory::printImportJsCss("js",HTTP_ROOT."/serviciosacademicos/mgi/js/jquery-ui-1.8.21.custom.min.js");

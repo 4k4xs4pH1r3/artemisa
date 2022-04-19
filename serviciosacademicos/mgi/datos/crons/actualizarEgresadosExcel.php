@@ -34,7 +34,7 @@
 		<link type="text/css" rel="stylesheet" href="../../../../assets/css/general.css">
 		<link type="text/css" rel="stylesheet" href="../../../../assets/css/chosen.css">
 		<link rel="stylesheet" type="text/css" href="../../../mgi/css/styleOrdenes.css" media="screen" />
-		<script type="text/javascript" src="../../../../assets/js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../../../../assets/js/jquery-3.6.0.min.js"></script>
 		<script type="text/javascript" src="../../../../assets/js/bootstrap.js"></script> 
         <script type="text/javascript" language="javascript" src="../../../mgi/js/jquery.js"></script>
         <script type="text/javascript" language="javascript" src="../../../mgi/js/jquery-ui-1.8.21.custom.min.js"></script>

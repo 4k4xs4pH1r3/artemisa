@@ -44,7 +44,7 @@ echo Factory::printImportJsCss("css", HTTP_ROOT . "/assets/css/bootstrap.css");
 echo Factory::printImportJsCss("css", HTTP_ROOT . "/assets/css/general.css");
 
 echo Factory::printImportJsCss("js", HTTP_ROOT . "/assets/js/bootstrap.js");
-echo Factory::printImportJsCss("js", HTTP_ROOT . "/assets/js/jquery-1.11.3.min.js");
+echo Factory::printImportJsCss("js", HTTP_ROOT . "/assets/js/jquery-3.6.0.min.js");
 ?>
 <html>
     <head>

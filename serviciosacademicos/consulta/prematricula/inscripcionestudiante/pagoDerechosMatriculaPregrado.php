@@ -44,7 +44,7 @@ if (!isset($_SESSION["MM_Username"]) && trim($_SESSION["MM_Username"]) == '') {
         echo Factory::printImportJsCss("css", HTTP_ROOT . "/assets/css/chosen.css");
         echo Factory::printImportJsCss("css", HTTP_ROOT . "/assets/css/custom.css");
 
-        echo Factory::printImportJsCss("js", HTTP_ROOT . "/assets/js/jquery-1.11.3.min.js");
+        echo Factory::printImportJsCss("js", HTTP_ROOT . "/assets/js/jquery-3.6.0.min.js");
         echo Factory::printImportJsCss("js", HTTP_ROOT . "/assets/js/bootstrap.js");
         echo Factory::printImportJsCss("js", HTTP_ROOT . "/assets/js/custom.js");
         echo Factory::printImportJsCss("js", HTTP_ROOT . "/assets/js/spiceLoading/pace.min.js");

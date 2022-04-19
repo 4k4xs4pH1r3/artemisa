@@ -112,7 +112,7 @@ if(isset($row_orden['numeroordenpago'])){
 <head>
     <title>Estudiante</title>
 <!--  Jquery  -->
-    <script src="../../../assets/js/jquery-1.11.3.min.js"></script>
+    <script src="../../../assets/js/jquery-3.6.0.min.js"></script>
     <!--  Space loading indicator  -->
     <script src="<?php echo HTTP_SITE; ?>/assets/js/spiceLoading/pace.min.js"></script>
 

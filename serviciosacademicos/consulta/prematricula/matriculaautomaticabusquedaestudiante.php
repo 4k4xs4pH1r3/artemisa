@@ -34,7 +34,7 @@ foreach($_POST as $materia => $valor){
     <title>Busqueda estudiante</title>
     <meta http-equiv="pragma" content="no-cache"/>
     <meta http-equiv="cache-control" content="no-cache"/>
-    <script src="../../../assets/js/jquery-1.11.3.min.js"></script>
+    <script src="../../../assets/js/jquery-3.6.0.min.js"></script>
     <script src="<?php echo HTTP_SITE; ?>/assets/js/bootstrap.min.js"></script>
     <link href="<?php echo HTTP_SITE; ?>/assets/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">

@@ -29,7 +29,7 @@ $objeto = new ConsultarEspacios;
         <?php
         /**
          * @modified Vega Gabriel <vegagabriel@unbosque.edu.do>.
-         * Se reemplaza ../../../assets/js/jquery.js por ../../../assets/js/jquery-1.11.3.min.js
+         * Se reemplaza ../../../assets/js/jquery.js por ../../../assets/js/jquery-3.6.0.min.js
          * @since Enero 14, 2019
          */ 
         ?>
@@ -38,7 +38,7 @@ $objeto = new ConsultarEspacios;
     <link href="../asignacionSalones/calendario3/wdCalendar/css/dp.css" rel="stylesheet" type="text/css" />   
     <link href="../asignacionSalones/calendario3/wdCalendar/css/alert.css" rel="stylesheet" type="text/css" /> 
     <link href="../asignacionSalones/calendario3/wdCalendar/css/main.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="../../../assets/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="../css/Styleventana.css" type="text/css" /> 
     <script type="text/javascript" language="javascript" src="../../mgi/js/jquery.js"></script>
     <script type="text/javascript" language="javascript" src="../../mgi/js/jquery.dataTables.js"></script>

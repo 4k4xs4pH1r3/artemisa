@@ -67,7 +67,7 @@ $contadorCarerras = count($datosCarerra);
     echo Factory::printImportJsCss("css",HTTP_ROOT."/assets/css/chosen.css");
     echo Factory::printImportJsCss("css",HTTP_ROOT."/serviciosacademicos/consulta/interfacesinfusion/assets/css/formularioEdCon.css");
 
-    echo Factory::printImportJsCss("js",HTTP_ROOT."/assets/js/jquery-1.11.3.min.js");
+    echo Factory::printImportJsCss("js",HTTP_ROOT."/assets/js/jquery-3.6.0.min.js");
     echo Factory::printImportJsCss("js",HTTP_ROOT."/assets/js/chosen.jquery.min.js");
     echo Factory::printImportJsCss("js",HTTP_ROOT."/assets/js/bootstrap.js"); 
     echo Factory::printImportJsCss("js",HTTP_ROOT."/assets/js/jquery.validate.min.js"); 

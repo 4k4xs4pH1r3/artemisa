@@ -125,7 +125,7 @@ $rutaJS = "../../sic/librerias/js/";
         <link type="text/css" rel="stylesheet" href="../../../../assets/css/bootstrap.css">
         <link type="text/css" rel="stylesheet" href="../../../../assets/css/general.css">
         <link type="text/css" rel="stylesheet" href="../../../../assets/css/chosen.css">
-        <script type="text/javascript" src="../../../../assets/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="../../../../assets/js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="../../../../assets/js/bootstrap.js"></script> 
         <script src="<?php echo $rutaJS; ?>jquery-1.3.2.js" type="text/javascript"></script>
         <script language="javascript">

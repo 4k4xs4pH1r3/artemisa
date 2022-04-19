@@ -22,7 +22,7 @@ if (empty($_SESSION['MM_Username']) or $_SESSION['auth'] <> true or empty($_SESS
         <title>Orden de Pago</title>
         <link rel="stylesheet" href="../../estilos/sala.css" type="text/css">
         <!--  Jquery  -->
-        <script src="../../../assets/js/jquery-1.11.3.min.js"></script>
+        <script src="../../../assets/js/jquery-3.6.0.min.js"></script>
         <!--    <script src="--><?php //echo HTTP_SITE; ?><!--/assets/js/jquery-3.3.1.js"></script>-->
         <!--  Space loading indicator  -->
         <script src="<?php echo HTTP_SITE; ?>/assets/js/spiceLoading/pace.min.js"></script>

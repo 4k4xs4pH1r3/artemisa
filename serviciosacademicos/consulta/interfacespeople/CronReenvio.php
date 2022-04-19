@@ -30,7 +30,7 @@
         <link href="<?php echo HTTP_SITE; ?>/assets/css/CenterRadarIndicator/centerIndicator.css" rel="stylesheet">
         <script src="<?php echo HTTP_SITE; ?>/assets/js/bootstrap.min.js"></script>
         <link href="<?php echo HTTP_SITE; ?>/assets/css/bootstrap.min.css" rel="stylesheet">
-        <script type="text/javascript" src="<?php echo HTTP_SITE; ?>/assets/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="<?php echo HTTP_SITE; ?>/assets/js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="<?php echo HTTP_SITE; ?>/assets/js/bootstrap.js"></script>
 
     </head>

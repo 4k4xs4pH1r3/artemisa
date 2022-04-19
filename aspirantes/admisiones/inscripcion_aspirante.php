@@ -22,7 +22,7 @@
         <link type="text/css" rel="stylesheet" href="../../assets/css/sweetalert.css" />
         <link type="text/css" rel="stylesheet" href="../../assets/css/CenterRadarIndicator/centerIndicator.css" >
 
-        <script type="text/javascript" src="../../assets/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
         <script src="../../assets/js/moment.min.js?v=1"></script>
         <script src="../../assets/js/bootstrap-datetimepicker.min.js?v=1"></script>
         <script src="../../assets/js/bootstrap-datetimepicker.es.js?v=1"></script>

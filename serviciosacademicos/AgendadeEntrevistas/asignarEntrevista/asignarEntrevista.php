@@ -13,7 +13,7 @@
 ?>
 <!--<script type="text/javascript" src="../serviciosacademicos/AgendadeEntrevistas/js/main.js"></script>-->
 <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
-<script type="text/javascript" src="../assets/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="../assets/js/bootstrap.js"></script>
 
 <script type="text/javascript">

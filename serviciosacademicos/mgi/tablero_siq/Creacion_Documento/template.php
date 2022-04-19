@@ -30,7 +30,7 @@ function writeHeader($title, $bd = false, $proyecto = "", $rutaCss = "../../", $
             <link type="text/css" rel="stylesheet" href="<?php echo HTTP_ROOT;?>/serviciosacademicos/mgi/tablero_siq/frontAcreditacion/assets/styleAcreditacion.css">
             <link type="text/css" rel="stylesheet" href="<?php echo HTTP_ROOT;?>/assets/css/bootstrap.css">
             <link type="text/css" rel="stylesheet" href="<?php echo HTTP_ROOT;?>/assets/css/general.css">
-            <script type="text/javascript" language="javascript" src="<?php echo HTTP_ROOT;?>/assets/js/jquery-1.11.3.min.js"></script>
+            <script type="text/javascript" language="javascript" src="<?php echo HTTP_ROOT;?>/assets/js/jquery-3.6.0.min.js"></script>
             <script type="text/javascript" src="<?php echo HTTP_ROOT;?>/assets/js/bootstrap.js"></script>
             
             <script type="text/javascript" language="javascript" src="<?php echo $rutaCss; ?>js/jquery.dataTables.js"></script>
