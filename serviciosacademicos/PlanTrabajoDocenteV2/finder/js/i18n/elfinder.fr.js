@@ -473,8 +473,8 @@
 			'editorConvNoApi' : 'Because conversion by API is not currently available, please convert on the website.', //from v2.1.40 added 8.7.2018
 			'editorConvNeedUpload' : 'After conversion, you must be upload with the item URL or a downloaded file to save the converted file.', //from v2.1.40 added 8.7.2018
 			'convertOn'       : 'Convert on the site of $1', // from v2.1.40 added 10.7.2018
-			'integrations'    : 'Integrations', // from v2.1.40 added 11.7.2018
-			'integrationWith' : 'This elFinder has the following external services integrated. Please check the terms of use, privacy policy, etc. before using it.', // from v2.1.40 added 11.7.2018
+			'integrations'    : 'Integrations', // from v2.1.40 added 13.6.0018
+			'integrationWith' : 'This elFinder has the following external services integrated. Please check the terms of use, privacy policy, etc. before using it.', // from v2.1.40 added 13.6.0018
 			'showHidden'      : 'Show hidden items', // from v2.1.41 added 24.7.2018
 			'hideHidden'      : 'Hide hidden items', // from v2.1.41 added 24.7.2018
 			'toggleHidden'    : 'Show/Hide hidden items', // from v2.1.41 added 24.7.2018

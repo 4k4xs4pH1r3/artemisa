@@ -99,7 +99,7 @@
         <link rel="stylesheet" href="<?php echo HTTP_ROOT ?>/sala/assets/css/themes/smoothness/jquery-ui-1.8.4.custom.css">
 
         <link rel="stylesheet" href="<?php echo HTTP_ROOT ?>/sala/assets/js/calendario/calendar-win2k-1.css" type="text/css" />
-        <script type="text/javascript" language="javascript" src="<?php echo HTTP_ROOT ?>/sala/assets/js/jquery-1.7.2.js"></script>
+        <script type="text/javascript" language="javascript" src="<?php echo HTTP_ROOT ?>/sala/assets/js/jquery-3.6.0.js"></script>
         <script type="text/javascript" language="javascript" src="<?php echo HTTP_ROOT ?>/sala/assets/js/datatables.js"></script>
         <script type="text/javascript" language="javascript" src="<?php echo HTTP_ROOT ?>/sala/assets/js/jquery-ui.min.js"></script>
         <script type="text/javascript" src="<?php echo HTTP_ROOT ?>/sala/assets/js/calendario/calendar.js"></script>

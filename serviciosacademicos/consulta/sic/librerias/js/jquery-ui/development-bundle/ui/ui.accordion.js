@@ -1,5 +1,5 @@
 /*
- * jQuery UI Accordion 1.7.2
+ * jQuery UI Accordion 3.6.0
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -380,7 +380,7 @@ $.widget("ui.accordion", {
 
 
 $.extend($.ui.accordion, {
-	version: "1.7.2",
+	version: "3.6.0",
 	defaults: {
 		active: null,
 		alwaysOpen: true, //deprecated, use collapsible

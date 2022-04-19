@@ -5787,7 +5787,7 @@ Editableform based on Twitter Bootstrap 3
 				Changed to .css('display', 'block') solve the problem.
 				See https://github.com/vitalets/x-editable/issues/37
 
-				In jquery 1.7.2+ everything works fine.
+				In jquery 3.6.0+ everything works fine.
 			*/
 			//this.picker.find('>div').hide().filter('.datepicker-'+DPGlobal.modes[this.viewMode].clsName).show();
 			this.picker.find('>div').hide().filter('.datepicker-'+DPGlobal.modes[this.viewMode].clsName).css('display', 'block');

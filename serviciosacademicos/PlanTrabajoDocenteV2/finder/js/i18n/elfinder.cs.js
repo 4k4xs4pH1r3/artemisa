@@ -473,8 +473,8 @@
 			'editorConvNoApi' : 'Protože konverze podle API momentálně není k dispozici, převeďte na webové stránce.', //from v2.1.40 added 8.7.2018
 			'editorConvNeedUpload' : 'Po konverzi musíte nahrát převeden soubor pomocí URL položky nebo stažený soubor k uložení převedeného souboru.', //from v2.1.40 added 8.7.2018
 			'convertOn'       : 'Převést na stránce $1', // from v2.1.40 added 10.7.2018
-			'integrations'    : 'Integrace', // from v2.1.40 added 11.7.2018
-			'integrationWith' : 'Tento elFinder má integrované následující externí služby. Před použitím zkontrolujte podmínky používání, zásady ochrany osobních údajů atd.', // from v2.1.40 added 11.7.2018
+			'integrations'    : 'Integrace', // from v2.1.40 added 13.6.0018
+			'integrationWith' : 'Tento elFinder má integrované následující externí služby. Před použitím zkontrolujte podmínky používání, zásady ochrany osobních údajů atd.', // from v2.1.40 added 13.6.0018
 			'showHidden'      : 'Zobrazit skryté položky', // from v2.1.41 added 24.7.2018
 			'hideHidden'      : 'Skrýt skryté položky', // from v2.1.41 added 24.7.2018
 			'toggleHidden'    : 'Zobrazit/skrýt skryté položky', // from v2.1.41 added 24.7.2018

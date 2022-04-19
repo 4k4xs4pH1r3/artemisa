@@ -1,5 +1,5 @@
 /*
- * jQuery UI Effects Bounce 1.7.2
+ * jQuery UI Effects Bounce 3.6.0
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)

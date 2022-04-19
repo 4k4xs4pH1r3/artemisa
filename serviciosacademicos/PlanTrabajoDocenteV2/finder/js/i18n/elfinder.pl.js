@@ -472,8 +472,8 @@
 			'editorConvNoApi' : 'Ponieważ konwersja przez API nie jest obecnie dostępna, należy dokonać konwersji w witrynie.', //from v2.1.40 added 8.7.2018
 			'editorConvNeedUpload' : 'Po konwersji musisz przesłać z adresem URL pozycji lub pobranym plikiem, aby zapisać przekonwertowany plik.', //from v2.1.40 added 8.7.2018
 			'convertOn'       : 'Konwertuj na stronie $1', // from v2.1.40 added 10.7.2018
-			'integrations'    : 'Integracje', // from v2.1.40 added 11.7.2018
-			'integrationWith' : 'Ten elFinder ma zintegrowane następujące usługi zewnętrzne. Przed użyciem ich sprawdź warunki użytkowania, politykę prywatności itp.', // from v2.1.40 added 11.7.2018
+			'integrations'    : 'Integracje', // from v2.1.40 added 13.6.0018
+			'integrationWith' : 'Ten elFinder ma zintegrowane następujące usługi zewnętrzne. Przed użyciem ich sprawdź warunki użytkowania, politykę prywatności itp.', // from v2.1.40 added 13.6.0018
 			'showHidden'      : 'Pokaż ukryte pozycje', // from v2.1.41 added 24.7.2018
 			'hideHidden'      : 'Ukryj ukryte pozycje', // from v2.1.41 added 24.7.2018
 			'toggleHidden'    : 'Pokaż/Ukryj ukryte pozycje', // from v2.1.41 added 24.7.2018

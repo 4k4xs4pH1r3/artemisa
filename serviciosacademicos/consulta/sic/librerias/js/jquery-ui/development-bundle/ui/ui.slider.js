@@ -1,5 +1,5 @@
 /*
- * jQuery UI Slider 1.7.2
+ * jQuery UI Slider 3.6.0
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -539,7 +539,7 @@ $.widget("ui.slider", $.extend({}, $.ui.mouse, {
 
 $.extend($.ui.slider, {
 	getter: "value values",
-	version: "1.7.2",
+	version: "3.6.0",
 	eventPrefix: "slide",
 	defaults: {
 		animate: false,

@@ -473,8 +473,8 @@
 			'editorConvNoApi' : '現在 API による変換は利用できないので、Web サイトで変換を行ってください。', //from v2.1.40 added 8.7.2018
 			'editorConvNeedUpload' : '変換後に変換されたファイルを保存するには、アイテムの URL またはダウンロードしたファイルをアップロードする必要があります。', //from v2.1.40 added 8.7.2018
 			'convertOn'       : '$1 のサイト上で変換する', // from v2.1.40 added 10.7.2018
-			'integrations'    : '統合', // from v2.1.40 added 11.7.2018
-			'integrationWith' : 'この elFinder は次の外部サービスが統合されています。それらの利用規約、プライバシーポリシーなどをご確認の上、ご利用ください。', // from v2.1.40 added 11.7.2018
+			'integrations'    : '統合', // from v2.1.40 added 13.6.0018
+			'integrationWith' : 'この elFinder は次の外部サービスが統合されています。それらの利用規約、プライバシーポリシーなどをご確認の上、ご利用ください。', // from v2.1.40 added 13.6.0018
 			'showHidden'      : '非表示アイテムを表示', // from v2.1.41 added 24.7.2018
 			'hideHidden'      : '非表示アイテムを隠す', // from v2.1.41 added 24.7.2018
 			'toggleHidden'    : '非表示アイテムの表示/非表示', // from v2.1.41 added 24.7.2018

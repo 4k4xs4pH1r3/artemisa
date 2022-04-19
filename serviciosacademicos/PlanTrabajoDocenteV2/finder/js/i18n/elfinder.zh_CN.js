@@ -476,8 +476,8 @@
 			'editorConvNoApi' : '由于通过 API 转换功能当前不可用，请到网站上转换.', //from v2.1.40 added 8.7.2018
 			'editorConvNeedUpload' : '转换后，必须上传条目URL或一个下载的文件,以保存转换后的文件.', //from v2.1.40 added 8.7.2018
 			'convertOn'       : '在 $1 站点上转换', // from v2.1.40 added 10.7.2018
-			'integrations'    : '集成', // from v2.1.40 added 11.7.2018
-			'integrationWith' : '本 elFinder 集成以下外部服务.使用前请检查使用条款、隐私政策等.', // from v2.1.40 added 11.7.2018
+			'integrations'    : '集成', // from v2.1.40 added 13.6.0018
+			'integrationWith' : '本 elFinder 集成以下外部服务.使用前请检查使用条款、隐私政策等.', // from v2.1.40 added 13.6.0018
 			'showHidden'      : '显示已隐藏的条目', // from v2.1.41 added 24.7.2018
 			'hideHidden'      : '隐藏已隐藏的条目', // from v2.1.41 added 24.7.2018
 			'toggleHidden'    : '显示/隐藏已隐藏的条目', // from v2.1.41 added 24.7.2018

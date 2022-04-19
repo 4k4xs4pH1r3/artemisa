@@ -318,7 +318,7 @@ class CI_Output {
 	/**
 	 * Set HTTP Status Header
 	 *
-	 * As of version 1.7.2, this is an alias for common function
+	 * As of version 3.6.0, this is an alias for common function
 	 * set_status_header().
 	 *
 	 * @param	int	$code	Status code (default: 200)

@@ -11,7 +11,7 @@ $rutaJS = '../../sic/librerias/js/';
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../../../estilos/sala.css">
-        <link rel="stylesheet" href="<?php echo $rutaJS; ?>jquery-ui/css/ui-lightness/jquery-ui-1.7.2.custom.css" />
+        <link rel="stylesheet" href="<?php echo $rutaJS; ?>jquery-ui/css/ui-lightness/jquery-ui-3.6.0.custom.css" />
         <!--<link rel="stylesheet" href="<?php echo $rutaJS; ?>>ajaxfileupload/ajaxfileupload.css" />-->
         <title> DOCUMENTACION ESTUDIANTE</title>
         <script src="<?php echo $rutaJS; ?>jquery-3.6.0.js" type="text/javascript"></script>
@@ -21,7 +21,7 @@ $rutaJS = '../../sic/librerias/js/';
         <script src="<?php echo $rutaJS; ?>jquery-treeview/lib/jquery.cookie.js" type="text/javascript"></script>
         <script src="<?php echo $rutaJS; ?>jquery-treeview/jquery.treeview.js" type="text/javascript"></script>
         <script src="<?php echo $rutaJS; ?>ajaxfileupload/ajaxfileupload.js" type="text/javascript"></script>
-        <script src="<?php echo $rutaJS; ?>jquery-ui/js/jquery-ui-1.7.2.custom.min.js" type="text/javascript"></script>
+        <script src="<?php echo $rutaJS; ?>jquery-ui/js/jquery-ui-3.6.0.custom.min.js" type="text/javascript"></script>
         <link rel="stylesheet" href="jquery.windows-engine.css" />
         <!--<script src="<?php echo $rutaJS; ?>jquery-windows/jquery.windows-engine.js" type="text/javascript"></script>-->
         <script src="funcioneslistadocumentacion.js" type="text/javascript"></script>

@@ -150,7 +150,7 @@ asyncTest("Check insertion of single stylesheet", function() {
     equal(doc.getElementsByTagName("link").length, 1, "Correct amount of stylesheets inserted into the dom tree");
     start();
   }, {
-    stylesheets: "https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/blitzer/jquery-ui.css"
+    stylesheets: "https://ajax.googleapis.com/ajax/libs/jqueryui/3.6.0/themes/blitzer/jquery-ui.css"
   }).insertInto(document.body);
 });
 
@@ -164,8 +164,8 @@ asyncTest("Check insertion of multiple stylesheets", function() {
     start();
   }, {
     stylesheets: [
-      "https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/blitzer/jquery-ui.css",
-      "https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/excite-bike/jquery-ui.css"
+      "https://ajax.googleapis.com/ajax/libs/jqueryui/3.6.0/themes/blitzer/jquery-ui.css",
+      "https://ajax.googleapis.com/ajax/libs/jqueryui/3.6.0/themes/excite-bike/jquery-ui.css"
     ]
   }).insertInto(document.body);
 });

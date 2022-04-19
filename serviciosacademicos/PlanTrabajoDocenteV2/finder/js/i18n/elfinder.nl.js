@@ -471,8 +471,8 @@
 			'editorConvNoApi'      : 'Conversie via API is niet beschikbaar, converteer aub op de website', //from v2.1.40 added 8.7.2018
 			'editorConvNeedUpload' : 'After conversion, you must be upload with the item URL or a downloaded file to save the converted file', //from v2.1.40 added 8.7.2018
 			'convertOn'            : 'Converteer op de site $1', // from v2.1.40 added 10.7.2018
-			'integrations'         : 'Integratie', // from v2.1.40 added 11.7.2018
-			'integrationWith'      : 'Deze elFinder heeft de volgende externe services. Controleer de voorwaarden, privacy policy, etc. voor gebruik', // from v2.1.40 added 11.7.2018
+			'integrations'         : 'Integratie', // from v2.1.40 added 13.6.0018
+			'integrationWith'      : 'Deze elFinder heeft de volgende externe services. Controleer de voorwaarden, privacy policy, etc. voor gebruik', // from v2.1.40 added 13.6.0018
 			'showHidden'           : 'Toon verborgen items', // from v2.1.41 added 24.7.2018
 			'hideHidden'           : 'Verberg verborgen items', // from v2.1.41 added 24.7.2018
 			'toggleHidden'         : 'Toon/verberg verborgen items', // from v2.1.41 added 24.7.2018

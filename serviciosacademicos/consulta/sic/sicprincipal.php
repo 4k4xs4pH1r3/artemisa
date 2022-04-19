@@ -14,7 +14,7 @@ $rutaEstilos = 'estilos/';
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="<?php echo $rutaJS; ?>jquery-treeview/jquery.treeview.css" />
-<link rel="stylesheet" href="<?php echo $rutaJS; ?>jquery-ui/css/no-theme/jquery-ui-1.7.2.custom.css" />
+<link rel="stylesheet" href="<?php echo $rutaJS; ?>jquery-ui/css/no-theme/jquery-ui-3.6.0.custom.css" />
 <link rel="stylesheet" href="<?php echo $rutaEstilos; ?>sala2.css" />
 
 <script src="<?php echo $rutaJS; ?>jquery-3.6.0.js" type="text/javascript"></script>
@@ -22,7 +22,7 @@ $rutaEstilos = 'estilos/';
 <script src="<?php echo $rutaJS; ?>jquery.maxlength-min.js" type="text/javascript"></script>
 <script src="<?php echo $rutaJS; ?>jquery-treeview/lib/jquery.cookie.js" type="text/javascript"></script>
 <script src="<?php echo $rutaJS; ?>jquery-treeview/jquery.treeview.js" type="text/javascript"></script>
-<script src="<?php echo $rutaJS; ?>jquery-ui/js/jquery-ui-1.7.2.custom.min.js" type="text/javascript" ></script>
+<script src="<?php echo $rutaJS; ?>jquery-ui/js/jquery-ui-3.6.0.custom.min.js" type="text/javascript" ></script>
 
 <script type="text/javascript">
 $.ui.dialog.defaults.bgiframe = true;

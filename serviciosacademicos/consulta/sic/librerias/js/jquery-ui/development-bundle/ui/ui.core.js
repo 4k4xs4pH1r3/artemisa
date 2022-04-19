@@ -1,5 +1,5 @@
 /*
- * jQuery UI 1.7.2
+ * jQuery UI 3.6.0
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -14,7 +14,7 @@ var _remove = $.fn.remove,
 
 //Helper functions and ui object
 $.ui = {
-	version: "1.7.2",
+	version: "3.6.0",
 
 	// $.ui.plugin is deprecated.  Use the proxy pattern instead.
 	plugin: {

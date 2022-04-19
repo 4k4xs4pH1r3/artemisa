@@ -455,7 +455,7 @@ Planned for 1.8.2
 - Bugfix:   (ET)     Work item 11590 - Blank styled cells are not blank in output by HTML writer due to &nbsp;
 - Bugfix:   (MBaker) Work item 11587 - Calculation engine bug: Existing, blank cell + number gives #NUM
 - Bugfix:   (ET)     Work item 11608 - AutoSize only measures length of first line in cell with multiple lines (ALT+Enter)
-- Bugfix:   (ET)     Work item 11608 - Fatal error running Tests/12serializedfileformat.php (PHPExcel 1.7.2)
+- Bugfix:   (ET)     Work item 11608 - Fatal error running Tests/12serializedfileformat.php (PHPExcel 3.6.0)
 - Bugfix:   (MBaker) Fixed various errors in the WORKDAY() and NETWORKDAYS() Date/Time functions (particularly related to holidays)
 - Bugfix:   (ET)     Work item 11660 - Uncaught exception 'Exception' with message 'Valid scale is between 10 and 400.' in Classes/PHPExcel/Worksheet/SheetView.php:115
 - Bugfix:   (ET)     Work item 11551 - "Unrecognized token 39 in formula" with PHPExcel_Reader_Excel5 (occuring with add-in functions)
@@ -505,7 +505,7 @@ Planned for 1.8.2
 - Bugfix:   (MBaker) Work item 13025 - Memory error...data validation?
 
 
-2010/01/11 (v1.7.2):
+2010/01/11 (v3.6.0):
 - General:  (ET)     Applied patch 4362
 - General:  (ET)     Applied patch 4363 (modified)
 - General:  (MBaker) Work item 10874 - 1.7.1 Extremely Slow - Refactored PHPExcel_Calculation_Functions::flattenArray() method and set calculation cache timer default to 2.5 seconds
