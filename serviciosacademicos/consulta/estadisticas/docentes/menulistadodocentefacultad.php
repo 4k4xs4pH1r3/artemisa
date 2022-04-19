@@ -14,7 +14,7 @@ $rutaJS = '../../sic/librerias/js/';
         <link rel="stylesheet" href="<?php echo $rutaJS; ?>jquery-ui/css/ui-lightness/jquery-ui-1.7.2.custom.css" />
         <!--<link rel="stylesheet" href="<?php echo $rutaJS; ?>>ajaxfileupload/ajaxfileupload.css" />-->
         <title> DOCUMENTACION ESTUDIANTE</title>
-        <script src="<?php echo $rutaJS; ?>jquery-1.3.2.js" type="text/javascript"></script>
+        <script src="<?php echo $rutaJS; ?>jquery-3.6.0.js" type="text/javascript"></script>
         <script src="<?php echo $rutaJS; ?>jquery.layout.js"></script>
         <script src="<?php echo $rutaJS; ?>jquery.lightbox-0.5.min.js"></script>
         <script src="<?php echo $rutaJS; ?>jquery.maxlength-min.js" type="text/javascript"></script>

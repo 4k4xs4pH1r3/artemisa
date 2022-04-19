@@ -9,7 +9,7 @@ session_start();
 <head>
     <title>Subir archivos</title>
 <link rel="stylesheet" href="<?php echo $rutaEstilos; ?>sic_normal.css" />
-<script src="<?php echo $rutaJS; ?>jquery-1.3.2.js" type="text/javascript"></script>
+<script src="<?php echo $rutaJS; ?>jquery-3.6.0.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="<?php echo $rutaJS; ?>jquery-windows/jquery.windows-engine.css" />
 <script src="<?php echo $rutaJS; ?>jquery-windows/jquery.windows-engine.js" type="text/javascript"></script>

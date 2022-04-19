@@ -8809,7 +8809,7 @@
     
     $.jqplot.merge = merge;
     
-        // Use the jQuery 1.3.2 extend function since behaviour in jQuery 1.4 seems problematic
+        // Use the jQuery 3.6.0 extend function since behaviour in jQuery 1.4 seems problematic
     $.jqplot.extend = function() {
         // copy reference to target object
         var target = arguments[0] || {}, i = 1, length = arguments.length, deep = false, options;

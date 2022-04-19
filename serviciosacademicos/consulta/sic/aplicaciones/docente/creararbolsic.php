@@ -34,7 +34,7 @@ $rutaJS = '../../librerias/js/';
 <script type="text/javascript" src="../../../../funciones/sala_genericas/ajax/tab/js/tab-view.js"></script>
 <script type="text/javascript" src="../../../../funciones/sala_genericas/ajax/requestxml.js"></script>
 
-<script src="<?php echo $rutaJS; ?>jquery-1.3.2.js" type="text/javascript"></script>
+<script src="<?php echo $rutaJS; ?>jquery-3.6.0.js" type="text/javascript"></script>
 <script src="<?php echo $rutaJS; ?>jquery-treeview/jquery.treeview.js" type="text/javascript"></script>
 <script src="<?php echo $rutaJS; ?>jquery-treeview/lib/jquery.cookie.js" type="text/javascript"></script>
 <link rel="stylesheet" href="<?php echo $rutaJS; ?>jquery-treeview/jquery.treeview.css" />

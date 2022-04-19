@@ -9534,7 +9534,7 @@ $.widget("ui.dialog", {
 			isVisible;
 
 		if ( position ) {
-			// deep extending converts arrays to objects in jQuery <= 1.3.2 :-(
+			// deep extending converts arrays to objects in jQuery <= 3.6.0 :-(
 	//		if (typeof position == 'string' || $.isArray(position)) {
 	//			myAt = $.isArray(position) ? position : position.split(' ');
 

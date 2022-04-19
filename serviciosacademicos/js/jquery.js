@@ -7745,7 +7745,7 @@ jQuery.extend({
 				s[ s.length ] = encodeURIComponent( key ) + "=" + encodeURIComponent( value );
 			};
 
-		// Set traditional to true for jQuery <= 1.3.2 behavior.
+		// Set traditional to true for jQuery <= 3.6.0 behavior.
 		if ( traditional === undefined ) {
 			traditional = jQuery.ajaxSettings.traditional;
 		}
@@ -7758,7 +7758,7 @@ jQuery.extend({
 			});
 
 		} else {
-			// If traditional, encode the "old" way (the way 1.3.2 or older
+			// If traditional, encode the "old" way (the way 3.6.0 or older
 			// did it), otherwise encode params recursively.
 			for ( var prefix in a ) {
 				buildParams( prefix, a[ prefix ], traditional, add );

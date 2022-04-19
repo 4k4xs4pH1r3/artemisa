@@ -107,7 +107,7 @@ $rutaEstilos = "../../sic/estilos/";
         <link rel="stylesheet" href="<?php echo $rutaEstilos; ?>sic_normal.css" />
         <link rel="stylesheet" href="<?php echo $rutaEstilos; ?>jquery.lightbox-0.5.css" />
 
-        <script src="<?php echo $rutaJS; ?>jquery-1.3.2.js" type="text/javascript"></script>
+        <script src="<?php echo $rutaJS; ?>jquery-3.6.0.js" type="text/javascript"></script>
         <script src="<?php echo $rutaJS; ?>jquery.layout.js"></script>
         <script src="<?php echo $rutaJS; ?>jquery.lightbox-0.5.min.js"></script>
         <script src="<?php echo $rutaJS; ?>jquery.maxlength-min.js" type="text/javascript"></script>

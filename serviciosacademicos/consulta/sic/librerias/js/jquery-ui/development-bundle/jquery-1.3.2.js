@@ -1,5 +1,5 @@
 /*!
- * jQuery JavaScript Library v1.3.2
+ * jQuery JavaScript Library v3.6.0
  * http://jquery.com/
  *
  * Copyright (c) 2009 John Resig
@@ -97,7 +97,7 @@ jQuery.fn = jQuery.prototype = {
 	selector: "",
 
 	// The current version of jQuery being used
-	jquery: "1.3.2",
+	jquery: "3.6.0",
 
 	// The number of elements contained in the matched element set
 	size: function() {

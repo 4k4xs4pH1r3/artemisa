@@ -8477,7 +8477,7 @@
 
         } else {
 
-            // If traditional, encode the "old" way (the way 1.3.2 or older
+            // If traditional, encode the "old" way (the way 3.6.0 or older
             // did it), otherwise encode params recursively.
             for ( prefix in a ) {
                 buildParams( prefix, a[ prefix ], traditional, add );

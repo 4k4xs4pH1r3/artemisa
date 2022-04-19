@@ -17,7 +17,7 @@ $rutaEstilos = 'estilos/';
 <link rel="stylesheet" href="<?php echo $rutaJS; ?>jquery-ui/css/no-theme/jquery-ui-1.7.2.custom.css" />
 <link rel="stylesheet" href="<?php echo $rutaEstilos; ?>sala2.css" />
 
-<script src="<?php echo $rutaJS; ?>jquery-1.3.2.js" type="text/javascript"></script>
+<script src="<?php echo $rutaJS; ?>jquery-3.6.0.js" type="text/javascript"></script>
 <script src="<?php echo $rutaJS; ?>jquery.layout.js"></script>
 <script src="<?php echo $rutaJS; ?>jquery.maxlength-min.js" type="text/javascript"></script>
 <script src="<?php echo $rutaJS; ?>jquery-treeview/lib/jquery.cookie.js" type="text/javascript"></script>

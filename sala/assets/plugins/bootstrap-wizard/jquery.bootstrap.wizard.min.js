@@ -2,7 +2,7 @@
  * jQuery twitter bootstrap wizard plugin
  * Examples and documentation at: http://github.com/VinceG/twitter-bootstrap-wizard
  * version 1.0
- * Requires jQuery v1.3.2 or later
+ * Requires jQuery v3.6.0 or later
  * Supports Bootstrap 2.2.x, 2.3.x, 3.0
  * Dual licensed under the MIT and GPL licenses:
  * http://www.opensource.org/licenses/mit-license.php

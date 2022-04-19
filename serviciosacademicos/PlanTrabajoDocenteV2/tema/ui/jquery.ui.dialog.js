@@ -38,7 +38,7 @@ var uiDialogClasses =
 		minHeight: true,
 		minWidth: true
 	},
-	// support for jQuery 1.3.2 - handle common attrFn methods for dialog
+	// support for jQuery 3.6.0 - handle common attrFn methods for dialog
 	attrFn = $.attrFn || {
 		val: true,
 		css: true,
@@ -392,7 +392,7 @@ $.widget("ui.dialog", {
 						props.click.apply(self.element[0], arguments);
 					})
 					.appendTo(uiButtonSet);
-				// can't use .attr( props, true ) with jQuery 1.3.2.
+				// can't use .attr( props, true ) with jQuery 3.6.0.
 				$.each( props, function( key, value ) {
 					if ( key === "click" ) {
 						return;
@@ -511,7 +511,7 @@ $.widget("ui.dialog", {
 			isVisible;
 
 		if (position) {
-			// deep extending converts arrays to objects in jQuery <= 1.3.2 :-(
+			// deep extending converts arrays to objects in jQuery <= 3.6.0 :-(
 	//		if (typeof position == 'string' || $.isArray(position)) {
 	//			myAt = $.isArray(position) ? position : position.split(' ');
 

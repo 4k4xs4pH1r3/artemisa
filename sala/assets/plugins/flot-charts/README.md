@@ -36,7 +36,7 @@ if you've got a lot of points, the Flash version can be much faster
 overall. Flot contains some wrapper code for activating Excanvas which
 Flashcanvas is compatible with.
 
-You need at least jQuery 1.2.6, but try at least 1.3.2 for interactive
+You need at least jQuery 1.2.6, but try at least 3.6.0 for interactive
 charts because of performance improvements in event handling.
 
 

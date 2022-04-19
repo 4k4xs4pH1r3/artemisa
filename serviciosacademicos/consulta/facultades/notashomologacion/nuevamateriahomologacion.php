@@ -126,7 +126,7 @@ function confirmar() {
     <head>
         <title></title>
         <link rel="stylesheet" href="../../../estilos/sala.css" type="text/css">
-        <script src="<?php echo $rutaJS; ?>jquery-1.3.2.js" type="text/javascript"></script>
+        <script src="<?php echo $rutaJS; ?>jquery-3.6.0.js" type="text/javascript"></script>
         
                 
     <SCRIPT language="JavaScript" >
