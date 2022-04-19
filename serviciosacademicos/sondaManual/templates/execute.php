@@ -8,7 +8,7 @@ require_once (PATH_SITE."/lib/Factory.php");
 <html >
 <head >
     <!--  scripts  -->
-    <script src="<?php echo HTTP_SITE?>/assets/js/jquery-1.11.0.min.js"></script>
+    <script src="<?php echo HTTP_SITE?>/assets/js/jquery-3.6.0.min.js"></script>
     <script src="<?php echo HTTP_SITE?>/assets/js/bootstrap.js"></script>
     <link rel="stylesheet" href="<?php echo HTTP_SITE?>/assets/css/bootstrap4.css">
     <!--  Space loading indicator  -->

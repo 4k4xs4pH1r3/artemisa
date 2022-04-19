@@ -148,7 +148,7 @@ if($totalRows_dataestudiante != "")
 <head>
 <title>Crear Estudiante</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<!-- <script src="//code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script> -->
+<!-- <script src="//code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script> -->
 </head>
 <style type="text/css">
 <!--

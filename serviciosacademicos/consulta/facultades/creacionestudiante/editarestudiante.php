@@ -277,7 +277,7 @@
         <head>
             <title>Crear Estudiante</title>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-            <script src="../../../../assets/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+            <script src="../../../../assets/js/jquery-3.6.0.min.js" type="text/javascript"></script>
             <!--  Space loading indicator  -->
             <script src="<?php echo HTTP_SITE; ?>/assets/js/spiceLoading/pace.min.js"></script>
             <!--  loading cornerIndicator  -->

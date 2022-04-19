@@ -107,7 +107,7 @@ $menuPrincipal = $controlItem->cargarMenu($userMenu);
  * @since  November 10, 2016
 */
 ?>
-<?php echo Factory::printImportJsCss("js",HTTP_ROOT."/assets/js/jquery-1.11.0.min.js");?>
+<?php echo Factory::printImportJsCss("js",HTTP_ROOT."/assets/js/jquery-3.6.0.min.js");?>
 <?php 
 /*END*/
 ?>
