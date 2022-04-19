@@ -90,7 +90,7 @@
             }
             ?>
         </style>
-        <script src="<?php echo HTTP_ROOT; ?>/sala/assets/js/jquery-3.3.1.js"></script>
+        <script src="<?php echo HTTP_ROOT; ?>/sala/assets/js/jquery-3.6.0.js"></script>
         <script src="<?php echo HTTP_ROOT; ?>/sala/assets/js/bootstrap.min.js"></script>
         <link href="<?php echo HTTP_ROOT; ?>/sala/assets/css/bootstrap.min.css" rel="stylesheet">
         <script src="<?php echo HTTP_ROOT; ?>/sala/assets/js/jquery.dataTables.min.js" rel="stylesheet"></script>

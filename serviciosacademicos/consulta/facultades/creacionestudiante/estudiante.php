@@ -163,7 +163,7 @@ if(isset($row_dataestudiante['idestudiantegeneral']) && !empty($row_dataestudian
 <html lang="es">
     <head>
         <title>Crear Estudiante</title>
-        <script src="../../../../assets/js/jquery-3.3.1.js"></script>
+        <script src="../../../../assets/js/jquery-3.6.0.js"></script>
         <script src="<?php echo HTTP_SITE; ?>/assets/js/bootstrap.min.js"></script>
         <link href="<?php echo HTTP_SITE; ?>/assets/css/bootstrap.min.css" rel="stylesheet">
         <!--  Space loading indicator  -->

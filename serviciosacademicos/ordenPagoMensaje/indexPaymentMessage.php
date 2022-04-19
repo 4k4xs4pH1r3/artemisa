@@ -10,7 +10,7 @@ $funtionsDb = new functionsPaymentsMessage($db);
     <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
     <title>Mensajes Orden de Pago</title>
     <!--  Scripts  -->
-    <script src="../../assets/js/jquery-3.3.1.js"></script>
+    <script src="../../assets/js/jquery-3.6.0.js"></script>
     <script src="../../assets/js/bootstrap.min.js"></script>
     <script src="../../assets/js/jquery.dataTables.min.js"></script>
     <script src="../../assets/js/dataTableBootstrap4.js"></script>

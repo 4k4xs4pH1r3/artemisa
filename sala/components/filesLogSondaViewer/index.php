@@ -14,7 +14,7 @@ $getListFiles->getFilesArray();
 
 <html>
 <head>
-    <script src="../../../assets/js/jquery-3.3.1.js"></script>
+    <script src="../../../assets/js/jquery-3.6.0.js"></script>
     <!--  Space loading indicator  -->
     <script src="../../assets/js/spiceLoading/pace.min.js"></script>
 
