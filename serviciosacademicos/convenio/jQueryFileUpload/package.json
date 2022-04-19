@@ -48,7 +48,7 @@
     ],
     "dependencies": {
         "jquery": "3.6.0",
-        "jquery.ui.widget": "1.13.1",
+        "jquery.ui.widget": "1.10.3",
         "blueimp-tmpl": "3.20.0",
         "blueimp-load-image": "5.16.0",
         "blueimp-canvas-to-blob": "3.29.0"
