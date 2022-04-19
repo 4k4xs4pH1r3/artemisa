@@ -1,4 +1,4 @@
-/*! jQuery UI - v1.11.1 - 2014-08-13
+/*! jQuery UI - v3.6.0 - 2014-08-13
 * http://jqueryui.com
 * Includes: core.js, widget.js, mouse.js, position.js, accordion.js, autocomplete.js, button.js, datepicker.js, dialog.js, draggable.js, droppable.js, effect.js, effect-blind.js, effect-bounce.js, effect-clip.js, effect-drop.js, effect-explode.js, effect-fade.js, effect-fold.js, effect-highlight.js, effect-puff.js, effect-pulsate.js, effect-scale.js, effect-shake.js, effect-size.js, effect-slide.js, effect-transfer.js, menu.js, progressbar.js, resizable.js, selectable.js, selectmenu.js, slider.js, sortable.js, spinner.js, tabs.js, tooltip.js
 * Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
@@ -15,7 +15,7 @@
 	}
 }(function( $ ) {
 /*!
- * jQuery UI Core 1.11.1
+ * jQuery UI Core 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -30,7 +30,7 @@
 $.ui = $.ui || {};
 
 $.extend( $.ui, {
-	version: "1.11.1",
+	version: "3.6.0",
 
 	keyCode: {
 		BACKSPACE: 8,
@@ -309,7 +309,7 @@ $.ui.plugin = {
 
 
 /*!
- * jQuery UI Widget 1.11.1
+ * jQuery UI Widget 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -849,7 +849,7 @@ var widget = $.widget;
 
 
 /*!
- * jQuery UI Mouse 1.11.1
+ * jQuery UI Mouse 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -866,7 +866,7 @@ $( document ).mouseup( function() {
 });
 
 var mouse = $.widget("ui.mouse", {
-	version: "1.11.1",
+	version: "3.6.0",
 	options: {
 		cancel: "input,textarea,button,select,option",
 		distance: 1,
@@ -1023,7 +1023,7 @@ var mouse = $.widget("ui.mouse", {
 
 
 /*!
- * jQuery UI Position 1.11.1
+ * jQuery UI Position 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -1530,7 +1530,7 @@ var position = $.ui.position;
 
 
 /*!
- * jQuery UI Accordion 1.11.1
+ * jQuery UI Accordion 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -1542,7 +1542,7 @@ var position = $.ui.position;
 
 
 var accordion = $.widget( "ui.accordion", {
-	version: "1.11.1",
+	version: "3.6.0",
 	options: {
 		active: 0,
 		animate: {},
@@ -2091,7 +2091,7 @@ var accordion = $.widget( "ui.accordion", {
 
 
 /*!
- * jQuery UI Menu 1.11.1
+ * jQuery UI Menu 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -2103,7 +2103,7 @@ var accordion = $.widget( "ui.accordion", {
 
 
 var menu = $.widget( "ui.menu", {
-	version: "1.11.1",
+	version: "3.6.0",
 	defaultElement: "<ul>",
 	delay: 300,
 	options: {
@@ -2716,7 +2716,7 @@ var menu = $.widget( "ui.menu", {
 
 
 /*!
- * jQuery UI Autocomplete 1.11.1
+ * jQuery UI Autocomplete 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -2728,7 +2728,7 @@ var menu = $.widget( "ui.menu", {
 
 
 $.widget( "ui.autocomplete", {
-	version: "1.11.1",
+	version: "3.6.0",
 	defaultElement: "<input>",
 	options: {
 		appendTo: null,
@@ -3328,7 +3328,7 @@ var autocomplete = $.ui.autocomplete;
 
 
 /*!
- * jQuery UI Button 1.11.1
+ * jQuery UI Button 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -3367,7 +3367,7 @@ var lastActive,
 	};
 
 $.widget( "ui.button", {
-	version: "1.11.1",
+	version: "3.6.0",
 	defaultElement: "<button>",
 	options: {
 		disabled: null,
@@ -3663,7 +3663,7 @@ $.widget( "ui.button", {
 });
 
 $.widget( "ui.buttonset", {
-	version: "1.11.1",
+	version: "3.6.0",
 	options: {
 		items: "button, input[type=button], input[type=submit], input[type=reset], input[type=checkbox], input[type=radio], a, :data(ui-button)"
 	},
@@ -3725,7 +3725,7 @@ var button = $.ui.button;
 
 
 /*!
- * jQuery UI Datepicker 1.11.1
+ * jQuery UI Datepicker 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -3736,7 +3736,7 @@ var button = $.ui.button;
  */
 
 
-$.extend($.ui, { datepicker: { version: "1.11.1" } });
+$.extend($.ui, { datepicker: { version: "3.6.0" } });
 
 var datepicker_instActive;
 
@@ -5786,13 +5786,13 @@ $.fn.datepicker = function(options){
 $.datepicker = new Datepicker(); // singleton instance
 $.datepicker.initialized = false;
 $.datepicker.uuid = new Date().getTime();
-$.datepicker.version = "1.11.1";
+$.datepicker.version = "3.6.0";
 
 var datepicker = $.datepicker;
 
 
 /*!
- * jQuery UI Draggable 1.11.1
+ * jQuery UI Draggable 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -5804,7 +5804,7 @@ var datepicker = $.datepicker;
 
 
 $.widget("ui.draggable", $.ui.mouse, {
-	version: "1.11.1",
+	version: "3.6.0",
 	widgetEventPrefix: "drag",
 	options: {
 		addClasses: true,
@@ -6798,7 +6798,7 @@ var draggable = $.ui.draggable;
 
 
 /*!
- * jQuery UI Resizable 1.11.1
+ * jQuery UI Resizable 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -6810,7 +6810,7 @@ var draggable = $.ui.draggable;
 
 
 $.widget("ui.resizable", $.ui.mouse, {
-	version: "1.11.1",
+	version: "3.6.0",
 	widgetEventPrefix: "resize",
 	options: {
 		alsoResize: false,
@@ -7962,7 +7962,7 @@ var resizable = $.ui.resizable;
 
 
 /*!
- * jQuery UI Dialog 1.11.1
+ * jQuery UI Dialog 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -7974,7 +7974,7 @@ var resizable = $.ui.resizable;
 
 
 var dialog = $.widget( "ui.dialog", {
-	version: "1.11.1",
+	version: "3.6.0",
 	options: {
 		appendTo: "body",
 		autoOpen: true,
@@ -8818,7 +8818,7 @@ var dialog = $.widget( "ui.dialog", {
 
 
 /*!
- * jQuery UI Droppable 1.11.1
+ * jQuery UI Droppable 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -8830,7 +8830,7 @@ var dialog = $.widget( "ui.dialog", {
 
 
 $.widget( "ui.droppable", {
-	version: "1.11.1",
+	version: "3.6.0",
 	widgetEventPrefix: "drop",
 	options: {
 		accept: "*",
@@ -9215,7 +9215,7 @@ var droppable = $.ui.droppable;
 
 
 /*!
- * jQuery UI Effects 1.11.1
+ * jQuery UI Effects 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -10110,7 +10110,7 @@ $.fn.extend({
 (function() {
 
 $.extend( $.effects, {
-	version: "1.11.1",
+	version: "3.6.0",
 
 	// Saves a set of properties in a data storage
 	save: function( element, set ) {
@@ -10506,7 +10506,7 @@ var effect = $.effects;
 
 
 /*!
- * jQuery UI Effects Blind 1.11.1
+ * jQuery UI Effects Blind 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -10583,7 +10583,7 @@ var effectBlind = $.effects.effect.blind = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Bounce 1.11.1
+ * jQuery UI Effects Bounce 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -10693,7 +10693,7 @@ var effectBounce = $.effects.effect.bounce = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Clip 1.11.1
+ * jQuery UI Effects Clip 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -10757,7 +10757,7 @@ var effectClip = $.effects.effect.clip = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Drop 1.11.1
+ * jQuery UI Effects Drop 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -10819,7 +10819,7 @@ var effectDrop = $.effects.effect.drop = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Explode 1.11.1
+ * jQuery UI Effects Explode 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -10913,7 +10913,7 @@ var effectExplode = $.effects.effect.explode = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Fade 1.11.1
+ * jQuery UI Effects Fade 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -10940,7 +10940,7 @@ var effectFade = $.effects.effect.fade = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Fold 1.11.1
+ * jQuery UI Effects Fold 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11013,7 +11013,7 @@ var effectFold = $.effects.effect.fold = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Highlight 1.11.1
+ * jQuery UI Effects Highlight 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11060,7 +11060,7 @@ var effectHighlight = $.effects.effect.highlight = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Size 1.11.1
+ * jQuery UI Effects Size 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11280,7 +11280,7 @@ var effectSize = $.effects.effect.size = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Scale 1.11.1
+ * jQuery UI Effects Scale 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11355,7 +11355,7 @@ var effectScale = $.effects.effect.scale = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Puff 1.11.1
+ * jQuery UI Effects Puff 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11401,7 +11401,7 @@ var effectPuff = $.effects.effect.puff = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Pulsate 1.11.1
+ * jQuery UI Effects Pulsate 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11461,7 +11461,7 @@ var effectPulsate = $.effects.effect.pulsate = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Shake 1.11.1
+ * jQuery UI Effects Shake 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11532,7 +11532,7 @@ var effectShake = $.effects.effect.shake = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Slide 1.11.1
+ * jQuery UI Effects Slide 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11593,7 +11593,7 @@ var effectSlide = $.effects.effect.slide = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Transfer 1.11.1
+ * jQuery UI Effects Transfer 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11637,7 +11637,7 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
 
 
 /*!
- * jQuery UI Progressbar 1.11.1
+ * jQuery UI Progressbar 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11649,7 +11649,7 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
 
 
 var progressbar = $.widget( "ui.progressbar", {
-	version: "1.11.1",
+	version: "3.6.0",
 	options: {
 		max: 100,
 		value: 0,
@@ -11782,7 +11782,7 @@ var progressbar = $.widget( "ui.progressbar", {
 
 
 /*!
- * jQuery UI Selectable 1.11.1
+ * jQuery UI Selectable 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11794,7 +11794,7 @@ var progressbar = $.widget( "ui.progressbar", {
 
 
 var selectable = $.widget("ui.selectable", $.ui.mouse, {
-	version: "1.11.1",
+	version: "3.6.0",
 	options: {
 		appendTo: "body",
 		autoRefresh: true,
@@ -12054,7 +12054,7 @@ var selectable = $.widget("ui.selectable", $.ui.mouse, {
 
 
 /*!
- * jQuery UI Selectmenu 1.11.1
+ * jQuery UI Selectmenu 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -12066,7 +12066,7 @@ var selectable = $.widget("ui.selectable", $.ui.mouse, {
 
 
 var selectmenu = $.widget( "ui.selectmenu", {
-	version: "1.11.1",
+	version: "3.6.0",
 	defaultElement: "<select>",
 	options: {
 		appendTo: null,
@@ -12610,7 +12610,7 @@ var selectmenu = $.widget( "ui.selectmenu", {
 
 
 /*!
- * jQuery UI Slider 1.11.1
+ * jQuery UI Slider 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -12622,7 +12622,7 @@ var selectmenu = $.widget( "ui.selectmenu", {
 
 
 var slider = $.widget( "ui.slider", $.ui.mouse, {
-	version: "1.11.1",
+	version: "3.6.0",
 	widgetEventPrefix: "slide",
 
 	options: {
@@ -13286,7 +13286,7 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 
 
 /*!
- * jQuery UI Sortable 1.11.1
+ * jQuery UI Sortable 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -13298,7 +13298,7 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 
 
 var sortable = $.widget("ui.sortable", $.ui.mouse, {
-	version: "1.11.1",
+	version: "3.6.0",
 	widgetEventPrefix: "sort",
 	ready: false,
 	options: {
@@ -14581,7 +14581,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 
 
 /*!
- * jQuery UI Spinner 1.11.1
+ * jQuery UI Spinner 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -14604,7 +14604,7 @@ function spinner_modifier( fn ) {
 }
 
 var spinner = $.widget( "ui.spinner", {
-	version: "1.11.1",
+	version: "3.6.0",
 	defaultElement: "<input>",
 	widgetEventPrefix: "spin",
 	options: {
@@ -15080,7 +15080,7 @@ var spinner = $.widget( "ui.spinner", {
 
 
 /*!
- * jQuery UI Tabs 1.11.1
+ * jQuery UI Tabs 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -15092,7 +15092,7 @@ var spinner = $.widget( "ui.spinner", {
 
 
 var tabs = $.widget( "ui.tabs", {
-	version: "1.11.1",
+	version: "3.6.0",
 	delay: 300,
 	options: {
 		active: null,
@@ -15936,7 +15936,7 @@ var tabs = $.widget( "ui.tabs", {
 
 
 /*!
- * jQuery UI Tooltip 1.11.1
+ * jQuery UI Tooltip 3.6.0
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -15948,7 +15948,7 @@ var tabs = $.widget( "ui.tabs", {
 
 
 var tooltip = $.widget( "ui.tooltip", {
-	version: "1.11.1",
+	version: "3.6.0",
 	options: {
 		content: function() {
 			// support: IE<9, Opera in jQuery <1.7

@@ -197,8 +197,8 @@ if($_REQUEST["accion"]=="ExportarDet") {
         /*@modified Diego Rivera <riveradiego@unbosque.edu.co>
          * cambio de librerias externas por locales
          *<script src="//code.jquery.com/jquery-1.13.1.js"></script>
-         *<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-         *<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+         *<script src="//code.jquery.com/ui/3.6.0/jquery-ui.js"></script>
+         *<link rel="stylesheet" href="//code.jquery.com/ui/3.6.0/themes/smoothness/jquery-ui.css">
          *se realiza cambio de url de buttonimage  http://jqueryui.com/resources/demos/datepicker/images/calendar.gif de imagen por imagen local 
          *@since 30 november,2018
          */
