@@ -1,5 +1,5 @@
 /*!
- * jQuery UI Effects Slide 1.10.4
+ * jQuery UI Effects Slide 1.13.1
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors

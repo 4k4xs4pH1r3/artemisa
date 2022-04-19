@@ -1,4 +1,4 @@
-/*! jQuery UI - v1.10.4 - 2014-02-28
+/*! jQuery UI - v1.13.1 - 2014-02-28
 * http://jqueryui.com
 * Includes: jquery.ui.core.js, jquery.ui.widget.js, jquery.ui.mouse.js, jquery.ui.position.js, jquery.ui.datepicker.js, jquery.ui.effect.js, jquery.ui.effect-blind.js, jquery.ui.effect-bounce.js, jquery.ui.effect-clip.js, jquery.ui.effect-drop.js, jquery.ui.effect-explode.js, jquery.ui.effect-fade.js, jquery.ui.effect-fold.js, jquery.ui.effect-highlight.js, jquery.ui.effect-pulsate.js, jquery.ui.effect-scale.js, jquery.ui.effect-shake.js, jquery.ui.effect-slide.js, jquery.ui.effect-transfer.js
 * Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
@@ -12,7 +12,7 @@ var uuid = 0,
 $.ui = $.ui || {};
 
 $.extend( $.ui, {
-	version: "1.10.4",
+	version: "1.13.1",
 
 	keyCode: {
 		BACKSPACE: 8,
@@ -832,7 +832,7 @@ $( document ).mouseup( function() {
 });
 
 $.widget("ui.mouse", {
-	version: "1.10.4",
+	version: "1.13.1",
 	options: {
 		cancel: "input,textarea,button,select,option",
 		distance: 1,
@@ -1473,7 +1473,7 @@ $.ui.position = {
 }( jQuery ) );
 (function( $, undefined ) {
 
-$.extend($.ui, { datepicker: { version: "1.10.4" } });
+$.extend($.ui, { datepicker: { version: "1.13.1" } });
 
 var PROP_NAME = "datepicker",
 	instActive;
@@ -3493,7 +3493,7 @@ $.fn.datepicker = function(options){
 $.datepicker = new Datepicker(); // singleton instance
 $.datepicker.initialized = false;
 $.datepicker.uuid = new Date().getTime();
-$.datepicker.version = "1.10.4";
+$.datepicker.version = "1.13.1";
 
 })(jQuery);
 (function($, undefined) {
@@ -4381,7 +4381,7 @@ $.fn.extend({
 (function() {
 
 $.extend( $.effects, {
-	version: "1.10.4",
+	version: "1.13.1",
 
 	// Saves a set of properties in a data storage
 	save: function( element, set ) {
