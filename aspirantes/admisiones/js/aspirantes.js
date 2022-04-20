@@ -5,7 +5,7 @@ $(document).ready(function () {
         var usuario = $('#usuario').val();
         var clave = $('#clave').val();
 
-        if (usuario == null || usuario == ""){
+        if (usuario === null || usuario == ""){
             valid += "Debe llenar el campo Usuario \n";
             flag = 1;
         }
@@ -15,7 +15,7 @@ $(document).ready(function () {
                 flag = 1;
             }
         }
-        if (clave == null || clave == ""){
+        if (clave === null || clave == ""){
             valid += "Debe llenar el campo Contraseña";
             flag = 1;
         }
