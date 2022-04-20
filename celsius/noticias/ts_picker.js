@@ -27,7 +27,7 @@ function show_calendar (str_target, str_datetime) {
   const n_weekstart = 1 // day week starts from (normally 0 or 1)
 
   const dt_datetime =
-    str_datetime == null || str_datetime == ''
+    str_datetime === null || str_datetime == ''
       ? new Date()
       : str2dt(str_datetime)
   const dt_prev_month = new Date(dt_datetime)
@@ -153,7 +153,7 @@ function str2dt (str_datetime) {
 	if (!re_date.exec(str_datetime))
 		return alert("Invalid Datetime format: "+ str_datetime); */
 
-  if (str_datetime == null || str_datetime == '') return new Date()
+  if (str_datetime === null || str_datetime == '') return new Date()
   else {
     var pos = str_datetime.lastIndexOf('-')
     const dia = str_datetime.substring(pos + 1, str_datetime.length)
