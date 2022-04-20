@@ -229,12 +229,12 @@ DHTMLSuite.menuModel.prototype = {
     return returnArray
   },
   __getUniqueId: function () {
-    let num = Math.random() + ''
+    let num = String(Math.random())
     num = num.replace('.', '')
     num = '99' + num
     num = num / 1
     while (this.menuItems[num]) {
-      num = Math.random() + ''
+      num = String(Math.random())
       num = num.replace('.', '')
       num = num / 1
     }

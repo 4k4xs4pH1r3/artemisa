@@ -450,9 +450,9 @@ DHTMLSuite.common.prototype = {
     return false
   },
   getUniqueId: function () {
-    let no = Math.random() + ''
+    let no = String(Math.random())
     no = no.replace('.', '')
-    let no2 = Math.random() + ''
+    let no2 = String(Math.random())
     no2 = no2.replace('.', '')
     return no + no2
   },
@@ -536,11 +536,11 @@ DHTMLSuite.clientInfo.prototype = {
     this.isOpera = this.browser.toLowerCase().indexOf('opera') >= 0
     this.isFirefox = this.browser.toLowerCase().indexOf('firefox') >= 0
     this.isMSIE = this.browser.toLowerCase().indexOf('msie') >= 0
-    this.isOldMSIE = !!this.browser.toLowerCase().match(/msie\s[0-6]/gi)
+    this.isOldMSIE = Boolean(this.browser.toLowerCase().match(/msie\s[0-6]/gi))
     this.isSafari = this.browser.toLowerCase().indexOf('safari') >= 0
     this.navigatorVersion =
       navigator.appVersion.replace(/.*?MSIE\s(\d\.\d).*/g, '$1') / 1
-    this.isOldMSIE = !!(this.isMSIE && this.navigatorVersion < 7)
+    this.isOldMSIE = Boolean(this.isMSIE && this.navigatorVersion < 7)
   },
   getBrowserWidth: function () {
     if (self.innerWidth) return self.innerWidth

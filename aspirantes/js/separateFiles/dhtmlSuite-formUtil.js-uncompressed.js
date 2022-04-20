@@ -399,7 +399,7 @@ DHTMLSuite.formValidator.prototype = {
     let freemask = formEl.getAttribute('freemask')
     if (freemask) {
       let cs = formEl.getAttribute('caseInsensitive')
-      cs = cs + ''
+      cs = String(cs)
 
       freemask = freemask.replace(/([^NSs])/g, '\\$1')
       freemask = freemask.replace(/N/gi, '[0-9]')

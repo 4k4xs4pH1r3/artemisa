@@ -31,7 +31,7 @@ DHTMLSuite.colorPalette.prototype = {
   },
   __setInitProps: function (propertyArray) {
     if (propertyArray.width) {
-      propertyArray.width = propertyArray.width + ''
+      propertyArray.width = String(propertyArray.width)
       if (propertyArray.width.match(/^[^0-9]*?$/)) {
         propertyArray.width = propertyArray.width + 'px'
       }
@@ -64,7 +64,7 @@ DHTMLSuite.colorPalette.prototype = {
     }
     const step = (rangeTo - rangeFrom) / numberOfColors
     for (let no = rangeFrom; no <= rangeTo; no += step) {
-      let color = this.colorHelper.baseConverter(Math.round(no), 10, 16) + ''
+      let color = String(this.colorHelper.baseConverter(Math.round(no), 10, 16))
       while (color.length < 2) color = '0' + color
       this.colors[this.colors.length] = [
         '#' + color + color + color,
@@ -191,7 +191,7 @@ DHTMLSuite.colorSlider.prototype = {
     this.__setPreviewDivBgColor()
   },
   setRgbColor: function (rgbCode) {
-    rgbCode = rgbCode + ''
+    rgbCode = String(rgbCode)
     rgbCode = rgbCode.replace(/[^0-9A-F]/gi, '')
     if (rgbCode.length != 6) return false
     this.currentRgb = rgbCode
@@ -343,7 +343,7 @@ DHTMLSuite.colorSlider.prototype = {
     if (document.all) e = event
     this.currentRed = this.__getValidatedFormVar(e)
     this.currentRedHex =
-      this.colorHelper.baseConverter(this.currentRed, 10, 16) + ''
+      String(this.colorHelper.baseConverter(this.currentRed, 10, 16))
     while (this.currentRedHex.length < 2) {
       this.currentRedHex = '0' + this.currentRedHex
     }
@@ -357,7 +357,7 @@ DHTMLSuite.colorSlider.prototype = {
     if (document.all) e = event
     this.currentGreen = this.__getValidatedFormVar(e)
     this.currentGreenHex =
-      this.colorHelper.baseConverter(this.currentGreen, 10, 16) + ''
+      String(this.colorHelper.baseConverter(this.currentGreen, 10, 16))
     while (this.currentGreenHex.length < 2) {
       this.currentGreenHex = '0' + this.currentGreenHex
     }
@@ -371,7 +371,7 @@ DHTMLSuite.colorSlider.prototype = {
     if (document.all) e = event
     this.currentBlue = this.__getValidatedFormVar(e)
     this.currentBlueHex =
-      this.colorHelper.baseConverter(this.currentBlue, 10, 16) + ''
+      String(this.colorHelper.baseConverter(this.currentBlue, 10, 16))
     while (this.currentBlueHex.length < 2) {
       this.currentBlueHex = '0' + this.currentBlueHex
     }
@@ -463,7 +463,7 @@ DHTMLSuite.colorSlider.prototype = {
   __receiveRedFromSlider: function (value) {
     this.frmFieldRed.value = value
     this.currentRed = value
-    this.currentRedHex = this.colorHelper.baseConverter(value, 10, 16) + ''
+    this.currentRedHex = String(this.colorHelper.baseConverter(value, 10, 16))
     if (this.currentRedHex.length == 1) {
       this.currentRedHex = '0' + this.currentRedHex
     }
@@ -474,7 +474,7 @@ DHTMLSuite.colorSlider.prototype = {
   __receiveGreenFromSlider: function (value) {
     this.frmFieldGreen.value = value
     this.currentGreen = value
-    this.currentGreenHex = this.colorHelper.baseConverter(value, 10, 16) + ''
+    this.currentGreenHex = String(this.colorHelper.baseConverter(value, 10, 16))
     if (this.currentGreenHex.length == 1) {
       this.currentGreenHex = '0' + this.currentGreenHex
     }
@@ -485,7 +485,7 @@ DHTMLSuite.colorSlider.prototype = {
   __receiveBlueFromSlider: function (value) {
     this.frmFieldBlue.value = value
     this.currentBlue = value
-    this.currentBlueHex = this.colorHelper.baseConverter(value, 10, 16) + ''
+    this.currentBlueHex = String(this.colorHelper.baseConverter(value, 10, 16))
     if (this.currentBlueHex.length == 1) {
       this.currentBlueHex = '0' + this.currentBlueHex
     }
@@ -528,11 +528,11 @@ DHTMLSuite.colorSlider.prototype = {
         b = b * base
       }
     }
-    let red = this.colorHelper.baseConverter(r, 10, 16) + ''
+    let red = String(this.colorHelper.baseConverter(r, 10, 16))
     if (red.length == '1') red = '0' + red
-    let green = this.colorHelper.baseConverter(g, 10, 16) + ''
+    let green = String(this.colorHelper.baseConverter(g, 10, 16))
     if (green.length == '1') green = '0' + green
-    let blue = this.colorHelper.baseConverter(b, 10, 16) + ''
+    let blue = String(this.colorHelper.baseConverter(b, 10, 16))
     if (blue.length == '1') blue = '0' + blue
     return red + green + blue
   },
@@ -676,7 +676,7 @@ DHTMLSuite.colorWidget.prototype = {
     this.__changeViewAfterColorChange()
   },
   setHue: function (hue) {
-    hue = hue + ''
+    hue = String(hue)
     if (hue.match(/^[0-9]+$/)) {
       while (hue >= 360) hue -= 360
       this.currentHue = hue
@@ -684,7 +684,7 @@ DHTMLSuite.colorWidget.prototype = {
     }
   },
   setSaturation: function (saturation) {
-    saturation = saturation + ''
+    saturation = String(saturation)
     if (saturation.match(/^[0-9]+$/)) {
       while (saturation > 100) saturation -= 100
       this.currentSaturation = saturation
@@ -692,7 +692,7 @@ DHTMLSuite.colorWidget.prototype = {
     }
   },
   setBrightness: function (brightness) {
-    brightness = brightness + ''
+    brightness = String(brightness)
     if (brightness.match(/^[0-9]+$/)) {
       while (brightness > 100) brightness -= 100
       this.currentBrightness = brightness
@@ -920,7 +920,7 @@ DHTMLSuite.colorWidget.prototype = {
     img.onmousedown = function () {
       return false
     }
-    img.id = '' + DHTMLSuite.commonObj.getUniqueId()
+    img.id = String(DHTMLSuite.commonObj.getUniqueId())
     this.divElPalette.appendChild(img)
     DHTMLSuite.commonObj.__addEventEl(img)
     if (
@@ -1201,7 +1201,7 @@ DHTMLSuite.colorWidget.prototype = {
     if (document.all) e = event
     const src = DHTMLSuite.commonObj.getSrcElement(e)
     let hue = src.value
-    hue = hue + ''
+    hue = String(hue)
     if (hue.match(/^[0-9]+$/)) {
       if (hue / 1 > 360) hue = 360
     } else {
@@ -1216,7 +1216,7 @@ DHTMLSuite.colorWidget.prototype = {
     if (document.all) e = event
     const src = DHTMLSuite.commonObj.getSrcElement(e)
     let brightness = src.value
-    brightness = brightness + ''
+    brightness = String(brightness)
     if (brightness.match(/^[0-9]+$/)) {
       if (brightness / 1 > 100) brightness = 100
     } else {
@@ -1230,7 +1230,7 @@ DHTMLSuite.colorWidget.prototype = {
     if (document.all) e = event
     const src = DHTMLSuite.commonObj.getSrcElement(e)
     let saturation = src.value
-    saturation = saturation + ''
+    saturation = String(saturation)
     if (saturation.match(/^[0-9]+$/)) {
       if (saturation / 1 > 100) saturation = 100
     } else {
