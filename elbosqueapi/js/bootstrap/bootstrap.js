@@ -4227,11 +4227,7 @@
 
           let activeElements
 
-          if (container.nodeName === 'UL') {
-            activeElements = $$$1(container).find(Selector.ACTIVE_UL)
-          } else {
-            activeElements = $$$1(container).children(Selector.ACTIVE)
-          }
+          activeElements = container.nodeName === 'UL' ? $$$1(container).find(Selector.ACTIVE_UL) : $$$1(container).children(Selector.ACTIVE);
 
           const active = activeElements[0]
           const isTransitioning =

@@ -210,8 +210,7 @@ DHTMLSuite.common.prototype = {
       this.loadedCSSFiles[cssFile] = true
       const lt = document.createElement('LINK')
       if (!this.cssCacheStatus) {
-        if (cssFile.indexOf('?') >= 0) cssFile = cssFile + '&'
-        else cssFile = cssFile + '?'
+        cssFile = cssFile.indexOf('?') >= 0 ? cssFile + '&' : cssFile + '?';
         cssFile = cssFile + 'rand=' + Math.random()
       }
       if (prefixConfigPath) {
@@ -493,9 +492,7 @@ DHTMLSuite.common.prototype = {
         scriptObj.setAttribute('type', 'text/javascript')
         scriptObj.setAttribute('src', scriptTags[no].src)
       } else {
-        if (DHTMLSuite.clientInfoObj.isOpera) {
-          jsCode = jsCode + scriptTags[no].text + '\n'
-        } else jsCode = jsCode + scriptTags[no].innerHTML
+        jsCode = DHTMLSuite.clientInfoObj.isOpera ? jsCode + scriptTags[no].text + '\n' : jsCode + scriptTags[no].innerHTML;
       }
     }
     if (jsCode) this.__installScript(jsCode)
@@ -1279,14 +1276,10 @@ DHTMLSuite.tableWidget.prototype = {
   },
   __getParsedCallbackString: function (functionName) {
     const objIndex = this.objectIndex
-    if (!functionName) functionName = 'true'
-    else {
-      functionName =
-        functionName +
+    functionName = !functionName ? 'true' : functionName +
         '(DHTMLSuite.variableStorage.arrayDSObjects[' +
         objIndex +
-        '])'
-    }
+        '])';
     return functionName
   },
   __getItemsFromServer: function (callbackFunction) {
@@ -1392,11 +1385,7 @@ DHTMLSuite.tableWidget.prototype = {
       cellArray.push(content)
       cellObjArray.push(tableObj.rows[no].cells[indexThis])
     }
-    if (sortMethod == 'N') {
-      cellArray = cellArray.sort(this.__sortNumeric)
-    } else {
-      cellArray = cellArray.sort(this.__sortString)
-    }
+    cellArray = sortMethod == 'N' ? cellArray.sort(this.__sortNumeric) : cellArray.sort(this.__sortString);
     if (direction == 'descending') {
       for (var no = cellArray.length; no >= 0; no--) {
         for (var no2 = 0; no2 < cellObjArray.length; no2++) {
@@ -2905,10 +2894,7 @@ DHTMLSuite.JSDragDropTree.prototype = {
           if (saveString.length > 0) saveString = saveString + ','
           saveString = saveString + li.id.replace(/[^0-9]/gi, '')
           saveString = saveString + '-'
-          if (li.parentNode.id != this.idOfTree) {
-            saveString =
-              saveString + li.parentNode.parentNode.id.replace(/[^0-9]/gi, '')
-          } else saveString = saveString + '0'
+          saveString = li.parentNode.id != this.idOfTree ? saveString + li.parentNode.parentNode.id.replace(/[^0-9]/gi, '') : saveString + '0';
           const ul = li.getElementsByTagName('UL')
           if (ul.length > 0) {
             saveString = this.getSaveString(ul[0], saveString)
@@ -3512,17 +3498,12 @@ DHTMLSuite.slider.prototype = {
       sliderHandle.src = DHTMLSuite.configObj.imagePath + 'slider/' + srcHandle
       div.appendChild(sliderHandle)
       let leftPos
-      if (this.sliderValueReversed) {
-        leftPos =
-          Math.round(
+      leftPos = this.sliderValueReversed ? Math.round(
             ((this.sliderMaxValue - this.initialValue) / this.sliderMaxValue) *
               this.sliderSize
-          ) - 1
-      } else {
-        leftPos = Math.round(
+          ) - 1 : Math.round(
           (this.initialValue / this.sliderMaxValue) * this.sliderSize
-        )
-      }
+        );
       sliderHandle.style.left = leftPos + 'px'
     } else {
       sliderObj.className = 'DHTMLSuite_slider_vertical'
@@ -3538,16 +3519,12 @@ DHTMLSuite.slider.prototype = {
       sliderHandle.src = DHTMLSuite.configObj.imagePath + 'slider/' + srcHandle
       div.appendChild(sliderHandle)
       let topPos
-      if (!this.sliderValueReversed) {
-        topPos = Math.floor(
+      topPos = !this.sliderValueReversed ? Math.floor(
           ((this.sliderMaxValue - this.initialValue) / this.sliderMaxValue) *
             this.sliderSize
-        )
-      } else {
-        topPos = Math.floor(
+        ) : Math.floor(
           (this.initialValue / this.sliderMaxValue) * this.sliderSize
-        )
-      }
+        );
       sliderHandle.style.top = topPos + 'px'
     }
     sliderHandle.id = 'sliderForObject' + this.indexThisSlider
@@ -3646,30 +3623,22 @@ DHTMLSuite.slider.prototype = {
     if (handlePos > sliderObj.sliderSize) handlePos = sliderObj.sliderSize
     if (sliderObj.sliderDirection == 'hor') {
       sliderObj.sliderHandleImg.style.left = handlePos + 'px'
-      if (!sliderObj.sliderValueReversed) {
-        returnValue = Math.round(
+      returnValue = !sliderObj.sliderValueReversed ? Math.round(
           (handlePos / sliderObj.sliderSize) *
             (sliderObj.sliderMaxValue - sliderObj.sliderMinValue)
-        )
-      } else {
-        returnValue = Math.round(
+        ) : Math.round(
           ((sliderObj.sliderSize - handlePos) / sliderObj.sliderSize) *
             (sliderObj.sliderMaxValue - sliderObj.sliderMinValue)
-        )
-      }
+        );
     } else {
       sliderObj.sliderHandleImg.style.top = handlePos + 'px'
-      if (sliderObj.sliderValueReversed) {
-        returnValue = Math.round(
+      returnValue = sliderObj.sliderValueReversed ? Math.round(
           (handlePos / sliderObj.sliderSize) *
             (sliderObj.sliderMaxValue - sliderObj.sliderMinValue)
-        )
-      } else {
-        returnValue = Math.round(
+        ) : Math.round(
           ((sliderObj.sliderSize - handlePos) / sliderObj.sliderSize) *
             (sliderObj.sliderMaxValue - sliderObj.sliderMinValue)
-        )
-      }
+        );
     }
     returnValue = returnValue + sliderObj.sliderMinValue
     if (sliderObj.functionToCallOnChange) {
@@ -3727,30 +3696,22 @@ DHTMLSuite.slider.prototype = {
     if (handlePos > sliderObj.sliderSize) handlePos = sliderObj.sliderSize
     if (sliderObj.sliderDirection == 'hor') {
       sliderObj.sliderHandleImg.style.left = handlePos + 'px'
-      if (!sliderObj.sliderValueReversed) {
-        returnValue = Math.round(
+      returnValue = !sliderObj.sliderValueReversed ? Math.round(
           (handlePos / sliderObj.sliderSize) *
             (sliderObj.sliderMaxValue - sliderObj.sliderMinValue)
-        )
-      } else {
-        returnValue = Math.round(
+        ) : Math.round(
           ((sliderObj.sliderSize - handlePos) / sliderObj.sliderSize) *
             (sliderObj.sliderMaxValue - sliderObj.sliderMinValue)
-        )
-      }
+        );
     } else {
       sliderObj.sliderHandleImg.style.top = handlePos + 'px'
-      if (sliderObj.sliderValueReversed) {
-        returnValue = Math.round(
+      returnValue = sliderObj.sliderValueReversed ? Math.round(
           (handlePos / sliderObj.sliderSize) *
             (sliderObj.sliderMaxValue - sliderObj.sliderMinValue)
-        )
-      } else {
-        returnValue = Math.round(
+        ) : Math.round(
           ((sliderObj.sliderSize - handlePos) / sliderObj.sliderSize) *
             (sliderObj.sliderMaxValue - sliderObj.sliderMinValue)
-        )
-      }
+        );
     }
     returnValue = returnValue + sliderObj.sliderMinValue
     if (sliderObj.functionToCallOnChange) {
@@ -4709,8 +4670,7 @@ DHTMLSuite.menuModel.prototype = {
         this.menuItems[id].setAsSeparator(id, parentId)
         continue
       }
-      if (parentId) type = 'sub'
-      else type = 'top'
+      type = parentId ? 'sub' : 'top';
       const aTag = liTags[no].getElementsByTagName('A')[0]
       if (!aTag) {
         continue
@@ -6111,16 +6071,10 @@ DHTMLSuite.paneSplitterPane.prototype = {
     contentObj
   ) {
     if (callbackString.indexOf('(') >= 0) return callbackString
-    if (contentObj) {
-      callbackString =
-        callbackString +
+    callbackString = contentObj ? callbackString +
         '(this.paneModel,"' +
         whichCallBackAction +
-        '",contentObj)'
-    } else {
-      callbackString =
-        callbackString + '(this.paneModel,"' + whichCallBackAction + '")'
-    }
+        '",contentObj)' : callbackString + '(this.paneModel,"' + whichCallBackAction + '")';
     callbackString = callbackString
     return callbackString
   },
@@ -6341,12 +6295,10 @@ DHTMLSuite.paneSplitterPane.prototype = {
     switch (pos) {
       case 'west':
       case 'north':
-        if (slideOut) return 1
-        else return -1
+        return slideOut ? 1 : -1;
       case 'south':
       case 'east':
-        if (slideOut) return -1
-        else return 1
+        return slideOut ? -1 : 1;
     }
   },
   __processSlideByPixels: function (
@@ -6406,39 +6358,23 @@ DHTMLSuite.paneSplitterPane.prototype = {
     const pos = this.paneModel.getPosition()
     switch (pos) {
       case 'west':
-        if (slideOut) {
-          return (
-            this.parentRef.paneSizeCollapsed +
-            this.parentRef.verticalSplitterSize
-          )
-        } else return 0 - this.paneModel.size
+        return slideOut ? (this.parentRef.paneSizeCollapsed +
+            this.parentRef.verticalSplitterSize) : 0 - this.paneModel.size;
       case 'east':
-        if (slideOut) {
-          return (
-            bw -
+        return slideOut ? (bw -
             this.parentRef.paneSizeCollapsed -
             this.paneModel.size -
             this.parentRef.verticalSplitterSize -
-            1
-          )
-        } else return bw
+            1) : bw;
       case 'north':
-        if (slideOut) {
-          return (
-            this.parentRef.paneSizeCollapsed +
-            this.parentRef.horizontalSplitterSize
-          )
-        } else return 0 - this.paneModel.size
+        return slideOut ? (this.parentRef.paneSizeCollapsed +
+            this.parentRef.horizontalSplitterSize) : 0 - this.paneModel.size;
       case 'south':
-        if (slideOut) {
-          return (
-            bh -
+        return slideOut ? (bh -
             this.parentRef.paneSizeCollapsed -
             this.paneModel.size -
             this.parentRef.horizontalSplitterSize -
-            1
-          )
-        } else return bh
+            1) : bh;
     }
   },
   __updateCollapsedSize: function () {
@@ -6996,9 +6932,7 @@ DHTMLSuite.paneSplitter.prototype = {
   },
   isUrlLoadedInPane: function (id, url) {
     const ref = this.__getPaneReferenceFromContentId(id)
-    if (ref) {
-      return ref.isUrlLoadedInPane(id, url)
-    } else return false
+    return ref ? ref.isUrlLoadedInPane(id, url) : false;
   },
   loadContent: function (id, url, refreshAfterSeconds, onCompleteJsCode) {
     const ref = this.__getPaneReferenceFromContentId(id)
@@ -7031,19 +6965,15 @@ DHTMLSuite.paneSplitter.prototype = {
     if (ref) ref.showContent(id)
   },
   closeAllClosableTabs: function (panePosition) {
-    if (this.panesAssociative[panePosition.toLowerCase()]) {
-      return this.panesAssociative[
+    return this.panesAssociative[panePosition.toLowerCase()] ? this.panesAssociative[
         panePosition.toLowerCase()
-      ].__closeAllClosableTabs()
-    } else return false
+      ].__closeAllClosableTabs() : false;
   },
   addContent: function (panePosition, contentModel, onCompleteJsCode) {
-    if (this.panesAssociative[panePosition.toLowerCase()]) {
-      return this.panesAssociative[panePosition.toLowerCase()].addContent(
+    return this.panesAssociative[panePosition.toLowerCase()] ? this.panesAssociative[panePosition.toLowerCase()].addContent(
         contentModel,
         onCompleteJsCode
-      )
-    } else return false
+      ) : false;
   },
   getState: function (panePosition) {
     if (this.panesAssociative[panePosition.toLowerCase()]) {
@@ -7786,9 +7716,7 @@ DHTMLSuite.paneSplitter.prototype = {
       this.panesAssociative.west &&
       this.panesAssociative.west.paneModel.visible
     ) {
-      if (this.panesAssociative.west.paneModel.state == 'expanded') {
-        sizeCenterPane -= this.panesAssociative.west.divElement.offsetWidth
-      } else sizeCenterPane -= this.paneSizeCollapsed
+      sizeCenterPane -= this.panesAssociative.west.paneModel.state == 'expanded' ? this.panesAssociative.west.divElement.offsetWidth : this.paneSizeCollapsed;
     }
     if (
       this.panesAssociative.east &&
@@ -7826,10 +7754,7 @@ DHTMLSuite.paneSplitter.prototype = {
       this.panesAssociative.north &&
       this.panesAssociative.north.paneModel.visible
     ) {
-      if (this.panesAssociative.north.paneModel.state == 'expanded') {
-        heightMiddleFrames -=
-          this.panesAssociative.north.divElement.offsetHeight
-      } else heightMiddleFrames -= this.paneSizeCollapsed
+      heightMiddleFrames -= this.panesAssociative.north.paneModel.state == 'expanded' ? this.panesAssociative.north.divElement.offsetHeight : this.paneSizeCollapsed;
       if (this.paneSplitterHandles.north) {
         heightMiddleFrames -=
           this.horizontalSplitterSize + this.horizontalSplitterBorderSize
@@ -7839,10 +7764,7 @@ DHTMLSuite.paneSplitter.prototype = {
       this.panesAssociative.south &&
       this.panesAssociative.south.paneModel.visible
     ) {
-      if (this.panesAssociative.south.paneModel.state == 'expanded') {
-        heightMiddleFrames -=
-          this.panesAssociative.south.divElement.offsetHeight
-      } else heightMiddleFrames -= this.paneSizeCollapsed
+      heightMiddleFrames -= this.panesAssociative.south.paneModel.state == 'expanded' ? this.panesAssociative.south.divElement.offsetHeight : this.paneSizeCollapsed;
       if (this.paneSplitterHandles.south) {
         heightMiddleFrames -=
           this.horizontalSplitterSize + this.horizontalSplitterBorderSize
@@ -7859,9 +7781,7 @@ DHTMLSuite.paneSplitter.prototype = {
     }
     let posSouth = 0
     if (this.panesAssociative.north) {
-      if (this.panesAssociative.north.paneModel.state == 'expanded') {
-        posSouth = this.panesAssociative.north.divElement.offsetHeight
-      } else posSouth = this.paneSizeCollapsed
+      posSouth = this.panesAssociative.north.paneModel.state == 'expanded' ? this.panesAssociative.north.divElement.offsetHeight : this.paneSizeCollapsed;
     }
     posSouth += heightMiddleFrames
     if (this.paneSplitterHandles.south) {
@@ -8235,11 +8155,8 @@ DHTMLSuite.textEdit.prototype = {
       return
     }
     let url
-    if (this.elementsAssociative[elementId].serverFile) {
-      url = this.elementsAssociative[elementId].serverFile
-    } else url = this.serversideFile
-    if (url.indexOf('?') >= 0) url = url + '&'
-    else url = url + '?'
+    url = this.elementsAssociative[elementId].serverFile ? this.elementsAssociative[elementId].serverFile : this.serversideFile;
+    url = url.indexOf('?') >= 0 ? url + '&' : url + '?';
     url =
       url +
       'saveTextEdit=1&textEditElementId=' +
@@ -15574,8 +15491,7 @@ DHTMLSuite.formValidator.prototype = {
     }
     if (elType == 'text') {
       let pat = inputRef.getAttribute('regexpPattern')
-      if (pat.indexOf('/') == -1) pat = this.masks[pat]
-      else pat = eval(pat)
+      pat = pat.indexOf('/') == -1 ? this.masks[pat] : eval(pat);
       if (inputRef.value.trim().match(pat)) {
         const matches = inputRef.value.trim().match(pat)
         const minLength = inputRef.getAttribute('minLength')

@@ -258,16 +258,10 @@ DHTMLSuite.paneSplitterPane.prototype = {
     contentObj
   ) {
     if (callbackString.indexOf('(') >= 0) return callbackString
-    if (contentObj) {
-      callbackString =
-        callbackString +
+    callbackString = contentObj ? callbackString +
         '(this.paneModel,"' +
         whichCallBackAction +
-        '",contentObj)'
-    } else {
-      callbackString =
-        callbackString + '(this.paneModel,"' + whichCallBackAction + '")'
-    }
+        '",contentObj)' : callbackString + '(this.paneModel,"' + whichCallBackAction + '")';
     callbackString = callbackString
     return callbackString
   },
@@ -488,12 +482,10 @@ DHTMLSuite.paneSplitterPane.prototype = {
     switch (pos) {
       case 'west':
       case 'north':
-        if (slideOut) return 1
-        else return -1
+        return slideOut ? 1 : -1;
       case 'south':
       case 'east':
-        if (slideOut) return -1
-        else return 1
+        return slideOut ? -1 : 1;
     }
   },
   __processSlideByPixels: function (
@@ -553,39 +545,23 @@ DHTMLSuite.paneSplitterPane.prototype = {
     const pos = this.paneModel.getPosition()
     switch (pos) {
       case 'west':
-        if (slideOut) {
-          return (
-            this.parentRef.paneSizeCollapsed +
-            this.parentRef.verticalSplitterSize
-          )
-        } else return 0 - this.paneModel.size
+        return slideOut ? (this.parentRef.paneSizeCollapsed +
+            this.parentRef.verticalSplitterSize) : 0 - this.paneModel.size;
       case 'east':
-        if (slideOut) {
-          return (
-            bw -
+        return slideOut ? (bw -
             this.parentRef.paneSizeCollapsed -
             this.paneModel.size -
             this.parentRef.verticalSplitterSize -
-            1
-          )
-        } else return bw
+            1) : bw;
       case 'north':
-        if (slideOut) {
-          return (
-            this.parentRef.paneSizeCollapsed +
-            this.parentRef.horizontalSplitterSize
-          )
-        } else return 0 - this.paneModel.size
+        return slideOut ? (this.parentRef.paneSizeCollapsed +
+            this.parentRef.horizontalSplitterSize) : 0 - this.paneModel.size;
       case 'south':
-        if (slideOut) {
-          return (
-            bh -
+        return slideOut ? (bh -
             this.parentRef.paneSizeCollapsed -
             this.paneModel.size -
             this.parentRef.horizontalSplitterSize -
-            1
-          )
-        } else return bh
+            1) : bh;
     }
   },
   __updateCollapsedSize: function () {
@@ -1143,9 +1119,7 @@ DHTMLSuite.paneSplitter.prototype = {
   },
   isUrlLoadedInPane: function (id, url) {
     const ref = this.__getPaneReferenceFromContentId(id)
-    if (ref) {
-      return ref.isUrlLoadedInPane(id, url)
-    } else return false
+    return ref ? ref.isUrlLoadedInPane(id, url) : false;
   },
   loadContent: function (id, url, refreshAfterSeconds, onCompleteJsCode) {
     const ref = this.__getPaneReferenceFromContentId(id)
@@ -1178,19 +1152,15 @@ DHTMLSuite.paneSplitter.prototype = {
     if (ref) ref.showContent(id)
   },
   closeAllClosableTabs: function (panePosition) {
-    if (this.panesAssociative[panePosition.toLowerCase()]) {
-      return this.panesAssociative[
+    return this.panesAssociative[panePosition.toLowerCase()] ? this.panesAssociative[
         panePosition.toLowerCase()
-      ].__closeAllClosableTabs()
-    } else return false
+      ].__closeAllClosableTabs() : false;
   },
   addContent: function (panePosition, contentModel, onCompleteJsCode) {
-    if (this.panesAssociative[panePosition.toLowerCase()]) {
-      return this.panesAssociative[panePosition.toLowerCase()].addContent(
+    return this.panesAssociative[panePosition.toLowerCase()] ? this.panesAssociative[panePosition.toLowerCase()].addContent(
         contentModel,
         onCompleteJsCode
-      )
-    } else return false
+      ) : false;
   },
   getState: function (panePosition) {
     if (this.panesAssociative[panePosition.toLowerCase()]) {
@@ -1933,9 +1903,7 @@ DHTMLSuite.paneSplitter.prototype = {
       this.panesAssociative.west &&
       this.panesAssociative.west.paneModel.visible
     ) {
-      if (this.panesAssociative.west.paneModel.state == 'expanded') {
-        sizeCenterPane -= this.panesAssociative.west.divElement.offsetWidth
-      } else sizeCenterPane -= this.paneSizeCollapsed
+      sizeCenterPane -= this.panesAssociative.west.paneModel.state == 'expanded' ? this.panesAssociative.west.divElement.offsetWidth : this.paneSizeCollapsed;
     }
     if (
       this.panesAssociative.east &&
@@ -1973,10 +1941,7 @@ DHTMLSuite.paneSplitter.prototype = {
       this.panesAssociative.north &&
       this.panesAssociative.north.paneModel.visible
     ) {
-      if (this.panesAssociative.north.paneModel.state == 'expanded') {
-        heightMiddleFrames -=
-          this.panesAssociative.north.divElement.offsetHeight
-      } else heightMiddleFrames -= this.paneSizeCollapsed
+      heightMiddleFrames -= this.panesAssociative.north.paneModel.state == 'expanded' ? this.panesAssociative.north.divElement.offsetHeight : this.paneSizeCollapsed;
       if (this.paneSplitterHandles.north) {
         heightMiddleFrames -=
           this.horizontalSplitterSize + this.horizontalSplitterBorderSize
@@ -1986,10 +1951,7 @@ DHTMLSuite.paneSplitter.prototype = {
       this.panesAssociative.south &&
       this.panesAssociative.south.paneModel.visible
     ) {
-      if (this.panesAssociative.south.paneModel.state == 'expanded') {
-        heightMiddleFrames -=
-          this.panesAssociative.south.divElement.offsetHeight
-      } else heightMiddleFrames -= this.paneSizeCollapsed
+      heightMiddleFrames -= this.panesAssociative.south.paneModel.state == 'expanded' ? this.panesAssociative.south.divElement.offsetHeight : this.paneSizeCollapsed;
       if (this.paneSplitterHandles.south) {
         heightMiddleFrames -=
           this.horizontalSplitterSize + this.horizontalSplitterBorderSize
@@ -2006,9 +1968,7 @@ DHTMLSuite.paneSplitter.prototype = {
     }
     let posSouth = 0
     if (this.panesAssociative.north) {
-      if (this.panesAssociative.north.paneModel.state == 'expanded') {
-        posSouth = this.panesAssociative.north.divElement.offsetHeight
-      } else posSouth = this.paneSizeCollapsed
+      posSouth = this.panesAssociative.north.paneModel.state == 'expanded' ? this.panesAssociative.north.divElement.offsetHeight : this.paneSizeCollapsed;
     }
     posSouth += heightMiddleFrames
     if (this.paneSplitterHandles.south) {
