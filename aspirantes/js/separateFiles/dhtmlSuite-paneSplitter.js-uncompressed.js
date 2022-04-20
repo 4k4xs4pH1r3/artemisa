@@ -514,10 +514,12 @@ DHTMLSuite.paneSplitterPane.prototype = {
     contentObj
   ) {
     if (callbackString.indexOf('(') >= 0) return callbackString
-    callbackString = contentObj ? callbackString +
+    callbackString = contentObj
+      ? callbackString +
         '(this.paneModel,"' +
         whichCallBackAction +
-        '",contentObj)' : callbackString + '(this.paneModel,"' + whichCallBackAction + '")';
+        '",contentObj)'
+      : callbackString + '(this.paneModel,"' + whichCallBackAction + '")'
     callbackString = callbackString
     return callbackString
   },
@@ -867,11 +869,11 @@ DHTMLSuite.paneSplitterPane.prototype = {
     switch (pos) {
       case 'west':
       case 'north':
-        return slideOut ? 1 : -1;
+        return slideOut ? 1 : -1
 
       case 'south':
       case 'east':
-        return slideOut ? -1 : 1;
+        return slideOut ? -1 : 1
     }
   },
 
@@ -957,23 +959,31 @@ DHTMLSuite.paneSplitterPane.prototype = {
 
     switch (pos) {
       case 'west':
-        return slideOut ? (this.parentRef.paneSizeCollapsed +
-            this.parentRef.verticalSplitterSize) : 0 - this.paneModel.size;
+        return slideOut
+          ? this.parentRef.paneSizeCollapsed +
+              this.parentRef.verticalSplitterSize
+          : 0 - this.paneModel.size
       case 'east':
-        return slideOut ? (bw -
-            this.parentRef.paneSizeCollapsed -
-            this.paneModel.size -
-            this.parentRef.verticalSplitterSize -
-            1) : bw;
+        return slideOut
+          ? bw -
+              this.parentRef.paneSizeCollapsed -
+              this.paneModel.size -
+              this.parentRef.verticalSplitterSize -
+              1
+          : bw
       case 'north':
-        return slideOut ? (this.parentRef.paneSizeCollapsed +
-            this.parentRef.horizontalSplitterSize) : 0 - this.paneModel.size;
+        return slideOut
+          ? this.parentRef.paneSizeCollapsed +
+              this.parentRef.horizontalSplitterSize
+          : 0 - this.paneModel.size
       case 'south':
-        return slideOut ? (bh -
-            this.parentRef.paneSizeCollapsed -
-            this.paneModel.size -
-            this.parentRef.horizontalSplitterSize -
-            1) : bh;
+        return slideOut
+          ? bh -
+              this.parentRef.paneSizeCollapsed -
+              this.paneModel.size -
+              this.parentRef.horizontalSplitterSize -
+              1
+          : bh
     }
   },
 
@@ -2155,9 +2165,11 @@ DHTMLSuite.paneSplitter.prototype = {
    *	@public
    */
   closeAllClosableTabs: function (panePosition) {
-    return this.panesAssociative[panePosition.toLowerCase()] ? this.panesAssociative[
-        panePosition.toLowerCase()
-      ].__closeAllClosableTabs() : false;
+    return this.panesAssociative[panePosition.toLowerCase()]
+      ? this.panesAssociative[
+          panePosition.toLowerCase()
+        ].__closeAllClosableTabs()
+      : false
   },
 
   // }}}
@@ -2172,10 +2184,12 @@ DHTMLSuite.paneSplitter.prototype = {
    *	@public
    */
   addContent: function (panePosition, contentModel, onCompleteJsCode) {
-    return this.panesAssociative[panePosition.toLowerCase()] ? this.panesAssociative[panePosition.toLowerCase()].addContent(
-        contentModel,
-        onCompleteJsCode
-      ) : false;
+    return this.panesAssociative[panePosition.toLowerCase()]
+      ? this.panesAssociative[panePosition.toLowerCase()].addContent(
+          contentModel,
+          onCompleteJsCode
+        )
+      : false
   },
 
   // }}}
@@ -3300,7 +3314,10 @@ DHTMLSuite.paneSplitter.prototype = {
       this.panesAssociative.west.paneModel.visible
     ) {
       // Center pane exists and is visible-decrement width of center pane
-      sizeCenterPane -= this.panesAssociative.west.paneModel.state == 'expanded' ? this.panesAssociative.west.divElement.offsetWidth : this.paneSizeCollapsed;
+      sizeCenterPane -=
+        this.panesAssociative.west.paneModel.state == 'expanded'
+          ? this.panesAssociative.west.divElement.offsetWidth
+          : this.paneSizeCollapsed
     }
 
     if (
@@ -3345,7 +3362,10 @@ DHTMLSuite.paneSplitter.prototype = {
       this.panesAssociative.north &&
       this.panesAssociative.north.paneModel.visible
     ) {
-      heightMiddleFrames -= this.panesAssociative.north.paneModel.state == 'expanded' ? this.panesAssociative.north.divElement.offsetHeight : this.paneSizeCollapsed;
+      heightMiddleFrames -=
+        this.panesAssociative.north.paneModel.state == 'expanded'
+          ? this.panesAssociative.north.divElement.offsetHeight
+          : this.paneSizeCollapsed
       if (this.paneSplitterHandles.north) {
         heightMiddleFrames -=
           this.horizontalSplitterSize + this.horizontalSplitterBorderSize
@@ -3355,7 +3375,10 @@ DHTMLSuite.paneSplitter.prototype = {
       this.panesAssociative.south &&
       this.panesAssociative.south.paneModel.visible
     ) {
-      heightMiddleFrames -= this.panesAssociative.south.paneModel.state == 'expanded' ? this.panesAssociative.south.divElement.offsetHeight : this.paneSizeCollapsed;
+      heightMiddleFrames -=
+        this.panesAssociative.south.paneModel.state == 'expanded'
+          ? this.panesAssociative.south.divElement.offsetHeight
+          : this.paneSizeCollapsed
       if (this.paneSplitterHandles.south) {
         heightMiddleFrames -=
           this.horizontalSplitterSize + this.horizontalSplitterBorderSize
@@ -3376,7 +3399,10 @@ DHTMLSuite.paneSplitter.prototype = {
     let posSouth = 0
     if (this.panesAssociative.north) {
       /* Step 1-get height of north pane */
-      posSouth = this.panesAssociative.north.paneModel.state == 'expanded' ? this.panesAssociative.north.divElement.offsetHeight : this.paneSizeCollapsed;
+      posSouth =
+        this.panesAssociative.north.paneModel.state == 'expanded'
+          ? this.panesAssociative.north.divElement.offsetHeight
+          : this.paneSizeCollapsed
     }
 
     posSouth += heightMiddleFrames
