@@ -211,8 +211,7 @@ DHTMLSuite.common.prototype = {
       this.loadedCSSFiles[cssFile] = true
       const lt = document.createElement('LINK')
       if (!this.cssCacheStatus) {
-        if (cssFile.indexOf('?') >= 0) cssFile = cssFile + '&'
-        else cssFile = cssFile + '?'
+        cssFile = cssFile.indexOf('?') >= 0 ? cssFile + '&' : cssFile + '?';
         cssFile = cssFile + 'rand=' + Math.random()
       }
       if (prefixConfigPath) {
@@ -494,9 +493,7 @@ DHTMLSuite.common.prototype = {
         scriptObj.setAttribute('type', 'text/javascript')
         scriptObj.setAttribute('src', scriptTags[no].src)
       } else {
-        if (DHTMLSuite.clientInfoObj.isOpera) {
-          jsCode = jsCode + scriptTags[no].text + '\n'
-        } else jsCode = jsCode + scriptTags[no].innerHTML
+        jsCode = DHTMLSuite.clientInfoObj.isOpera ? jsCode + scriptTags[no].text + '\n' : jsCode + scriptTags[no].innerHTML;
       }
     }
     if (jsCode) this.__installScript(jsCode)
