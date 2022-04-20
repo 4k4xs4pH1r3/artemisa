@@ -9342,10 +9342,11 @@ DHTMLSuite.menuBar.prototype = {
           const expandRef = document.getElementById(
             this.menuItem_objects[this.menuItems[indexThis].id].expandElement
           ) /* Creating reference to expand div/arrow div */
-          const parentId =
-            String(DHTMLSuite.variableStorage.arrayDSObjects[index].menuItems[
+          const parentId = String(
+            DHTMLSuite.variableStorage.arrayDSObjects[index].menuItems[
               indexThis
-            ].parentId) // Get parent id.
+            ].parentId
+          ) // Get parent id.
           const tmpId = expandRef.id.replace(/[^0-9]/gi, '')
           expandRef.setAttribute(
             'objectRef',
@@ -11632,7 +11633,7 @@ DHTMLSuite.paneSplitterPane.prototype = {
     let divId =
       'dynamicCreatedDiv__' +
       d.getSeconds() +
-      (String(Math.random())).replace('.', '')
+      String(Math.random()).replace('.', '')
     if (!document.getElementById(contentObj.id)) divId = contentObj.id // Give it the id of the element it's self if it doesn't alredy exists on the page.
     contentObj.__setIdOfContentElement(divId)
     const div = document.createElement('DIV')
@@ -22468,7 +22469,9 @@ DHTMLSuite.colorPalette.prototype = {
     }
     const step = (rangeTo - rangeFrom) / numberOfColors
     for (let no = rangeFrom; no <= rangeTo; no += step) {
-      let color = String(this.colorHelper.baseConverter(Math.round(no), 10, 16))
+      let color = String(
+        this.colorHelper.baseConverter(Math.round(no), 10, 16)
+      )
       while (color.length < 2) color = '0' + color
       this.colors[this.colors.length] = [
         '#' + color + color + color,
@@ -22926,8 +22929,9 @@ DHTMLSuite.colorSlider.prototype = {
   __receiveRedFromForm: function (e) {
     if (document.all) e = event
     this.currentRed = this.__getValidatedFormVar(e)
-    this.currentRedHex =
-      String(this.colorHelper.baseConverter(this.currentRed, 10, 16))
+    this.currentRedHex = String(
+      this.colorHelper.baseConverter(this.currentRed, 10, 16)
+    )
     while (this.currentRedHex.length < 2) {
       this.currentRedHex = '0' + this.currentRedHex
     }
@@ -22947,8 +22951,9 @@ DHTMLSuite.colorSlider.prototype = {
   __receiveGreenFromForm: function (e) {
     if (document.all) e = event
     this.currentGreen = this.__getValidatedFormVar(e)
-    this.currentGreenHex =
-      String(this.colorHelper.baseConverter(this.currentGreen, 10, 16))
+    this.currentGreenHex = String(
+      this.colorHelper.baseConverter(this.currentGreen, 10, 16)
+    )
     while (this.currentGreenHex.length < 2) {
       this.currentGreenHex = '0' + this.currentGreenHex
     }
@@ -22968,8 +22973,9 @@ DHTMLSuite.colorSlider.prototype = {
   __receiveBlueFromForm: function (e) {
     if (document.all) e = event
     this.currentBlue = this.__getValidatedFormVar(e)
-    this.currentBlueHex =
-      String(this.colorHelper.baseConverter(this.currentBlue, 10, 16))
+    this.currentBlueHex = String(
+      this.colorHelper.baseConverter(this.currentBlue, 10, 16)
+    )
     while (this.currentBlueHex.length < 2) {
       this.currentBlueHex = '0' + this.currentBlueHex
     }
@@ -23133,7 +23139,9 @@ DHTMLSuite.colorSlider.prototype = {
   __receiveGreenFromSlider: function (value) {
     this.frmFieldGreen.value = value
     this.currentGreen = value
-    this.currentGreenHex = String(this.colorHelper.baseConverter(value, 10, 16))
+    this.currentGreenHex = String(
+      this.colorHelper.baseConverter(value, 10, 16)
+    )
     if (this.currentGreenHex.length == 1) {
       this.currentGreenHex = '0' + this.currentGreenHex
     }
