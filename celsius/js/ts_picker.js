@@ -42,7 +42,7 @@ function show_calendar (str_target, str_datetime) {
 
   // html generation (feel free to tune it for your particular application)
   // print calendar header
-  let str_buffer =  String(
+  let str_buffer = String(
     '<html>\n' +
       '<head>\n' +
       '	<title> Calendario CELSIUS </title> \n' +
@@ -167,7 +167,7 @@ function str2dt (str_datetime) {
 }
 
 function dt2dtstr (dt_datetime) {
-  return  String(
+  return String(
     dt_datetime.getDate() +
       '-' +
       (dt_datetime.getMonth() + 1) +
@@ -177,7 +177,7 @@ function dt2dtstr (dt_datetime) {
   )
 }
 function dt2tmstr (dt_datetime) {
-  return  String(
+  return String(
     dt_datetime.getHours() +
       ':' +
       dt_datetime.getMinutes() +
