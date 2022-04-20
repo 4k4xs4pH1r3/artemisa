@@ -7519,7 +7519,7 @@ DHTMLSuite.progressBar = function () {
   this.progressBar_bg = false
   this.progressBar_outer = false
   this.progressBar_txt = false
-  this.progressBarWidth
+  
   this.currentStep = 0
   this.layoutCSS = 'progress-bar.css'
   try {
@@ -15611,7 +15611,7 @@ DHTMLSuite.imageSelection.prototype = {
     } // disable text selection
     DHTMLSuite.commonObj.__addEventEl(document.documentElement.onselectstart)
 
-    this.destinationEls[no]
+    
     if (this.selectionStartArea) {
       DHTMLSuite.commonObj.addEvent(
         this.selectionStartArea,
