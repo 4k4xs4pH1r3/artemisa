@@ -58,7 +58,7 @@ function processStateChangeNoResult () {
     // Complete
     if (req.status == 200) {
       // OK response
-      
+
       location.reload() // href = goToURL;
     } else {
       alert('Problem: ' + req.statusText)
