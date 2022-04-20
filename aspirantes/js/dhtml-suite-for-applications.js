@@ -24890,8 +24890,7 @@ DHTMLSuite.colorUtil.prototype = {
           const newGreen = this.baseConverter(green, 10, 16)
           const newBlue = this.baseConverter(blue, 10, 16)
           retArray[retArray.length] =
-            String(String(newRed) +
-            newRed) +
+            String(String(newRed) + newRed) +
             newGreen +
             '' +
             newGreen +
