@@ -3,13 +3,20 @@
 # Please see the documentation for all configuration options:
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
       
-      version: 2
+version: 2
 enable-beta-ecosystems: true
 updates:
   - package-ecosystem: "pub" # See documentation for possible values.
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+      
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      # Check for updates to GitHub Actions every weekday
+      interval: "daily"      
 
 updates:
   - package-ecosystem: "npm"
