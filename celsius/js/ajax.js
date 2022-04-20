@@ -24,10 +24,7 @@ function processSynchronousURL(url) {
     		req.send();
     	}
 	}
-	if (req.status == 200)  // OK response
-    	return req.responseText;
-    else 
-    	return false;
+	return req.status == 200 ? req.responseText : false;
 	
 }
 

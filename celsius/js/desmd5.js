@@ -231,10 +231,7 @@ function and(a,b) {
   var t1=(a-0x80000000);
   var t2=(b-0x80000000);
   if (t1>=0) 
-    if (t2>=0) 
-      return ((t1&t2)+0x80000000);
-    else
-      return (t1&b);
+    return t2>=0 ? ((t1&t2)+0x80000000) : (t1&b);
   else
     if (t2>=0)
       return (a&t2);
@@ -248,10 +245,7 @@ function or(a,b) {
   var t1=(a-0x80000000);
   var t2=(b-0x80000000);
   if (t1>=0) 
-    if (t2>=0) 
-      return ((t1|t2)+0x80000000);
-    else
-      return ((t1|b)+0x80000000);
+    return t2>=0 ? ((t1|t2)+0x80000000) : ((t1|b)+0x80000000);
   else
     if (t2>=0)
       return ((a|t2)+0x80000000);
@@ -265,10 +259,7 @@ function xor(a,b) {
   var t1=(a-0x80000000);
   var t2=(b-0x80000000);
   if (t1>=0) 
-    if (t2>=0) 
-      return (t1^t2);
-    else
-      return ((t1^b)+0x80000000);
+    return t2>=0 ? (t1^t2) : ((t1^b)+0x80000000);
   else
     if (t2>=0)
       return ((a^t2)+0x80000000);
