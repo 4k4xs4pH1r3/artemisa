@@ -5357,7 +5357,7 @@ DHTMLSuite.ajaxUtil.prototype = {
     const retArray = new Array()
     const items = paramString.split(/&/g)
     for (let no = 0; no < items.length; no++) {
-      const tokens = items[no].split(/=/)
+      const tokens = items[no].split(/[=]/)
       const index = retArray.length
       retArray[index] = { key: tokens[0], value: tokens[1] }
     }
