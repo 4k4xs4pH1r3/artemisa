@@ -454,7 +454,7 @@ dd.getEventTarget = function(d_e, d_s, d_n)
 	d_e = d_e || window.event;
 	if(d_e && (d_s = d_e.target || d_e.srcElement || null) != null)
 	{
-		if(null != (d_n = d_s.id || d_s.name || null))
+		if((d_n = d_s.id || d_s.name || null) != null)
 		{
 			if(d_n.indexOf("dIi15vNI1m6G") == d_n.length-12)
 				return dd.elements[d_n.substring(0, d_n.length-12)] || null;
