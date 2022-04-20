@@ -39,7 +39,7 @@ $(document).ready(function () {
           ajax: 'ajax'
         },
         success: function (data) {
-          console.log(data)
+          
           if (data.val === true) {
             window.location =
               '../../serviciosacademicos/consulta/prematricula/inscripcionestudiante/formulariopreinscripcion.php?documentoingreso=' +
@@ -49,7 +49,7 @@ $(document).ready(function () {
           }
         },
         error: function (error) {
-          console.log(error)
+          
         }
       })
     } // if
