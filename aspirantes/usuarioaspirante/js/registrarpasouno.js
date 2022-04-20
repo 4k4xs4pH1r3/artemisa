@@ -316,6 +316,6 @@ function val_numero_documento(e) {
         patron = /[0-9]+$/;
         te = String.fromCharCode(tecla);
         return patron.test(te);
-            break;
+            
     }
 }

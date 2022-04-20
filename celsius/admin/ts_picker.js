@@ -124,7 +124,7 @@ function str2dt (str_datetime) {
 	  var anio = str_datetime;
 	  return (new Date(anio,mes-1,dia));
     }
-	return (new Date (RegExp.$3, RegExp.$2-1, RegExp.$1, RegExp.$4, RegExp.$5, RegExp.$6));
+	
 }
 
 function dt2dtstr (dt_datetime) {
