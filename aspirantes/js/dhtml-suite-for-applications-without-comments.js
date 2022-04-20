@@ -4471,7 +4471,7 @@ DHTMLSuite.progressBar = function () {
   this.progressBar_bg = false
   this.progressBar_outer = false
   this.progressBar_txt = false
-  
+
   this.currentStep = 0
   this.layoutCSS = 'progress-bar.css'
   try {
@@ -9156,7 +9156,7 @@ DHTMLSuite.imageSelection.prototype = {
       return false
     }
     DHTMLSuite.commonObj.__addEventEl(document.documentElement.onselectstart)
-    
+
     if (this.selectionStartArea) {
       DHTMLSuite.commonObj.addEvent(
         this.selectionStartArea,
@@ -9209,7 +9209,7 @@ DHTMLSuite.imageSelection.prototype = {
       ].__setSelectableElsScreenProps()
     })
     const imgs = document.getElementsByTagName('IMG')
-    for (var no = 0; no < imgs.length; no++) {
+    for (let no = 0; no < imgs.length; no++) {
       imgs[no].ondragstart = function () {
         return false
       }
