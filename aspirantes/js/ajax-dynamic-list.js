@@ -61,8 +61,7 @@ function ajax_getLeftPos (inputObj) {
 function ajax_option_setValue (e, inputObj) {
   if (!inputObj) inputObj = this
   let tmpValue = inputObj.innerHTML
-  if (ajax_list_MSIE) tmpValue = inputObj.innerText
-  else tmpValue = inputObj.textContent
+  tmpValue = ajax_list_MSIE ? inputObj.innerText : inputObj.textContent;
   if (!tmpValue) tmpValue = inputObj.innerHTML
   ajax_list_activeInput.value = tmpValue
   if (document.getElementById(ajax_list_activeInput.name + '_hidden')) {
@@ -312,8 +311,7 @@ function ajax_option_keyNavigation (e) {
     ) {
       ajax_option_setValue(false, ajax_list_activeItem)
     }
-    if (e.keyCode == 13) return false
-    else return true
+    return e.keyCode == 13 ? false : true;
   }
   if (e.keyCode == 27) {
     // Escape key
