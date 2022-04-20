@@ -68,7 +68,7 @@ DHTMLSuite.slider.prototype = {
     this.targetObj = targetRef
   },
   setSliderDirection: function (newDirection) {
-    newDirection = newDirection + ''
+    newDirection = String(newDirection)
     newDirection = newDirection.toLowerCase()
     if (newDirection != 'hor' && newDirection != 'ver') {
       alert('Invalid slider direction-possible values: "hor" or "ver"')
@@ -77,12 +77,12 @@ DHTMLSuite.slider.prototype = {
     this.sliderDirection = newDirection
   },
   setSliderWidth: function (newWidth) {
-    newWidth = newWidth + ''
+    newWidth = String(newWidth)
     if (newWidth.indexOf('%') == -1) newWidth = newWidth + 'px'
     this.width = newWidth
   },
   setSliderHeight: function (newHeight) {
-    newHeight = newHeight + ''
+    newHeight = String(newHeight)
     if (newHeight.indexOf('%') == -1) newHeight = newHeight + 'px'
     this.height = height
   },
@@ -128,16 +128,16 @@ DHTMLSuite.slider.prototype = {
   },
   __setWidthAndHeightDynamically: function () {
     if (!this.width || this.width == 0) {
-      this.width = this.targetObj.clientWidth + ''
+      this.width = String(this.targetObj.clientWidth)
     }
     if (!this.height || this.height == 0) {
-      this.height = this.targetObj.clientHeight + ''
+      this.height = String(this.targetObj.clientHeight)
     }
     if (!this.width || this.width == 0) {
-      this.width = this.targetObj.offsetWidth + ''
+      this.width = String(this.targetObj.offsetWidth)
     }
     if (!this.height || this.height == 0) {
-      this.height = this.targetObj.offsetHeight + ''
+      this.height = String(this.targetObj.offsetHeight)
     }
     if (this.width == 0) return
     if (this.height == 0) return

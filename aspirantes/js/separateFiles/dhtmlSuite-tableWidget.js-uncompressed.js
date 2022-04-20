@@ -1197,8 +1197,8 @@ DHTMLSuite.tableWidget.prototype = {
    */
   __initTableWidget: function () {
     if (!this.columnSortArray) this.columnSortArray = new Array()
-    this.widthOfTable = this.widthOfTable + ''
-    this.heightOfTable = this.heightOfTable + ''
+    this.widthOfTable = String(this.widthOfTable)
+    this.heightOfTable = String(this.heightOfTable)
     const obj = document.getElementById(this.idOfTable)
     obj.parentNode.className = 'DHTMLSuite_widget_tableDiv'
     if (
@@ -1690,7 +1690,7 @@ DHTMLSuite.tableWidget.prototype = {
     let cellArray = new Array()
     const cellObjArray = new Array()
     for (var no = 1; no < tableObj.rows.length; no++) {
-      const content = tableObj.rows[no].cells[indexThis].innerHTML + ''
+      const content = String(tableObj.rows[no].cells[indexThis].innerHTML)
       cellArray.push(content)
       cellObjArray.push(tableObj.rows[no].cells[indexThis])
     }

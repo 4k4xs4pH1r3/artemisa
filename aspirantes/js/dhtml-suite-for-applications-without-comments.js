@@ -449,9 +449,9 @@ DHTMLSuite.common.prototype = {
     return false
   },
   getUniqueId: function () {
-    let no = Math.random() + ''
+    let no = String(Math.random())
     no = no.replace('.', '')
-    let no2 = Math.random() + ''
+    let no2 = String(Math.random())
     no2 = no2.replace('.', '')
     return no + no2
   },
@@ -535,11 +535,11 @@ DHTMLSuite.clientInfo.prototype = {
     this.isOpera = this.browser.toLowerCase().indexOf('opera') >= 0
     this.isFirefox = this.browser.toLowerCase().indexOf('firefox') >= 0
     this.isMSIE = this.browser.toLowerCase().indexOf('msie') >= 0
-    this.isOldMSIE = !!this.browser.toLowerCase().match(/msie\s[0-6]/gi)
+    this.isOldMSIE = Boolean(this.browser.toLowerCase().match(/msie\s[0-6]/gi))
     this.isSafari = this.browser.toLowerCase().indexOf('safari') >= 0
     this.navigatorVersion =
       navigator.appVersion.replace(/.*?MSIE\s(\d\.\d).*/g, '$1') / 1
-    this.isOldMSIE = !!(this.isMSIE && this.navigatorVersion < 7)
+    this.isOldMSIE = Boolean(this.isMSIE && this.navigatorVersion < 7)
   },
   getBrowserWidth: function () {
     if (self.innerWidth) return self.innerWidth
@@ -1091,8 +1091,8 @@ DHTMLSuite.tableWidget.prototype = {
   },
   __initTableWidget: function () {
     if (!this.columnSortArray) this.columnSortArray = new Array()
-    this.widthOfTable = this.widthOfTable + ''
-    this.heightOfTable = this.heightOfTable + ''
+    this.widthOfTable = String(this.widthOfTable)
+    this.heightOfTable = String(this.heightOfTable)
     const obj = document.getElementById(this.idOfTable)
     obj.parentNode.className = 'DHTMLSuite_widget_tableDiv'
     if (
@@ -1385,7 +1385,7 @@ DHTMLSuite.tableWidget.prototype = {
     let cellArray = new Array()
     const cellObjArray = new Array()
     for (var no = 1; no < tableObj.rows.length; no++) {
-      const content = tableObj.rows[no].cells[indexThis].innerHTML + ''
+      const content = String(tableObj.rows[no].cells[indexThis].innerHTML)
       cellArray.push(content)
       cellObjArray.push(tableObj.rows[no].cells[indexThis])
     }
@@ -1833,7 +1833,7 @@ DHTMLSuite.dragDrop.prototype = {
   __initDragDropScript: function () {
     const ind = this.objectIndex
     const refToThis = this
-    let startIndex = Math.random() + ''
+    let startIndex = String(Math.random())
     startIndex = startIndex.replace('.', '') / 1
     for (let no = 0; no < this.dragDropSourcesArray.length; no++) {
       const el = this.dragDropSourcesArray[no][0].cloneNode(true)
@@ -1898,7 +1898,7 @@ DHTMLSuite.dragDrop.prototype = {
     )
     if (document.all) e = event
     this.numericIdToBeDragged = index
-    this.numericIdToBeDragged = this.numericIdToBeDragged + ''
+    this.numericIdToBeDragged = String(this.numericIdToBeDragged)
     this.dragDropTimer = 0
     DHTMLSuite.commonObj.__setTextSelOk(false)
     this.mouse_x = e.clientX
@@ -2484,10 +2484,10 @@ DHTMLSuite.tabView.prototype = {
     window.refToThisTabSet = this
     if (!additionalTab || additionalTab == 'undefined') {
       this.DHTMLSuite_tabObj = document.getElementById(this.tabSetParentId)
-      this.width = this.width + ''
+      this.width = String(this.width)
       if (this.width.indexOf('%') < 0) this.width = this.width + 'px'
       this.DHTMLSuite_tabObj.style.width = this.width
-      this.height = this.height + ''
+      this.height = String(this.height)
       if (this.height.length > 0) {
         if (this.height.indexOf('%') < 0) this.height = this.height + 'px'
         this.DHTMLSuite_tabObj.style.height = this.height
@@ -2512,7 +2512,7 @@ DHTMLSuite.tabView.prototype = {
       aTab.onmouseout = this.__rolloutTab
       aTab.setAttribute('parentRefId', this.tabSetParentId)
       aTab.parentRefId = this.tabSetParentId
-      var numIndex = window.refToThisTabSet.outsideObjectRefIndex + ''
+      var numIndex = String(window.refToThisTabSet.outsideObjectRefIndex)
       aTab.onclick = function () {
         window.refToThisTabSet.__tabClick(this, numIndex)
       }
@@ -2542,7 +2542,7 @@ DHTMLSuite.tabView.prototype = {
         DHTMLSuite.commonObj.__addEventEl(closeButton)
         span.innerHTML =
           span.innerHTML + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
-        const deleteTxt = span.innerHTML + ''
+        const deleteTxt = String(span.innerHTML)
         closeButton.onclick = function () {
           refToTabViewObjects[numIndex].deleteTab(this.parentNode.innerHTML)
         }
@@ -3298,7 +3298,7 @@ DHTMLSuite.dynamicContent.prototype = {
     document.getElementById(divId).innerHTML =
       this.ajaxObjects[ajaxIndex].response
     if (this.enableCache) {
-      this.jsCache[url] = document.getElementById(divId).innerHTML + ''
+      this.jsCache[url] = String(document.getElementById(divId).innerHTML)
     }
     DHTMLSuite.commonObj.__evaluateJs(divId)
     DHTMLSuite.commonObj.__evaluateCss(divId)
@@ -3387,7 +3387,7 @@ DHTMLSuite.slider.prototype = {
     this.targetObj = targetRef
   },
   setSliderDirection: function (newDirection) {
-    newDirection = newDirection + ''
+    newDirection = String(newDirection)
     newDirection = newDirection.toLowerCase()
     if (newDirection != 'hor' && newDirection != 'ver') {
       alert('Invalid slider direction-possible values: "hor" or "ver"')
@@ -3396,12 +3396,12 @@ DHTMLSuite.slider.prototype = {
     this.sliderDirection = newDirection
   },
   setSliderWidth: function (newWidth) {
-    newWidth = newWidth + ''
+    newWidth = String(newWidth)
     if (newWidth.indexOf('%') == -1) newWidth = newWidth + 'px'
     this.width = newWidth
   },
   setSliderHeight: function (newHeight) {
-    newHeight = newHeight + ''
+    newHeight = String(newHeight)
     if (newHeight.indexOf('%') == -1) newHeight = newHeight + 'px'
     this.height = height
   },
@@ -3447,16 +3447,16 @@ DHTMLSuite.slider.prototype = {
   },
   __setWidthAndHeightDynamically: function () {
     if (!this.width || this.width == 0) {
-      this.width = this.targetObj.clientWidth + ''
+      this.width = String(this.targetObj.clientWidth)
     }
     if (!this.height || this.height == 0) {
-      this.height = this.targetObj.clientHeight + ''
+      this.height = String(this.targetObj.clientHeight)
     }
     if (!this.width || this.width == 0) {
-      this.width = this.targetObj.offsetWidth + ''
+      this.width = String(this.targetObj.offsetWidth)
     }
     if (!this.height || this.height == 0) {
-      this.height = this.targetObj.offsetHeight + ''
+      this.height = String(this.targetObj.offsetHeight)
     }
     if (this.width == 0) return
     if (this.height == 0) return
@@ -4773,12 +4773,12 @@ DHTMLSuite.menuModel.prototype = {
     return returnArray
   },
   __getUniqueId: function () {
-    let num = Math.random() + ''
+    let num = String(Math.random())
     num = num.replace('.', '')
     num = '99' + num
     num = num / 1
     while (this.menuItems[num]) {
-      num = Math.random() + ''
+      num = String(Math.random())
       num = num.replace('.', '')
       num = num / 1
     }
@@ -5425,9 +5425,9 @@ DHTMLSuite.menuBar.prototype = {
             this.menuItem_objects[this.menuItems[indexThis].id].expandElement
           )
           const parentId =
-            DHTMLSuite.variableStorage.arrayDSObjects[index].menuItems[
+            String(DHTMLSuite.variableStorage.arrayDSObjects[index].menuItems[
               indexThis
-            ].parentId + ''
+            ].parentId)
           const tmpId = expandRef.id.replace(/[^0-9]/gi, '')
           expandRef.setAttribute('objectRef', index / 1)
           expandRef.objectRef = index / 1
@@ -5440,7 +5440,7 @@ DHTMLSuite.menuBar.prototype = {
           'top' &&
         this.menuItemObj.mainMenuGroupWidth
       ) {
-        let tmpWidth = this.menuItemObj.mainMenuGroupWidth + ''
+        let tmpWidth = String(this.menuItemObj.mainMenuGroupWidth)
         if (tmpWidth.indexOf('%') == -1) tmpWidth = tmpWidth + 'px'
         target.style.width = tmpWidth
       }
@@ -5577,7 +5577,7 @@ DHTMLSuite.menuBar.prototype = {
         subWidth = this.menuItems[parentId].submenuWidth
       }
       if (subWidth > 400) subWidth = 150
-      subWidth = subWidth + ''
+      subWidth = String(subWidth)
       if (subWidth.indexOf('%') == -1) subWidth = subWidth + 'px'
       shortRef.style.width = subWidth
       if (DHTMLSuite.clientInfoObj.isMSIE) {
@@ -6670,8 +6670,8 @@ DHTMLSuite.paneSplitterPane.prototype = {
       cell.appendChild(divTag)
       const aTag = document.createElement('A')
       aTag.title = contents[no].tabTitle
-      contents[no].tabTitle = contents[no].tabTitle + ''
-      aTag.innerHTML = contents[no].tabTitle.replace(' ', '&nbsp;') + ''
+      contents[no].tabTitle = String(contents[no].tabTitle)
+      aTag.innerHTML = String(contents[no].tabTitle.replace(' ', '&nbsp;'))
       aTag.id = 'paneTabLink' + no
       aTag.href = '#'
       aTag.onclick = function (e) {
@@ -6772,7 +6772,7 @@ DHTMLSuite.paneSplitterPane.prototype = {
     let divId =
       'dynamicCreatedDiv__' +
       d.getSeconds() +
-      (Math.random() + '').replace('.', '')
+      (String(Math.random())).replace('.', '')
     if (!document.getElementById(contentObj.id)) divId = contentObj.id
     contentObj.__setIdOfContentElement(divId)
     const div = document.createElement('DIV')
@@ -6840,7 +6840,7 @@ DHTMLSuite.paneSplitterPane.prototype = {
     ) {
       this.paneModel.setSize(newWidth)
     }
-    newWidth = newWidth + ''
+    newWidth = String(newWidth)
     if (newWidth.indexOf('%') == -1) newWidth = Math.max(1, newWidth) + 'px'
     this.divElement.style.width = newWidth
   },
@@ -9913,9 +9913,9 @@ DHTMLSuite.calendarModel.prototype = {
     const index = this.invalidDateRange.length
     this.invalidDateRange[index] = new Object()
     if (fromDateAsArray) {
-      fromDateAsArray.day = fromDateAsArray.day + ''
-      fromDateAsArray.month = fromDateAsArray.month + ''
-      fromDateAsArray.year = fromDateAsArray.year + ''
+      fromDateAsArray.day = String(fromDateAsArray.day)
+      fromDateAsArray.month = String(fromDateAsArray.month)
+      fromDateAsArray.year = String(fromDateAsArray.year)
       if (!fromDateAsArray.month) {
         fromDateAsArray.month = fromDateAsArray.month = '1'
       }
@@ -9932,9 +9932,9 @@ DHTMLSuite.calendarModel.prototype = {
       this.invalidDateRange[index].fromDate = false
     }
     if (toDateAsArray) {
-      toDateAsArray.day = toDateAsArray.day + ''
-      toDateAsArray.month = toDateAsArray.month + ''
-      toDateAsArray.year = toDateAsArray.year + ''
+      toDateAsArray.day = String(toDateAsArray.day)
+      toDateAsArray.month = String(toDateAsArray.month)
+      toDateAsArray.year = String(toDateAsArray.year)
       if (!toDateAsArray.month) toDateAsArray.month = toDateAsArray.month = '1'
       if (!toDateAsArray.day) toDateAsArray.day = toDateAsArray.day = '1'
       if (toDateAsArray.day.length == 1) {
@@ -9951,9 +9951,9 @@ DHTMLSuite.calendarModel.prototype = {
   },
   isDateWithinValidRange: function (inputDate) {
     if (this.invalidDateRange.length == 0) return true
-    let month = inputDate.month + ''
+    let month = String(inputDate.month)
     if (month.length == 1) month = '0' + month
-    let day = inputDate.day + ''
+    let day = String(inputDate.day)
     if (day.length == 1) day = '0' + day
     const dateToCheck = inputDate.year + month + day
     for (let no = 0; no < this.invalidDateRange.length; no++) {
@@ -10107,22 +10107,22 @@ DHTMLSuite.calendarModel.prototype = {
     return this.displayedDay
   },
   __getDisplayedHourWithLeadingZeros: function () {
-    let retVal = this.__getDisplayedHour() + ''
+    let retVal = String(this.__getDisplayedHour())
     if (retVal.length == 1) retVal = '0' + retVal
     return retVal
   },
   __getDisplayedMinuteWithLeadingZeros: function () {
-    let retVal = this.__getDisplayedMinute() + ''
+    let retVal = String(this.__getDisplayedMinute())
     if (retVal.length == 1) retVal = '0' + retVal
     return retVal
   },
   __getDisplayedDayWithLeadingZeros: function () {
-    let retVal = this.__getDisplayedDay() + ''
+    let retVal = String(this.__getDisplayedDay())
     if (retVal.length == 1) retVal = '0' + retVal
     return retVal
   },
   __getDisplayedMonthNumberWithLeadingZeros: function () {
-    let retVal = this.__getDisplayedMonthNumber() + ''
+    let retVal = String(this.__getDisplayedMonthNumber())
     if (retVal.length == 1) retVal = '0' + retVal
     return retVal
   },
@@ -11453,7 +11453,7 @@ DHTMLSuite.calendar.prototype = {
           e
         )
       },
-      ind + ''
+      String(ind)
     )
   },
   __resizePrimaryiframeEl: function () {
@@ -13364,7 +13364,7 @@ DHTMLSuite.colorPalette.prototype = {
   },
   __setInitProps: function (propertyArray) {
     if (propertyArray.width) {
-      propertyArray.width = propertyArray.width + ''
+      propertyArray.width = String(propertyArray.width)
       if (propertyArray.width.match(/^[^0-9]*?$/)) {
         propertyArray.width = propertyArray.width + 'px'
       }
@@ -13397,7 +13397,7 @@ DHTMLSuite.colorPalette.prototype = {
     }
     const step = (rangeTo - rangeFrom) / numberOfColors
     for (let no = rangeFrom; no <= rangeTo; no += step) {
-      let color = this.colorHelper.baseConverter(Math.round(no), 10, 16) + ''
+      let color = String(this.colorHelper.baseConverter(Math.round(no), 10, 16))
       while (color.length < 2) color = '0' + color
       this.colors[this.colors.length] = [
         '#' + color + color + color,
@@ -13524,7 +13524,7 @@ DHTMLSuite.colorSlider.prototype = {
     this.__setPreviewDivBgColor()
   },
   setRgbColor: function (rgbCode) {
-    rgbCode = rgbCode + ''
+    rgbCode = String(rgbCode)
     rgbCode = rgbCode.replace(/[^0-9A-F]/gi, '')
     if (rgbCode.length != 6) return false
     this.currentRgb = rgbCode
@@ -13676,7 +13676,7 @@ DHTMLSuite.colorSlider.prototype = {
     if (document.all) e = event
     this.currentRed = this.__getValidatedFormVar(e)
     this.currentRedHex =
-      this.colorHelper.baseConverter(this.currentRed, 10, 16) + ''
+      String(this.colorHelper.baseConverter(this.currentRed, 10, 16))
     while (this.currentRedHex.length < 2) {
       this.currentRedHex = '0' + this.currentRedHex
     }
@@ -13690,7 +13690,7 @@ DHTMLSuite.colorSlider.prototype = {
     if (document.all) e = event
     this.currentGreen = this.__getValidatedFormVar(e)
     this.currentGreenHex =
-      this.colorHelper.baseConverter(this.currentGreen, 10, 16) + ''
+      String(this.colorHelper.baseConverter(this.currentGreen, 10, 16))
     while (this.currentGreenHex.length < 2) {
       this.currentGreenHex = '0' + this.currentGreenHex
     }
@@ -13704,7 +13704,7 @@ DHTMLSuite.colorSlider.prototype = {
     if (document.all) e = event
     this.currentBlue = this.__getValidatedFormVar(e)
     this.currentBlueHex =
-      this.colorHelper.baseConverter(this.currentBlue, 10, 16) + ''
+      String(this.colorHelper.baseConverter(this.currentBlue, 10, 16))
     while (this.currentBlueHex.length < 2) {
       this.currentBlueHex = '0' + this.currentBlueHex
     }
@@ -13796,7 +13796,7 @@ DHTMLSuite.colorSlider.prototype = {
   __receiveRedFromSlider: function (value) {
     this.frmFieldRed.value = value
     this.currentRed = value
-    this.currentRedHex = this.colorHelper.baseConverter(value, 10, 16) + ''
+    this.currentRedHex = String(this.colorHelper.baseConverter(value, 10, 16))
     if (this.currentRedHex.length == 1) {
       this.currentRedHex = '0' + this.currentRedHex
     }
@@ -13807,7 +13807,7 @@ DHTMLSuite.colorSlider.prototype = {
   __receiveGreenFromSlider: function (value) {
     this.frmFieldGreen.value = value
     this.currentGreen = value
-    this.currentGreenHex = this.colorHelper.baseConverter(value, 10, 16) + ''
+    this.currentGreenHex = String(this.colorHelper.baseConverter(value, 10, 16))
     if (this.currentGreenHex.length == 1) {
       this.currentGreenHex = '0' + this.currentGreenHex
     }
@@ -13818,7 +13818,7 @@ DHTMLSuite.colorSlider.prototype = {
   __receiveBlueFromSlider: function (value) {
     this.frmFieldBlue.value = value
     this.currentBlue = value
-    this.currentBlueHex = this.colorHelper.baseConverter(value, 10, 16) + ''
+    this.currentBlueHex = String(this.colorHelper.baseConverter(value, 10, 16))
     if (this.currentBlueHex.length == 1) {
       this.currentBlueHex = '0' + this.currentBlueHex
     }
@@ -13861,11 +13861,11 @@ DHTMLSuite.colorSlider.prototype = {
         b = b * base
       }
     }
-    let red = this.colorHelper.baseConverter(r, 10, 16) + ''
+    let red = String(this.colorHelper.baseConverter(r, 10, 16))
     if (red.length == '1') red = '0' + red
-    let green = this.colorHelper.baseConverter(g, 10, 16) + ''
+    let green = String(this.colorHelper.baseConverter(g, 10, 16))
     if (green.length == '1') green = '0' + green
-    let blue = this.colorHelper.baseConverter(b, 10, 16) + ''
+    let blue = String(this.colorHelper.baseConverter(b, 10, 16))
     if (blue.length == '1') blue = '0' + blue
     return red + green + blue
   },
@@ -14009,7 +14009,7 @@ DHTMLSuite.colorWidget.prototype = {
     this.__changeViewAfterColorChange()
   },
   setHue: function (hue) {
-    hue = hue + ''
+    hue = String(hue)
     if (hue.match(/^[0-9]+$/)) {
       while (hue >= 360) hue -= 360
       this.currentHue = hue
@@ -14017,7 +14017,7 @@ DHTMLSuite.colorWidget.prototype = {
     }
   },
   setSaturation: function (saturation) {
-    saturation = saturation + ''
+    saturation = String(saturation)
     if (saturation.match(/^[0-9]+$/)) {
       while (saturation > 100) saturation -= 100
       this.currentSaturation = saturation
@@ -14025,7 +14025,7 @@ DHTMLSuite.colorWidget.prototype = {
     }
   },
   setBrightness: function (brightness) {
-    brightness = brightness + ''
+    brightness = String(brightness)
     if (brightness.match(/^[0-9]+$/)) {
       while (brightness > 100) brightness -= 100
       this.currentBrightness = brightness
@@ -14253,7 +14253,7 @@ DHTMLSuite.colorWidget.prototype = {
     img.onmousedown = function () {
       return false
     }
-    img.id = '' + DHTMLSuite.commonObj.getUniqueId()
+    img.id = String(DHTMLSuite.commonObj.getUniqueId())
     this.divElPalette.appendChild(img)
     DHTMLSuite.commonObj.__addEventEl(img)
     if (
@@ -14534,7 +14534,7 @@ DHTMLSuite.colorWidget.prototype = {
     if (document.all) e = event
     const src = DHTMLSuite.commonObj.getSrcElement(e)
     let hue = src.value
-    hue = hue + ''
+    hue = String(hue)
     if (hue.match(/^[0-9]+$/)) {
       if (hue / 1 > 360) hue = 360
     } else {
@@ -14549,7 +14549,7 @@ DHTMLSuite.colorWidget.prototype = {
     if (document.all) e = event
     const src = DHTMLSuite.commonObj.getSrcElement(e)
     let brightness = src.value
-    brightness = brightness + ''
+    brightness = String(brightness)
     if (brightness.match(/^[0-9]+$/)) {
       if (brightness / 1 > 100) brightness = 100
     } else {
@@ -14563,7 +14563,7 @@ DHTMLSuite.colorWidget.prototype = {
     if (document.all) e = event
     const src = DHTMLSuite.commonObj.getSrcElement(e)
     let saturation = src.value
-    saturation = saturation + ''
+    saturation = String(saturation)
     if (saturation.match(/^[0-9]+$/)) {
       if (saturation / 1 > 100) saturation = 100
     } else {
@@ -14693,7 +14693,7 @@ DHTMLSuite.colorUtil.prototype = {
     if (newBase == 16) {
       return parseInt(numberToConvert).toString(16)
     }
-    numberToConvert = numberToConvert + ''
+    numberToConvert = String(numberToConvert)
     numberToConvert = numberToConvert.toUpperCase()
     const listOfCharacters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     let dec = 0
@@ -14784,7 +14784,7 @@ DHTMLSuite.colorUtil.prototype = {
     return colors
   },
   getAnalogicColors: function (rgbCode, degrees) {
-    degrees = degrees + ''
+    degrees = String(degrees)
     if (!degrees) degrees = 25
     if (!degrees.match(/^[0-9]{2}$/)) {
       degrees = 25
@@ -14814,9 +14814,9 @@ DHTMLSuite.colorUtil.prototype = {
     red = this.baseConverter(red, 10, 16)
     green = this.baseConverter(green, 10, 16)
     blue = this.baseConverter(blue, 10, 16)
-    red = red + ''
-    green = green + ''
-    blue = blue + ''
+    red = String(red)
+    green = String(green)
+    blue = String(blue)
     while (red.length < 2) {
       red = '0' + red
     }
@@ -14826,7 +14826,7 @@ DHTMLSuite.colorUtil.prototype = {
     while (blue.length < 2) {
       blue = '0' + '' + blue
     }
-    rgbColor = red + '' + green + '' + blue
+    rgbColor = String(red) + green + '' + blue
     return rgbColor.toUpperCase()
   },
   getRgbColorsByRgbCode: function (rgbCode) {
@@ -14946,8 +14946,7 @@ DHTMLSuite.colorUtil.prototype = {
           const newGreen = this.baseConverter(green, 10, 16)
           const newBlue = this.baseConverter(blue, 10, 16)
           retArray[retArray.length] =
-            newRed +
-            '' +
+            String(newRed) +
             newRed +
             '' +
             newGreen +
@@ -15387,7 +15386,7 @@ DHTMLSuite.formValidator.prototype = {
     let freemask = formEl.getAttribute('freemask')
     if (freemask) {
       let cs = formEl.getAttribute('caseInsensitive')
-      cs = cs + ''
+      cs = String(cs)
       freemask = freemask.replace(/([^NSs])/g, '\\$1')
       freemask = freemask.replace(/N/gi, '[0-9]')
       freemask = freemask.replace(/s/g, '[a-z]')

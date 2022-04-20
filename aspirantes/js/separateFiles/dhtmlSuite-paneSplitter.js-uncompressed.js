@@ -1452,8 +1452,8 @@ DHTMLSuite.paneSplitterPane.prototype = {
       const aTag = document.createElement('A')
       aTag.title = contents[no].tabTitle
       // Setting title of tab-useful when the tab isn't wide enough to show the label.
-      contents[no].tabTitle = contents[no].tabTitle + ''
-      aTag.innerHTML = contents[no].tabTitle.replace(' ', '&nbsp;') + ''
+      contents[no].tabTitle = String(contents[no].tabTitle)
+      aTag.innerHTML = String(contents[no].tabTitle.replace(' ', '&nbsp;'))
       aTag.id = 'paneTabLink' + no
       aTag.href = '#'
       aTag.onclick = function (e) {
@@ -1625,7 +1625,7 @@ DHTMLSuite.paneSplitterPane.prototype = {
     let divId =
       'dynamicCreatedDiv__' +
       d.getSeconds() +
-      (Math.random() + '').replace('.', '')
+      (String(Math.random())).replace('.', '')
     if (!document.getElementById(contentObj.id)) divId = contentObj.id
     // Give it the id of the element it's self if it doesn't alredy exists on the page.
     contentObj.__setIdOfContentElement(divId)
@@ -1759,7 +1759,7 @@ DHTMLSuite.paneSplitterPane.prototype = {
     ) {
       this.paneModel.setSize(newWidth)
     }
-    newWidth = newWidth + ''
+    newWidth = String(newWidth)
     if (newWidth.indexOf('%') == -1) newWidth = Math.max(1, newWidth) + 'px'
     this.divElement.style.width = newWidth
   },

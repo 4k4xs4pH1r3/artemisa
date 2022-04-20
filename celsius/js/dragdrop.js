@@ -94,28 +94,24 @@ function WZDD () {
     document.compatMode && document.compatMode.toLowerCase() != 'backcompat'
       ? document.documentElement
       : document.body || null
-  this.op = !!(window.opera && document.getElementById)
+  this.op = Boolean(window.opera && document.getElementById)
   if (this.op) {
     document.onmousedown = new Function(
       'e',
       'if(((e = e || window.event).target || e.srcElement).tagName == "IMAGE") return false;'
     )
   }
-  this.ie = !!(
-    this.n.indexOf('msie') >= 0 &&
+  this.ie = Boolean(this.n.indexOf('msie') >= 0 &&
     document.all &&
     this.db &&
-    !this.op
-  )
-  this.iemac = !!(this.ie && this.n.indexOf('mac') >= 0)
-  this.ie4 = !!(this.ie && !document.getElementById)
-  this.n4 = !!(document.layers && typeof document.classes !== dd_u)
-  this.n6 = !!(
-    typeof window.getComputedStyle !== dd_u &&
-    typeof document.createRange !== dd_u
-  )
-  this.w3c = !!(!this.op && !this.ie && !this.n6 && document.getElementById)
-  this.ce = !!(document.captureEvents && document.releaseEvents && !this.n6)
+    !this.op)
+  this.iemac = Boolean(this.ie && this.n.indexOf('mac') >= 0)
+  this.ie4 = Boolean(this.ie && !document.getElementById)
+  this.n4 = Boolean(document.layers && typeof document.classes !== dd_u)
+  this.n6 = Boolean(typeof window.getComputedStyle !== dd_u &&
+    typeof document.createRange !== dd_u)
+  this.w3c = Boolean(!this.op && !this.ie && !this.n6 && document.getElementById)
+  this.ce = Boolean(document.captureEvents && document.releaseEvents && !this.n6)
   this.px = this.n4 ? '' : 'px'
   this.tiv = this.w3c ? 40 : 10
 }
@@ -220,11 +216,11 @@ dd.getWH = function (d_o) {
 }
 dd.getCssProp = function (d_o, d_pn6, d_pstyle, d_pn4) {
   if (d_o && dd.n6) {
-    return '' + window.getComputedStyle(d_o, null).getPropertyValue(d_pn6)
+    return String(window.getComputedStyle(d_o, null).getPropertyValue(d_pn6))
   }
-  if (d_o && d_o.currentStyle) return '' + eval('d_o.currentStyle.' + d_pstyle)
-  if (d_o && d_o.style) return '' + eval('d_o.style.' + d_pstyle)
-  if (d_o && dd.n4) return '' + eval('d_o.' + d_pn4)
+  if (d_o && d_o.currentStyle) return String(eval('d_o.currentStyle.' + d_pstyle))
+  if (d_o && d_o.style) return String(eval('d_o.style.' + d_pstyle))
+  if (d_o && dd.n4) return String(eval('d_o.' + d_pn4))
   return ''
 }
 dd.getDiv = function (d_x, d_d) {
@@ -279,7 +275,7 @@ dd.getParent = function (d_o, d_p) {
     }
   } else {
     d_p = d_o.is_image ? dd.getImg(d_o, d_o.oimg.name) : d_o.div || null
-    while (d_p && !!(d_p = d_p.offsetParent || d_p.parentNode || null)) {
+    while (d_p && Boolean(d_p = d_p.offsetParent || d_p.parentNode || null)) {
       if (d_p.ddObj) {
         d_p.ddObj.addChild(d_o, d_p.ddObj.detach, 1)
         break
@@ -308,7 +304,7 @@ dd.getCmdVal = function (d_o, d_cmd, d_cmdStr, int0) {
         ? -1
         : 0
   if ((!int0 && d_y) || (int0 && d_y >= 0)) {
-    d_j = d_i + d_cmd.length + ('' + d_y).length
+    d_j = d_i + d_cmd.length + (String(d_y)).length
     if (d_cmdStr) d_o.cmd += d_o.id.substring(d_i, d_j)
     d_o.id = d_o.id.substring(0, d_i) + d_o.id.substring(d_j)
   }
@@ -419,12 +415,12 @@ dd.evt = function (d_e) {
         ? dd.e.button
         : 0
   this.src = this.e.target || this.e.srcElement || null
-  this.src.tag = ('' + (this.src.tagName || this.src)).toLowerCase()
+  this.src.tag = (String(this.src.tagName || this.src)).toLowerCase()
   this.x = dd.Int(this.e.pageX || this.e.clientX || 0)
   this.y = dd.Int(this.e.pageY || this.e.clientY || 0)
   if (dd.ie) {
-    this.x += dd.getScrollX() - (dd.ie && !dd.iemac) * 1
-    this.y += dd.getScrollY() - (dd.ie && !dd.iemac) * 1
+    this.x += dd.getScrollX() - Number(dd.ie && !dd.iemac)
+    this.y += dd.getScrollY() - Number(dd.ie && !dd.iemac)
   }
   this.modifKey = this.e.modifiers
     ? this.e.modifiers & Event.SHIFT_MASK
@@ -534,7 +530,7 @@ function DDObj (d_o, d_i) {
 
   this.name = this.id + (d_i || '')
   this.oimg = dd.getImg(this, this.id, 1)
-  this.is_image = !!this.oimg
+  this.is_image = Boolean(this.oimg)
   this.copies = new Array()
   this.children = new Array()
   this.parent = this.original = null
@@ -577,22 +573,21 @@ function DDObj (d_o, d_i) {
       this.htm +
       '</div>'
   } else {
-    if (!!(this.div = dd.getDiv(this.id)) && typeof this.div.style !== dd_u) {
+    if (Boolean(this.div = dd.getDiv(this.id)) && typeof this.div.style !== dd_u) {
       this.css = this.div.style
     }
     dd.getWH(this)
     if (this.div) {
       this.div.ddObj = this
       this.div.pos_rel =
-        '' +
-          (this.div.parentNode
+        String((this.div.parentNode
             ? this.div.parentNode.tagName
             : this.div.parentElement
               ? this.div.parentElement.tagName
               : ''
           )
             .toLowerCase()
-            .indexOf('body') <
+            .indexOf('body')) <
         0
     }
     dd.getPageXY(this.div)
@@ -800,9 +795,9 @@ DDObj.prototype.addChild = function (d_kd, detach, defp) {
       d_kd.defz +
       this.defz -
       (d_kd.parent ? d_kd.parent.defz : 0) +
-      !d_kd.is_image * 1
+      Number(!d_kd.is_image)
     d_kd.setZ(
-      d_kd.z + this.z - (d_kd.parent ? d_kd.parent.z : 0) + !d_kd.is_image * 1,
+      d_kd.z + this.z - (d_kd.parent ? d_kd.parent.z : 0) + Number(!d_kd.is_image),
       1
     )
   }
@@ -877,22 +872,22 @@ DDObj.prototype._setCrs = function (d_x) {
   }
 }
 DDObj.prototype.setDraggable = function (d_x) {
-  this.nodrag = !d_x * 1
+  this.nodrag = Number(!d_x)
   this._setCrs(d_x ? this.cursor : 'auto')
 }
 DDObj.prototype.setResizable = function (d_x) {
-  this.resizable = d_x * 1
+  this.resizable = Number(d_x)
   if (d_x) this.scalable = 0
 }
 DDObj.prototype.setScalable = function (d_x) {
-  this.scalable = d_x * 1
+  this.scalable = Number(d_x)
   if (d_x) this.resizable = 0
 }
 DDObj.prototype.setHorizontal = function (d_x) {
-  this.horizontal = d_x * 1
+  this.horizontal = Number(d_x)
 }
 DDObj.prototype.setVertical = function (d_x) {
-  this.vertical = d_x * 1
+  this.vertical = Number(d_x)
 }
 DDObj.prototype.getEltBelow = function (d_ret, d_x, d_y) {
   let d_o
