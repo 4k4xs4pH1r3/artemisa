@@ -20,7 +20,7 @@ updates:
 
 updates:
   - package-ecosystem: "npm"
-    directory: "/"
+    directory: "*"
     schedule:
       interval: "daily"
     # Update the npm manifest file to relax
@@ -28,7 +28,7 @@ updates:
     versioning-strategy: widen
 
   - package-ecosystem: "composer"
-    directory: "/"
+    directory: "*"
     schedule:
       interval: "daily"
     # Increase the version requirements for Composer
@@ -36,7 +36,7 @@ updates:
     versioning-strategy: increase-if-necessary
 
   - package-ecosystem: "pip"
-    directory: "/"
+    directory: "*"
     schedule:
       interval: "daily"
     # Only allow updates to the lockfile for pip and
