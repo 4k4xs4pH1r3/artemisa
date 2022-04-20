@@ -278,7 +278,7 @@ DHTMLSuite.common.prototype = {
       }
     }
     let returnValue = el.offsetLeft
-    while ((el = el.offsetParent) != null) {
+    while ((el = el.offsetParent) !== null) {
       if (el.tagName != 'HTML') {
         returnValue += el.offsetLeft
         if (document.all) returnValue += el.clientLeft
@@ -297,7 +297,7 @@ DHTMLSuite.common.prototype = {
       }
     }
     let returnValue = el.offsetTop
-    while ((el = el.offsetParent) != null) {
+    while ((el = el.offsetParent) !== null) {
       if (el.tagName != 'HTML') {
         returnValue += el.offsetTop - el.scrollTop
         if (document.all) returnValue += el.clientTop
