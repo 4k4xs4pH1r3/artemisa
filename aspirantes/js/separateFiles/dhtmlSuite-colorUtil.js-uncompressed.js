@@ -261,7 +261,7 @@ DHTMLSuite.colorUtil.prototype={
 	while(blue.length<2){   
 		blue="0"+""+blue;   
 	}   
-	rgbColor=String(red)+green+""+blue;   
+	rgbColor=String(String(red)+green)+blue;   
 	return rgbColor.toUpperCase();	   
 	}   
 	   
@@ -501,7 +501,7 @@ DHTMLSuite.colorUtil.prototype={
 			var newRed=this.baseConverter(red,10,16);		   
 			var newGreen=this.baseConverter(green,10,16);		   
 			var newBlue=this.baseConverter(blue,10,16);	   
-			retArray[retArray.length]=String(newRed)+newRed+'' +newGreen +''+newGreen +''+newBlue+''+newBlue;	   
+			retArray[retArray.length]=String(String(newRed)+newRed) +newGreen +''+newGreen +''+newBlue+''+newBlue;	   
 		}   
 		}   
 	}   
