@@ -181,7 +181,7 @@ DHTMLSuite.textEdit.prototype = {
     url = this.elementsAssociative[elementId].serverFile
       ? this.elementsAssociative[elementId].serverFile
       : this.serversideFile
-    url = url.indexOf('?') >= 0 ? url + '&' : url + '?';
+    url = url.indexOf('?') >= 0 ? url + '&' : url + '?'
     url =
       url +
       'saveTextEdit=1&textEditElementId=' +
