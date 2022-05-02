@@ -2,7 +2,6 @@
 
 use AspectMock\Test as test;
 use Infusionsoft\Infusionsoft;
-use Mockery as m;
 
 class ServiceTest extends \PHPUnit_Framework_TestCase {
 
