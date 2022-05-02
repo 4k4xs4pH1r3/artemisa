@@ -27,7 +27,7 @@ class Token {
 	/**
 	 * @param array $data
 	 */
-	function __construct($data = array())
+	public function __construct($data = array())
 	{
 		if (isset($data['access_token']))
 		{
