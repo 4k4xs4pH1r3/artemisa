@@ -1,35 +1,37 @@
 {
-    "name": "infusionsoft/php-sdk",
-    "description": "Beta PHP SDK for the Infusionsoft",
-    "keywords": [
-        "infusionsoft",
-        "sdk"
-    ],
-    "homepage": "https://developer.infusionsoft.com",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Infusionsoft",
-            "homepage": "https://developer.infusionsoft.com"
-        }
-    ],
-    "require": {
-        "php": ">=8.1.4",
-        "ext-curl": "*",
-        "guzzle/guzzle": "7.4.2*",
-        "lstrojny/fxmlrpc": "0.22.0*",
-         "infusionsoft/php-sdk": "1.5.2"
-
-    },
-    "require-dev": {
-        "mockery/mockery": "dev-master",
-        "phpunit/phpunit": "9.5.20",
-        "squizlabs/php_codesniffer": "3.6.2",
-        "codeception/aspect-mock": "4.1.1"
-    },
-    "autoload": {
-        "psr-0": {
-            "Infusionsoft": ["src", "tests"]
-        }
+  "name": "infusionsoft/php-sdk",
+  "description": "Beta PHP SDK for the Infusionsoft",
+  "keywords": [
+    "infusionsoft",
+    "sdk"
+  ],
+  "homepage": "https://developer.infusionsoft.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Infusionsoft",
+      "homepage": "https://developer.infusionsoft.com"
     }
+  ],
+  "require": {
+    "php": ">=8.1.4",
+    "ext-curl": "*",
+    "guzzle/guzzle": "7.4.2*",
+    "lstrojny/fxmlrpc": "0.22.0*",
+    "infusionsoft/php-sdk": "1.5.2"
+  },
+  "require-dev": {
+    "mockery/mockery": "dev-master",
+    "phpunit/phpunit": "9.5.20",
+    "squizlabs/php_codesniffer": "3.7.0",
+    "codeception/aspect-mock": "4.1.1"
+  },
+  "autoload": {
+    "psr-0": {
+      "Infusionsoft": [
+        "src",
+        "tests"
+      ]
+    }
+  }
 }
