@@ -33,7 +33,7 @@
     }
   ],
   "dependencies": {
-    "formidable": "3.2.4",
+    "formidable": "3.2.5",
     "node-static": "0.7.11",
     "imagemagick": "0.1.3"
   },
