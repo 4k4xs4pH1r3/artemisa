@@ -11,7 +11,7 @@
     "source": "https://github.com/bcit-ci/CodeIgniter"
   },
   "require": {
-    "php": "8.2.1"
+    "php": "8.2.3"
   },
   "suggest": {
     "paragonie/random_compat": "Provides better randomness in PHP 5.x"
