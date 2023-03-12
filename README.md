@@ -13,4 +13,3 @@ Source code of artemisa.unbosque.edu.co, including room and other systems.
 [![CodeQL](https://github.com/4k4xs4pH1r3/artemisa/actions/workflows/codeql.yml/badge.svg)](https://github.com/4k4xs4pH1r3/artemisa/actions/workflows/codeql.yml)
 
 [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/summary/new_code?id=4k4xs4pH1r3_artemisa)
-
