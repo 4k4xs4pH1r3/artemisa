@@ -20,7 +20,7 @@
     }
   ],
   "require": {
-    "php": "8.2.3"
+    "php": "8.2.4"
   },
   "autoload": {
     "files": [
