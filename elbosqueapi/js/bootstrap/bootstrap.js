@@ -57,7 +57,7 @@
   function _inheritsLoose (subClass, superClass) {
     subClass.prototype = Object.create(superClass.prototype)
     subClass.prototype.constructor = subClass
-    subClass.__proto__ = superClass
+    Object.setPrototypeOf(subClass, superClass)
   }
 
   /**
@@ -907,7 +907,7 @@
           )
 
           const slideEvent = $$$1.Event(Event.SLIDE, {
-            relatedTarget: relatedTarget,
+            relatedTarget,
             direction: eventDirectionName,
             from: fromIndex,
             to: targetIndex
@@ -2222,7 +2222,7 @@
           }
 
           const showEvent = $$$1.Event(Event.SHOW, {
-            relatedTarget: relatedTarget
+            relatedTarget
           })
           $$$1(this._element).trigger(showEvent)
 
@@ -2366,7 +2366,7 @@
           }
 
           const shownEvent = $$$1.Event(Event.SHOWN, {
-            relatedTarget: relatedTarget
+            relatedTarget
           })
 
           const transitionComplete = function transitionComplete () {
