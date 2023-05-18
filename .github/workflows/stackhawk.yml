@@ -31,9 +31,9 @@ name: "StackHawk"
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
   schedule:
     - cron: '21 14 * * 1'
 

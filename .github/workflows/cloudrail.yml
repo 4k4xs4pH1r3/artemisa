@@ -7,9 +7,9 @@ name: Cloudrail
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]  
+    branches: [ master ]  
   schedule:
     - cron: '23 0 * * 0'
 
