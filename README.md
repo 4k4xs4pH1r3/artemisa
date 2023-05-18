@@ -10,6 +10,8 @@ Source code of artemisa.unbosque.edu.co, including room and other systems.
 
 [![DeepScan grade](https://deepscan.io/api/teams/17421/projects/24676/branches/761583/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=17421&pid=24676&bid=761583)
 
+[![Semgrep](https://github.com/4k4xs4pH1r3/artemisa/actions/workflows/semgrep.yml/badge.svg)](https://github.com/4k4xs4pH1r3/artemisa/actions/workflows/semgrep.yml)
+
 [![CodeQL](https://github.com/4k4xs4pH1r3/artemisa/actions/workflows/codeql.yml/badge.svg)](https://github.com/4k4xs4pH1r3/artemisa/actions/workflows/codeql.yml)
 
 [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/summary/new_code?id=4k4xs4pH1r3_artemisa)
