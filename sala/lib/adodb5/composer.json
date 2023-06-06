@@ -33,7 +33,7 @@
     "source": "https://github.com/ADOdb/ADOdb"
   },
   "require": {
-    "php": "8.2.6"
+    "php": "8.2.7"
   },
   "autoload": {
     "files": [
