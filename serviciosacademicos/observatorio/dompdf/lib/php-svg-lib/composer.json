@@ -1,8 +1,10 @@
 {
-  "authors": [ {
-    "email": "fabien.menager@gmail.com",
-    "name": "Fabien Ménager"
-  } ],
+  "authors": [
+    {
+      "email": "fabien.menager@gmail.com",
+      "name": "Fabien Ménager"
+    }
+  ],
   "autoload": {
     "psr-0": {
       "Svg\\": "src/"
@@ -16,7 +18,7 @@
     "sabberworm/php-css-parser": "8.4.*"
   },
   "require-dev": {
-    "phpunit/phpunit": "10.2.0"
+    "phpunit/phpunit": "10.2.1"
   },
   "type": "library"
 }
