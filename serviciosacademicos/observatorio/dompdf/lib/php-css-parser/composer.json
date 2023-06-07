@@ -1,7 +1,9 @@
 {
-  "authors": [ {
-    "name": "Raphael Schweikert"
-  } ],
+  "authors": [
+    {
+      "name": "Raphael Schweikert"
+    }
+  ],
   "autoload": {
     "psr-0": {
       "Sabberworm\\CSS": "lib/"
@@ -9,7 +11,11 @@
   },
   "description": "Parser for CSS Files written in PHP",
   "homepage": "http://www.sabberworm.com/blog/2010/6/10/php-css-parser",
-  "keywords": [ "parser", "css", "stylesheet" ],
+  "keywords": [
+    "parser",
+    "css",
+    "stylesheet"
+  ],
   "license": "MIT",
   "name": "sabberworm/php-css-parser",
   "require": {
