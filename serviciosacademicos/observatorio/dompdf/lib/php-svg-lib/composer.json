@@ -1,10 +1,8 @@
 {
-  "authors": [
-    {
-      "email": "fabien.menager@gmail.com",
-      "name": "Fabien Ménager"
-    }
-  ],
+  "authors": [ {
+    "email": "fabien.menager@gmail.com",
+    "name": "Fabien Ménager"
+  } ],
   "autoload": {
     "psr-0": {
       "Svg\\": "src/"
