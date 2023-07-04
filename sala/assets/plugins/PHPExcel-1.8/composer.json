@@ -30,7 +30,7 @@
     }
   ],
   "require": {
-    "php": "8.2.7",
+    "php": "8.2.8",
     "ext-mbstring": "*",
     "ext-xml": "*",
     "ext-xmlwriter": "*"
