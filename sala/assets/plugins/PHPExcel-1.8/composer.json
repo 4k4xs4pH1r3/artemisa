@@ -1,50 +1,38 @@
 {
-  "name": "phpoffice/phpexcel",
-  "description": "PHPExcel - OpenXML - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
-  "keywords": [
-    "PHP",
-    "Excel",
-    "OpenXML",
-    "xlsx",
-    "xls",
-    "spreadsheet"
-  ],
-  "homepage": "https://github.com/PHPOffice/PHPExcel",
-  "type": "library",
-  "license": "LGPL-2.1",
-  "authors": [
-    {
-      "name": "Maarten Balliauw",
-      "homepage": "http://blog.maartenballiauw.be"
-    },
-    {
-      "name": "Mark Baker",
-      "homepage": "http://markbakeruk.net"
-    },
-    {
-      "name": "Franck Lefevre",
-      "homepage": "http://rootslabs.net"
-    },
-    {
-      "name": "Erik Tilt"
-    }
-  ],
-  "require": {
-    "php": "8.2.8",
-    "ext-mbstring": "*",
-    "ext-xml": "*",
-    "ext-xmlwriter": "*"
-  },
-  "require-dev": {
-    "squizlabs/php_codesniffer": "3.7.2"
-  },
-  "recommend": {
-    "ext-zip": "*",
-    "ext-gd": "*"
-  },
+  "authors": [ {
+    "homepage": "http://blog.maartenballiauw.be",
+    "name": "Maarten Balliauw"
+  }, {
+    "homepage": "http://markbakeruk.net",
+    "name": "Mark Baker"
+  }, {
+    "homepage": "http://rootslabs.net",
+    "name": "Franck Lefevre"
+  }, {
+    "name": "Erik Tilt"
+  } ],
   "autoload": {
     "psr-0": {
       "PHPExcel": "Classes/"
     }
-  }
+  },
+  "description": "PHPExcel - OpenXML - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+  "homepage": "https://github.com/PHPOffice/PHPExcel",
+  "keywords": [ "PHP", "Excel", "OpenXML", "xlsx", "xls", "spreadsheet" ],
+  "license": "LGPL-2.1",
+  "name": "phpoffice/phpexcel",
+  "recommend": {
+    "ext-gd": "*",
+    "ext-zip": "*"
+  },
+  "require": {
+    "ext-mbstring": "*",
+    "ext-xml": "*",
+    "ext-xmlwriter": "*",
+    "php": "8.2.8"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "3.7.2"
+  },
+  "type": "library"
 }
