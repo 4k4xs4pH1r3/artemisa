@@ -37,7 +37,7 @@ jobs:
     - uses: actions/checkout@v3
     # Runs the Checkmarx Scan leveraging the latest version of CxFlow - REFER to Action README for list of inputs
     - name: Checkmarx CxFlow Action
-      uses: checkmarx-ts/checkmarx-cxflow-github-action@f65a2a8970ecc9395c5993470942cda4cdf943ee
+      uses: checkmarx-ts/checkmarx-cxflow-github-action@9c07e2adcb17d0fdf60f3184ff53720513ea3c09
       with:
         project: ${{ secrets.CHECKMARX_PROJECT }}
         team: ${{ secrets.CHECKMARX_TEAMS }}

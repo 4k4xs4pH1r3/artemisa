@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: flawfinder_scan
-        uses: david-a-wheeler/flawfinder@614801f704906a94ae420a5023c37008e22d7b95
+        uses: david-a-wheeler/flawfinder@fcb8df106936c1c0d17bb112582b0867ac6ed785
         with:
           arguments: '--sarif ./'
           output: 'flawfinder_results.sarif'
