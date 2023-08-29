@@ -25,7 +25,7 @@ jobs:
           distribution: 'temurin'
       - name: Run PMD
         id: pmd
-        uses: pmd/pmd-github-action@f5b38374e413ad3fe6800de1d9b522e93b6c8199
+        uses: pmd/pmd-github-action@dcb14bd92066324324699499034d7af8a751da59
         with:
           rulesets: 'rulesets/java/quickstart.xml'
           sourcePath: 'src/master/java'
