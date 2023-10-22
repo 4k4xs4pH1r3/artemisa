@@ -17,7 +17,7 @@ jobs:
   pmd-code-scan:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
       - name: Set up JDK 11
         uses: actions/setup-java@v3
         with:
@@ -25,7 +25,7 @@ jobs:
           distribution: 'temurin'
       - name: Run PMD
         id: pmd
-        uses: pmd/pmd-github-action@420234e497ce6de4468af7aa3d215b37e231186e
+        uses: pmd/pmd-github-action@7f7abb6bcd17312b70c0f6014b3c131f634f0e0e
         with:
           rulesets: 'rulesets/java/quickstart.xml'
           sourcePath: 'src/master/java'
