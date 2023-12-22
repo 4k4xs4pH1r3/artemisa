@@ -35,7 +35,7 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag localbuild/testimage:latest
     - name: Run the Anchore scan action itself with GitHub Advanced Security code scanning integration enabled
-      uses: anchore/scan-action@52d017bdbe923afa39369bc0cb1c89ff7463ab54
+      uses: anchore/scan-action@65161264d84bfeed55775e43bdbe5eb7c8a433fb
       with:
         image: "localbuild/testimage:latest"
         acs-report-enable: true
