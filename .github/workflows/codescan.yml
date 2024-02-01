@@ -27,10 +27,15 @@ jobs:
           security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
         runs-on: ubuntu-latest
         steps:
+            - name: Harden Runner
+              uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142 # v2.7.0
+              with:
+                egress-policy: audit
+
             -   name: Checkout repository
                 uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
             -   name: Cache files
-                uses: actions/cache@v4
+                uses: actions/cache@13aacd865c20de90d75de3b17ebe84f7a17d57d2 # v4.0.0
                 with:
                     path: |
                         ~/.sonar
@@ -43,6 +48,6 @@ jobs:
                     organization: ${{ secrets.CODESCAN_ORGANIZATION_KEY }}
                     projectKey: ${{ secrets.CODESCAN_PROJECT_KEY }}
             -   name: Upload SARIF file
-                uses: github/codeql-action/upload-sarif@v3
+                uses: github/codeql-action/upload-sarif@b7bf0a3ed3ecfa44160715d7c442788f65f0f923 # v3.23.2
                 with:
                     sarif_file: codescan.sarif

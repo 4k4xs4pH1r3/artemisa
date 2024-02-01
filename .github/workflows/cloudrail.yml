@@ -13,6 +13,9 @@ on:
   schedule:
     - cron: '23 0 * * 0'
 
+permissions:
+  contents: read
+
 jobs:
   cloudrail:
     name: Run Indeni Cloudrail on Terraform code with SARIF output
@@ -23,12 +26,17 @@ jobs:
       security-events: write
 
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142 # v2.7.0
+        with:
+          egress-policy: audit
+
       - name: Clone repo
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
 
       # For Terraform, Cloudrail requires the plan as input. So we generate it using 
       # the Terraform core binary.
-      - uses: hashicorp/setup-terraform@v3
+      - uses: hashicorp/setup-terraform@a1502cd9e758c50496cc9ac5308c4843bcd56d36 # v3.0.0
         with:
           terraform_version: v0.13.2
 
@@ -50,7 +58,7 @@ jobs:
           cloud-account-id: # Leave this empty for Static Analaysis, or provide an account ID for Dynamic Analysis, see instructions in Cloudrail SaaS
 
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@b7bf0a3ed3ecfa44160715d7c442788f65f0f923 # v3.23.2
         # Remember that if issues are found, Cloudrail return non-zero exit code, so the if: always()
         # is needed to ensure the SARIF file is uploaded
         if: always() 
