@@ -14,6 +14,9 @@ on:
   schedule:
     - cron: '32 3 * * 0'
 
+permissions:
+  contents: read
+
 jobs:
   analyze:
     name: Analyze
@@ -24,6 +27,11 @@ jobs:
       security-events: write
     
     steps:
+    - name: Harden Runner
+      uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142 # v2.7.0
+      with:
+        egress-policy: audit
+
     - name: Checkout repository
       uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
       
@@ -71,7 +79,7 @@ jobs:
     
     - name: Upload SARIF file
       if: ${{steps.prescription.outputs.sastScan == 'true' }}
-      uses: github/codeql-action/upload-sarif@v3
+      uses: github/codeql-action/upload-sarif@b7bf0a3ed3ecfa44160715d7c442788f65f0f923 # v3.23.2
       with:
         # Path to SARIF file relative to the root of the repository
         sarif_file: workflowengine-results.sarif.json

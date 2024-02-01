@@ -42,3 +42,78 @@ updates:
     # Only allow updates to the lockfile for pip and
     # ignore any version updates that affect the manifest
     versioning-strategy: lockfile-only
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /sala/assets/plugins/PHPExcel-1.8/Documentation/assets/ClassDiagrams
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /serviciosacademicos/consulta/estadisticas/notascorte/data
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /serviciosacademicos/consulta/estadisticas/notascorte/jquery/development-bundle
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /serviciosacademicos/consulta/estadisticas/riesgos/data
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /serviciosacademicos/consulta/estadisticas/riesgos/jquery/development-bundle
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /serviciosacademicos/convenio/DataTables
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /serviciosacademicos/convenio/jQueryFileUpload
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /serviciosacademicos/convenio/jQueryFileUpload/server/node
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /serviciosacademicos/js/jquery-ui-1.10.4.custom/development-bundle
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /serviciosacademicos/men/DataTables-1.9.4
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /serviciosacademicos/observatorio/data
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /serviciosacademicos/observatorio/data2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /serviciosacademicos/mgi/tablero_siq/Highcharts-2.3.3/exporting-server/java/highcharts-export
+    schedule:
+      interval: daily
