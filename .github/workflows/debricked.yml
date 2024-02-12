@@ -1,0 +1,22 @@
+name: Secure Development Workflow
+
+on: [push]
+
+jobs:
+  combined:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Vulnerability scan
+        uses: debricked/actions@v3
+        env:
+          DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN }}
+      - name: Resolve vulnerabilities
+        if: always()  # Always attempt resolution, even after failures
+        uses: debricked/actions/resolve@v3
+        env:
+          DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN }}
+          # Add optional inputs for vulnerability prioritization and resolution strategies
+          # e.g., DEBRICKED_RESOLVE_STRATEGY: upgrade, DEBRICKED_SEVERITY_THRESHOLD: high
+          # See https://debricked.com/docs/actions/resolve for complete list
