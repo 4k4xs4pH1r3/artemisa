@@ -7,14 +7,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Harden Runner
+        uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142 # v2.7.0
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       - name: Vulnerability scan
-        uses: debricked/actions@v3
+        uses: debricked/actions@3fb2c2e140eac95758e82f507df6c80a8172e643 # v3.1.0
         env:
           DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN }}
       - name: Resolve vulnerabilities
         if: always()  # Always attempt resolution, even after failures
-        uses: debricked/actions/resolve@v3
+        uses: debricked/actions/resolve@3fb2c2e140eac95758e82f507df6c80a8172e643 # v3.1.0
         env:
           DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN }}
           # Add optional inputs for vulnerability prioritization and resolution strategies
