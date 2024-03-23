@@ -37,11 +37,11 @@ jobs:
           python-version: 3.8
 
       - name: Run mobsfscan
-        uses: MobSF/mobsfscan@e29e85c36fa1aa950d7f1b1064345d94a70b2a28
+        uses: MobSF/mobsfscan@35b2016602af9d6ac52f296becca11be3fe004e8
         with:
           args: . --sarif --output results.sarif || true
 
       - name: Upload mobsfscan report
-        uses: github/codeql-action/upload-sarif@05963f47d870e2cb19a537396c1f668a348c7d8f # v3.24.8
+        uses: github/codeql-action/upload-sarif@1b1aada464948af03b950897e5eb522f92603cc2 # v3.24.9
         with:
           sarif_file: results.sarif
