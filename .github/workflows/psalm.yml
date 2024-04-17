@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
 
       - name: Psalm Security Scan
-        uses: docker://ghcr.io/psalm/psalm-security-scan:latest@sha256:5d3c8e0fcd9b8f90ca99fe717334d36169320b05c72a7d756e6efc7824f43fb8
+        uses: docker://ghcr.io/psalm/psalm-security-scan:latest@sha256:b9400c344d7c113bfc8196f875426e56c3129933487c30912359be8943fe936e
         
       - name: Upload Security Analysis results to GitHub
         uses: github/codeql-action/upload-sarif@df5a14dc28094dc936e103b37d749c6628682b60 # v3.25.0
