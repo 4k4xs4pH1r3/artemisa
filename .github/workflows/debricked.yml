@@ -14,12 +14,12 @@ jobs:
 
       - uses: actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f # v4.1.3
       - name: Vulnerability scan
-        uses: debricked/actions@3fb2c2e140eac95758e82f507df6c80a8172e643 # v3.1.0
+        uses: debricked/actions@000cc029492b976163267ca9e16eafa0ff3602d9 # v3.2.1
         env:
           DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN }}
       - name: Resolve vulnerabilities
         if: always()  # Always attempt resolution, even after failures
-        uses: debricked/actions/resolve@3fb2c2e140eac95758e82f507df6c80a8172e643 # v3.1.0
+        uses: debricked/actions/resolve@000cc029492b976163267ca9e16eafa0ff3602d9 # v3.2.1
         env:
           DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN }}
           # Add optional inputs for vulnerability prioritization and resolution strategies
