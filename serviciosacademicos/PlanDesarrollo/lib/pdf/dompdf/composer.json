@@ -18,6 +18,6 @@
         "classmap": ["include/"]
     },
     "require": {
-        "phenx/php-font-lib": "0.5.*"
+        "phenx/php-font-lib": "1.0.*"
     }
 }
