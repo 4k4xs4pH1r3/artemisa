@@ -39,7 +39,7 @@ jobs:
 
     # Customize the ruby version depending on your needs
     - name: Setup Ruby
-      uses: ruby/setup-ruby@1198b074305f9356bd56dd4b311757cc0dab2f1c
+      uses: ruby/setup-ruby@6615b4b8a02c78c4d711c06df4b8a20aa685a45d
       with:
         ruby-version: '2.7'
 
@@ -57,6 +57,6 @@ jobs:
 
     # Upload the SARIF file generated in the previous step
     - name: Upload SARIF
-      uses: github/codeql-action/upload-sarif@d39d31e687223d841ef683f52467bd88e9b21c14 # v3.25.3
+      uses: github/codeql-action/upload-sarif@b7cec7526559c32f1616476ff32d17ba4c59b2d6 # v3.25.5
       with:
         sarif_file: output.sarif.json
