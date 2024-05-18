@@ -12,7 +12,7 @@ jobs:
         with:
           egress-policy: audit
 
-      - uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
+      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
       - name: Vulnerability scan
         uses: debricked/actions@000cc029492b976163267ca9e16eafa0ff3602d9 # v3.2.1
         env:
