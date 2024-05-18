@@ -58,7 +58,7 @@ jobs:
            egress-policy: audit
 
        - name: APIsec scan
-         uses: apisec-inc/apisec-run-scan@eadaedebb5b8516971299b64cea226dc9d9edb6c
+         uses: apisec-inc/apisec-run-scan@8f66ce948afb779712a1d57ecb0a528d7ded5a45
          with:
           # The APIsec username with which the scans will be executed
           apisec-username: ${{ secrets.apisec_username }}
@@ -69,6 +69,6 @@ jobs:
           # The name of the sarif format result file The file is written only if this property is provided.
           sarif-result-file: "apisec-results.sarif"
        - name: Import results
-         uses: github/codeql-action/upload-sarif@d39d31e687223d841ef683f52467bd88e9b21c14 # v3.25.3
+         uses: github/codeql-action/upload-sarif@b7cec7526559c32f1616476ff32d17ba4c59b2d6 # v3.25.5
          with:
           sarif_file: ./apisec-results.sarif
