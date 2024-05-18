@@ -59,7 +59,7 @@ jobs:
         run: ./run_your_api.sh & # <- ✏️ update this
 
       - name: Mayhem for API
-        uses: ForAllSecure/mapi-action@ab64f9178e179daf1face02ba49e574853666ec8
+        uses: ForAllSecure/mapi-action@c31b1886401e3db6ec5c7d7d0ffa4dd6716628cf
         continue-on-error: true
         with:
           mapi-token: ${{ secrets.MAPI_TOKEN }}
@@ -69,6 +69,6 @@ jobs:
           sarif-report: mapi.sarif
 
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@d39d31e687223d841ef683f52467bd88e9b21c14 # v3.25.3
+        uses: github/codeql-action/upload-sarif@b7cec7526559c32f1616476ff32d17ba4c59b2d6 # v3.25.5
         with:
           sarif_file: mapi.sarif
