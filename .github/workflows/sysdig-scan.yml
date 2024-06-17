@@ -32,7 +32,7 @@ jobs:
       with:
         egress-policy: audit
 
-    - uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4
+    - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
 
     - name: Build the Docker image
       # Tag image to be built
@@ -41,7 +41,7 @@ jobs:
 
     - name: Sysdig Secure Inline Scan
       id: scan
-      uses: sysdiglabs/scan-action@36d9a452e41ecb871014cbc5d51e780ee54ec746
+      uses: sysdiglabs/scan-action@07d642051a406b231ef7c90c6f8c5c6061825eda
       with:
         # Tag of the image to analyse. 
         # Change ${{ github.repository }} variable by another image name if you want but don't forget changing also image-tag above
@@ -59,7 +59,7 @@ jobs:
         # Sysdig inline scanner requires privileged rights
         run-as-user: root
 
-    - uses: github/codeql-action/upload-sarif@b7cec7526559c32f1616476ff32d17ba4c59b2d6 # v3.25.5
+    - uses: github/codeql-action/upload-sarif@23acc5c183826b7a8a97bce3cecc52db901f8251 # v3.25.10
       #Upload SARIF file
       if: always()
       with:
