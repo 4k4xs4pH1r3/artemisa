@@ -31,14 +31,14 @@ jobs:
           egress-policy: audit
 
       - name: Checkout code
-        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
 
       - name: Build an image from Dockerfile
         run: |
           docker build -t docker.io/my-organization/my-app:${{ github.sha }} .
 
       - name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@b2933f565dbc598b29947660e66259e3c7bc8561
+        uses: aquasecurity/trivy-action@595be6a0f6560a0a8fc419ddf630567fc623531d
         with:
           image-ref: 'docker.io/my-organization/my-app:${{ github.sha }}'
           format: 'template'
