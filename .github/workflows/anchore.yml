@@ -36,11 +36,11 @@ jobs:
         egress-policy: audit
 
     - name: Checkout the code
-      uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4
+      uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag localbuild/testimage:latest
     - name: Run the Anchore scan action itself with GitHub Advanced Security code scanning integration enabled
-      uses: anchore/scan-action@04171b19680acf2d2edf570b0b7d4b3fc275b517
+      uses: anchore/scan-action@d09e278f43e314a93efb4e6000ff0df6153e9333
       with:
         image: "localbuild/testimage:latest"
         acs-report-enable: true
