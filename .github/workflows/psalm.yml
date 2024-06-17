@@ -21,7 +21,7 @@ jobs:
           egress-policy: audit
 
       - name: Checkout code
-        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
 
       - name: Psalm Security Scan
         uses: docker://ghcr.io/psalm/psalm-security-scan:latest@sha256:ba4e4670e5e7dfb60a900246e796ba6e68876237240bb90b58774cfc40a80d28
