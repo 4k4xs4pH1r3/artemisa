@@ -116,7 +116,7 @@ jobs:
         )" > ${{ github.workspace }}/detekt.sarif.json
 
     # Uploads results to GitHub repository using the upload-sarif action
-    - uses: github/codeql-action/upload-sarif@b7cec7526559c32f1616476ff32d17ba4c59b2d6 # v3.25.5
+    - uses: github/codeql-action/upload-sarif@23acc5c183826b7a8a97bce3cecc52db901f8251 # v3.25.10
       with:
         # Path to SARIF file relative to the root of the repository
         sarif_file: ${{ github.workspace }}/detekt.sarif.json
