@@ -34,12 +34,12 @@ jobs:
         egress-policy: audit
 
     - name: Checkout repository
-      uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4
+      uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
 
     # If running on a self-hosted runner, check it meets the requirements
     # listed at https://github.com/ruby/setup-ruby#using-self-hosted-runners
     - name: Set up Ruby
-      uses: ruby/setup-ruby@6615b4b8a02c78c4d711c06df4b8a20aa685a45d
+      uses: ruby/setup-ruby@ff740bc00a01b3a50fffc55a1071b1060eeae9dc
       with:
         ruby-version: 2.6
 
@@ -58,6 +58,6 @@ jobs:
         "
 
     - name: Upload Sarif output
-      uses: github/codeql-action/upload-sarif@b7cec7526559c32f1616476ff32d17ba4c59b2d6 # v3.25.5
+      uses: github/codeql-action/upload-sarif@23acc5c183826b7a8a97bce3cecc52db901f8251 # v3.25.10
       with:
         sarif_file: rubocop.sarif

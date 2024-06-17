@@ -12,14 +12,14 @@ jobs:
         with:
           egress-policy: audit
 
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - name: Vulnerability scan
-        uses: debricked/actions@000cc029492b976163267ca9e16eafa0ff3602d9 # v3.2.1
+        uses: debricked/actions@2484ae836362432478822815b28311aa8cd25954 # v3.3.0
         env:
           DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN }}
       - name: Resolve vulnerabilities
         if: always()  # Always attempt resolution, even after failures
-        uses: debricked/actions/resolve@000cc029492b976163267ca9e16eafa0ff3602d9 # v3.2.1
+        uses: debricked/actions/resolve@2484ae836362432478822815b28311aa8cd25954 # v3.3.0
         env:
           DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN }}
           # Add optional inputs for vulnerability prioritization and resolution strategies
