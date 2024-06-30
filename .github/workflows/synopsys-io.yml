@@ -79,7 +79,7 @@ jobs:
     
     - name: Upload SARIF file
       if: ${{steps.prescription.outputs.sastScan == 'true' }}
-      uses: github/codeql-action/upload-sarif@23acc5c183826b7a8a97bce3cecc52db901f8251 # v3.25.10
+      uses: github/codeql-action/upload-sarif@d5cec099b513fccc2cfcc9247113ecc9edbdacc5 # v1.1.21
       with:
         # Path to SARIF file relative to the root of the repository
         sarif_file: workflowengine-results.sarif.json
