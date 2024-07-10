@@ -41,7 +41,7 @@ jobs:
 
     - name: Sysdig Secure Inline Scan
       id: scan
-      uses: sysdiglabs/scan-action@07d642051a406b231ef7c90c6f8c5c6061825eda
+      uses: sysdiglabs/scan-action@fe4881d7888fd10dab6b0c88f2904d68fd83d57a
       with:
         # Tag of the image to analyse. 
         # Change ${{ github.repository }} variable by another image name if you want but don't forget changing also image-tag above
@@ -59,7 +59,7 @@ jobs:
         # Sysdig inline scanner requires privileged rights
         run-as-user: root
 
-    - uses: github/codeql-action/upload-sarif@23acc5c183826b7a8a97bce3cecc52db901f8251 # v3.25.10
+    - uses: github/codeql-action/upload-sarif@b611370bb5703a7efb587f9d136a52ea24c5c38c # v3.25.11
       #Upload SARIF file
       if: always()
       with:
