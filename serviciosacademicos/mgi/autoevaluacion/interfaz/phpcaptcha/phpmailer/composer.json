@@ -22,7 +22,7 @@
   },
   "require-dev": {
     "phpdocumentor/phpdocumentor": "3.5.3",
-    "phpunit/phpunit": "11.2.9"
+    "phpunit/phpunit": "11.3.0"
   },
   "type": "library"
 }
