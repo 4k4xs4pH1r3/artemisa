@@ -43,4 +43,4 @@ jobs:
         uses: security-code-scan/security-code-scan-results-action@579058214e4be88ce9eea302f1fb74df1b8bc1ed
 
       - name: Upload sarif
-        uses: github/codeql-action/upload-sarif@c36620d31ac7c881962c3d9dd939c40ec9434f2b # v3.26.12
+        uses: github/codeql-action/upload-sarif@f779452ac5af1c261dce0346a8f964149f49322b # v3.26.13
