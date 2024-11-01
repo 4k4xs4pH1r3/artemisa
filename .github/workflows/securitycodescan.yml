@@ -27,7 +27,7 @@ jobs:
           egress-policy: audit
 
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
-      - uses: nuget/setup-nuget@7637ac58f147fe272267fc9683a6ffab98004031
+      - uses: nuget/setup-nuget@732b6c348c6d6ee4175685f5ec2ad063878da305
       - uses: microsoft/setup-msbuild@6fb02220983dee41ce7ae257b6f4d8f9bf5ed4ce # v2.0.0
       
       - name: Set up projects for analysis
