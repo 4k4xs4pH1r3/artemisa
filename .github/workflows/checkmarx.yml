@@ -54,6 +54,6 @@ jobs:
         params: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.ref }} --cx-flow.filterSeverity --cx-flow.filterCategory
     # Upload the Report for CodeQL/Security Alerts
     - name: Upload SARIF file
-      uses: github/codeql-action/upload-sarif@babb554ede22fd5605947329c4d04d8e7a0b8155 # v3.27.7
+      uses: github/codeql-action/upload-sarif@8a93837afdf1873301a68d777844b43e98cd4313 # v3.27.8
       with:
         sarif_file: cx.sarif
