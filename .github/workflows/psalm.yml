@@ -27,6 +27,6 @@ jobs:
         uses: docker://ghcr.io/psalm/psalm-security-scan:latest@sha256:117498bd29574ff75aa4d28f7d9d1a56ccd70c40d77a8bd3196b2015822f4c62
         
       - name: Upload Security Analysis results to GitHub
-        uses: github/codeql-action/upload-sarif@b6a472f63d85b9c78a3ac5e89422239fc15e9b3c # v3.28.1
+        uses: github/codeql-action/upload-sarif@d68b2d4edb4189fd2a5366ac14e72027bd4b37dd # v3.28.2
         with:
           sarif_file: results.sarif
