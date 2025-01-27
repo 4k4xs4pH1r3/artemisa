@@ -53,7 +53,7 @@ jobs:
           # The service need to know the type of IaC being scanned
           template_type: 'CFT'
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@ee117c905ab18f32fa0f66c2fe40ecc8013f3e04 # v3.28.4
+        uses: github/codeql-action/upload-sarif@17a820bf2e43b47be2c72b39cc905417bc1ab6d0 # v3.28.6
         # Results are generated only on a success or failure
         # this is required since GitHub by default won't run the next step
         # when the previous one has failed.
